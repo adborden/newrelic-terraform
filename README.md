@@ -1,18 +1,31 @@
-# 18F Open Source Policy
+# TTS New Relic Automation
 
-This repository contains the official [Open Source Policy](policy.md) of [18F](https://18f.gsa.gov/) (a digital delivery team within the [General Services Administration](http://gsa.gov)).
+## Getting Started
+To protect agaisnt committing credentials or other secrets:
+- [Gitleaks](https://github.com/zricethezav/gitleaks#getting-started)
+- [Pre-commit](https://pre-commit.com/#install)
+- [Mozilla's Secrets OPerationS (SOPS)](https://github.com/mozilla/sops)
 
-**[Read 18F's open source policy.](policy.md)**
+```bash
+$ brew install pre-commit gitleaks sops
+```
 
-### 18F Team Guidance
+To import existing New Relic accountxs into terraform:
+- [Terraform](https://www.terraform.io/downloads.html)
+- [Terraformer](https://github.com/GoogleCloudPlatform/terraformer
 
-For 18F team members, we have guidance on how 18F puts this policy into practice, and how we handle the narrow situations where we may delay or withhold the release of source code.
+```bash
+$ brew install terraform terraformer
+```
 
-**[Read 18F's open source team practices.](practice.md)**
-
-### Credits
-
-This policy was originally forked from the [Consumer Financial Protection Bureau's policy](https://github.com/cfpb/source-code-policy). Thanks also to [@benbalter](https://github.com/benbalter) for his [insights regarding CFPB's initial policy](http://ben.balter.com/2012/04/10/whats-missing-from-cfpbs-awesome-new-source-code-policy/).
+Import an existing New Relic account into terraform:
+```bash
+$ export NEWRELIC_API_KEY=REPLACEME
+$ terraformer import newrelic -r alert,dashboard,infra,synthetics
+```
+### Continuos Integration
+- [Github Actions - Gitleaks](https://github.com/marketplace/actions/gitleaks)
+- [CircleCI](https://circleci.com)
 
 
 ### Public domain
