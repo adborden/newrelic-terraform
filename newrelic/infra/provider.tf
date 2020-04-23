@@ -1,3 +1,3 @@
 provider "newrelic" {
-  version = "~>v1.14.0"
+  version = "~>v1.16.0"
 }

@@ -12,7 +12,7 @@ $ brew install pre-commit gitleaks sops
 
 To import existing New Relic accountxs into terraform:
 - [Terraform](https://www.terraform.io/downloads.html)
-- [Terraformer](https://github.com/GoogleCloudPlatform/terraformer
+- [Terraformer](https://github.com/GoogleCloudPlatform/terraformer)
 
 ```bash
 $ brew install terraform terraformer
@@ -20,8 +20,9 @@ $ brew install terraform terraformer
 
 Import an existing New Relic account into terraform:
 ```bash
-$ export NEWRELIC_API_KEY=REPLACEME
-$ terraformer import newrelic -r alert,dashboard,infra,synthetics
+$ export NEWRELIC_API_KEY=REPLACEMEterra
+$ terraform init
+$ terraformer import newrelic -o "./newrelic" -r alert,dashboard,infra,synthetics
 ```
 ### Continuos Integration
 - [Github Actions - Gitleaks](https://github.com/marketplace/actions/gitleaks)

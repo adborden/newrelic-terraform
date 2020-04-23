@@ -1,3 +1,7 @@
+provider "newrelic" {
+  
+}
+
 locals {
   csv_data = <<-CSV
     system
