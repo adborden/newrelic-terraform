@@ -1,3 +1,3 @@
-provider "newrelic" {
-  
+module "newrelic" {
+  source = "./newrelic"
 }

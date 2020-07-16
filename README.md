@@ -20,8 +20,9 @@ $ brew install terraform terraformer
 
 Import an existing New Relic account into terraform:
 ```bash
-$ export NEWRELIC_API_KEY=REPLACEME
-$ terraformer import newrelic -r alert,dashboard,infra,synthetics
+$ export NEWRELIC_API_KEY=REPLACEMEterra
+$ terraform init
+$ terraformer import newrelic -o "./newrelic" -r alert,dashboard,infra,synthetics
 ```
 ### Continuous Integration
 - [Github Actions - Gitleaks](https://github.com/marketplace/actions/gitleaks)
