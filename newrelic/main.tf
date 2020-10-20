@@ -108,11 +108,7 @@ locals {
     counties.data.gov
     crime-data-explorer.fr.cloud.gov
     crissupb.identitysandbox.gov
-    crm-labs.data.gov
-    dap.digitalgov.gov
-    dashboard-labs.data.gov
-    dashboard.brody.identitysandbox.gov
-    dashboard.markryan.identitysandbox.gov
+    dap.digitalgov.gov/Universal-Federated-Analytics-Min.js
     data.gov
     demo.10x.gsa.gov
     demo.accessibility.digital.gov
@@ -123,12 +119,6 @@ locals {
     demo.plainlanguage.gov
     demo.pra.digital.gov
     demo.touchpoints.digital.gov
-    demo1.search.usa.gov
-    demo1.staging.infr.search.usa.gov
-    demo2.search.usa.gov
-    demo2.staging.infr.search.usa.gov
-    demo3.search.usa.gov
-    demo3.staging.infr.search.usa.gov
     design-principles-guide.18f.gov
     designsystem.digital.gov
     dev.identitysandbox.gov
@@ -139,47 +129,27 @@ locals {
     digital.gov
     digitalaccelerator.18f.gov
     digitalgov.gov
-    digitalgov.sitesusa.app.cloud.gov
     disaster.data.gov
     disasters.data.gov
     discovery.gsa.gov
-    discuss.pif.gov
     docs.cloud.gov
     dolores-app.18f.gov
     dolores-staging.18f.gov
-    download.collegescorecard.ed.gov
     ecosystems.data.gov
     ed.data.gov
     education.data.gov
     emerging.digital.gov
-    energy.data.gov
     eng-hiring.18f.gov
     engineering.18f.gov
     epa-notice.usa.gov
     ethics.data.gov
     everykidinapark.gov
-    explore.data.gov
-    fcsm.sitesusa.app.cloud.gov
-    fdic-cloudworkspace.app.cloud.gov
-    fdic-search.app.cloud.gov
-    fdic-wwwdev.app.cloud.gov
-    federalist-builder.18f.gov
-    federalist-docs-staging.18f.gov
     federalist-docs.18f.gov
-    federalist-landing-template.18f.gov
-    federalist-modern-team-template.18f.gov
-    federalist-proxy.app.cloud.gov
-    federalist-report-template.18f.gov
-    federalist-staging.18f.gov
-    federalist-uswds-template.18f.gov
     federalist.18f.gov
     federalistapp-staging.18f.gov
     federalistapp.18f.gov
     federation-staging.data.gov
     federation.data.gov
-    fedinfo.gov
-    fedramp-dashboard.fr.cloud.gov
-    fedramp-develop.fr.cloud.gov
     fedramp.gov
     fedramp.sitesusa.app.cloud.gov
     fedspendingtransparency.18f.gov
@@ -187,7 +157,6 @@ locals {
     feedback.usa.gov
     feedthefuture.gov
     fellows-in-innovation.pif.gov
-    files.18f.gov
     finance.data.gov
     find.digitalgov.gov
     find.search.gov
@@ -196,48 +165,28 @@ locals {
     food.data.gov
     foodsecurity.data.gov
     forms.gov
-    fr-stage.cloud.gov
-    fr.cloud.gov
     frontend.18f.gov
-    fugacious.18f.gov
     geospatial.data.gov
     globaldevelopment.data.gov
     go.usa.gov
     gobierno.usa.gov
     gobiernousa.gov
     govconnect.18f.gov
-    grafana.18f.gov
     grouplet-playbook.18f.gov
-    gsaforecast.gsa.gov
     guides-template.18f.gov
     guides.18f.gov
-    hamilton.app.cloud.gov
     handbook.18f.gov
     handbook.tts.gsa.gov
     health.data.gov
     highlights.data.gov
-    howto.gov
     devicepki.idmanagement.gov
     hackerone.com/tts
     https.app.cloud.gov
     https.cio.gov
-    hub.18f.gov
     humanrights.data.gov
-    i14y.search.gov
-    i14y.search.usa.gov
-    i14y.usa.gov
     iaa-forms.18f.gov
     identity-dev-docs.18f.gov
-    identitysandbox.gov
     idmanagement.gov
-    idp.brody.identitysandbox.gov
-    idp.ci.identitysandbox.gov
-    idp.crissupb.identitysandbox.gov
-    idp.dev.identitysandbox.gov
-    idp.int.identitysandbox.gov
-    idp.jjg.identitysandbox.gov
-    idp.markryan.identitysandbox.gov
-    idp.qa.identitysandbox.gov
     idp.staging.login.gov
     info.gov
     innovation-toolkit-prototype.18f.gov
@@ -249,18 +198,8 @@ locals {
     jobs.18f.gov
     join.18f.gov
     join.tts.gsa.gov
-    kibana.demo1.search.usa.gov
-    kibana.demo2.search.usa.gov
-    kibana.demo3.search.usa.gov
-    kibana.search.gov
-    kibana.search.usa.gov
-    kibana5.demo1.search.usa.gov
-    kibana5.demo2.search.usa.gov
-    kibana5.demo3.search.usa.gov
-    kibana5.search.gov
     kids.gov
     kids.usa.gov
-    labs-bsp.data.gov
     labs.data.gov
     labs.usa.gov
     law.data.gov
@@ -268,7 +207,6 @@ locals {
     login.fr.cloud.gov
     login.gov
     lookforwatersense-prod.app.cloud.gov
-    lookforwatersense-stage.app.cloud.gov
     m.gobiernousa.gov
     m.usa.gov
     make.data.gov
@@ -280,17 +218,12 @@ locals {
     micropurchase.18f.gov
     modularcontracting.18f.gov
     my.usa.gov
-    mywaterway-dev.app.cloud.gov
-    mywaterway-stage.app.cloud.gov
-    new.vote.gov
     next.data.gov
     notice.data.gov
     notice.usa.gov
     notifications.usa.gov
     nutrition.data.gov
-    o166.email.digitalgov.gov
     ocean.data.gov
-    onepagetest.18f.gov
     open-forest-dev.app.cloud.gov
     open-forest-staging.app.cloud.gov
     open-source-guide.18f.gov
@@ -303,33 +236,15 @@ locals {
     paid-leave-prototype.18f.gov
     participation.usa.gov
     partnership-playbook.18f.gov
-    paygap-slack.pif.gov
     paygap.pif.gov
     performance-gov-research.18f.gov
     performance.gov
-    pfabankapi-d.app.cloud.gov
-    pfabankapi-q.app.cloud.gov
-    pfabankapi.app.cloud.gov
-    pfabankfindui-d.app.cloud.gov
-    pfabankfindui-n.app.cloud.gov
-    pfabankfindui-q.app.cloud.gov
-    pfabankfindui.app.cloud.gov
-    pfabankui-q.app.cloud.gov
     pif.gov
-    pif.gsa.gov
     piv.idmanagement.gov
-    pivcac.ci.identitysandbox.gov
-    pivcac.crissupb.identitysandbox.gov
-    pivcac.int.identitysandbox.gov
-    pivcac.jjg.identitysandbox.gov
-    pivcac.markryan.identitysandbox.gov
-    pivcac.prod.login.gov
-    pivcac.staging.login.gov
     plain-language-tutorial.18f.gov
     plainlanguage.gov
     pra.digital.gov
     presidentialinnovationfellows.gov
-    preview.login.gov
     private-eye.18f.gov
     product-guide.18f.gov
     promotions.usa.gov
@@ -337,7 +252,6 @@ locals {
     public-sans.digital.gov
     publications.usa.gov
     pulse.cio.gov
-    qa.identitysandbox.gov
     reference.data.gov
     registry.usa.gov
     requests.18f.gov
@@ -345,17 +259,10 @@ locals {
     resources-staging.data.gov
     resources.data.gov
     respuestas.gobiernousa.gov
-    resque.demo1.search.usa.gov
-    resque.demo2.search.usa.gov
-    resque.demo3.search.usa.gov
-    resque.search.usa.gov
-    review.pif.gov
     rural.data.gov
     safety.data.gov
-    sandbox.gov
     sbst.gov
     science.data.gov
-    sdg-bsp.data.gov
     sdg-staging.data.gov
     sdg.data.gov
     search.data.gov
@@ -366,54 +273,21 @@ locals {
     semantic.data.gov
     services.data.gov
     site-scanning.app.cloud.gov
-    Sites.usa.gov
     skills.data.gov
     slides.18f.gov
     smallbusiness.data.gov
     smartdisclosure.data.gov
-    sp-oidc-sinatra.brody.identitysandbox.gov
-    sp-oidc-sinatra.markryan.identitysandbox.gov
-    sp-rails.brody.identitysandbox.gov
-    sp-rails.markryan.identitysandbox.gov
-    sp-sinatra.brody.identitysandbox.gov
-    sp-sinatra.markryan.identitysandbox.gov
-    sp.brody.identitysandbox.gov
-    sp.ci.identitysandbox.gov
-    sp.crissupb.identitysandbox.gov
-    sp.dev.identitysandbox.gov
-    sp.int.identitysandbox.gov
-    sp.jjg.identitysandbox.gov
-    sp.markryan.identitysandbox.gov
-    sp.qa.identitysandbox.gov
-    stage-socialmobileregistry.digitalgov.gov
-    staging.api.data.gov
     staging.code.gov
     staging.login.gov
     staging.performance.gov
-    staging.pulse.cio.gov
     staging.vote.gov
     standards.usa.gov
-    standupbot.18f.gov
     states.data.gov
-    static.data.gov
-    stats.search.usa.gov
     strategy.data.gov
     summit.digitalgov.gov
-    support.digitalgov.gov
-    survey.apps.cloud.gov
     tailored.fedramp.gov
-    tell-us.usa.gov
-    tellus.usa.gov
-    test-migrate.app.cloud.gov
-    test-onrr.app.cloud.gov
-    test.18f.us
-    test.collegescorecard.ed.gov
     testing-cookbook.18f.gov
-    tmate.18f.gov
     tock.18f.gov
-    tome.app.cloud.gov
-    tomeairnow.app.cloud.gov
-    tomeairnow1.app.cloud.gov
     tophealth.pif.gov
     touchpoints.digital.gov
     us.gov
@@ -421,13 +295,10 @@ locals {
     usdigitalregistry.digitalgov.gov
     v1.designsystem.digital.gov
     v2.designsystem.digital.gov
-    v2.designsystem.digital.gov/
-    v2alt.designsystem.digital.gov
     vocab.data.gov
     vote.gov
     vote.usa.gov
     weather.data.gov
-    weekofmaking.pif.gov
     workflow.digital.gov
     wp-bsp.data.gov
     writing-lab-guide.18f.gov
