@@ -1,16 +1,8 @@
 # TTS New Relic Automation
 
 ## Getting Started
-To protect against committing credentials or other secrets:
-- [Gitleaks](https://github.com/zricethezav/gitleaks#getting-started)
-- [Pre-commit](https://pre-commit.com/#install)
-- [Mozilla's Secrets OPerationS (SOPS)](https://github.com/mozilla/sops)
 
-```bash
-$ brew install pre-commit gitleaks sops
-```
-
-To import existing New Relic accountxs into terraform:
+The terraform state is not managed directly, the account is used as the state and imported into terraform using terraformer. Both are required locally to make updates:
 - [Terraform](https://www.terraform.io/downloads.html)
 - [Terraformer](https://github.com/GoogleCloudPlatform/terraformer)
 
@@ -21,13 +13,14 @@ $ brew install terraform terraformer
 Import an existing New Relic account into terraform:
 ```bash
 $ export NEWRELIC_API_KEY=REPLACEMEterra
+$ terraformer import newrelic -o "." -r alert,infra,synthetics
+$ cd newrelic/synthetics
 $ terraform init
-$ terraformer import newrelic -o "./newrelic" -r alert,dashboard,infra,synthetics
+# Make changes directly and apply to update
+$ terraform apply
 ```
 ### Continuous Integration
-- [Github Actions - Gitleaks](https://github.com/marketplace/actions/gitleaks)
-- [CircleCI](https://circleci.com)
-
+TBD
 
 ### Public domain
 

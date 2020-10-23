@@ -25,7 +25,37 @@ resource "newrelic_alert_channel" "tfer--amos-002D-stone-002D-amos-002D-stone-00
   type = "user"
 }
 
-resource "newrelic_alert_channel" "tfer--hbrien-002D-newrelic-002D-com-002D-3370989" {
+resource "newrelic_alert_channel" "tfer--hbrien-002D-newrelic-002D-com-002D-4143108" {
+  config {
+    include_json_attachment = "true"
+    recipients              = "hbrien@newrelic.com"
+  }
+
+  name = "hbrien@newrelic.com"
+  type = "email"
+}
+
+resource "newrelic_alert_channel" "tfer--hbrien-002D-newrelic-002D-com-002D-4143109" {
+  config {
+    include_json_attachment = "true"
+    recipients              = "hbrien@newrelic.com"
+  }
+
+  name = "hbrien@newrelic.com"
+  type = "email"
+}
+
+resource "newrelic_alert_channel" "tfer--hbrien-002D-newrelic-002D-com-002D-4143165" {
+  config {
+    include_json_attachment = "true"
+    recipients              = "hbrien@newrelic.com"
+  }
+
+  name = "hbrien@newrelic.com"
+  type = "email"
+}
+
+resource "newrelic_alert_channel" "tfer--hbrien-002D-newrelic-002D-com-002D-4143166" {
   config {
     include_json_attachment = "true"
     recipients              = "hbrien@newrelic.com"
@@ -60,9 +90,4 @@ resource "newrelic_alert_channel" "tfer--melanie-002D-leopold-002D-melanie-002D-
 
   name = "Melanie Leopold <melanie.leopold@gsa.gov>"
   type = "user"
-}
-
-resource "newrelic_alert_channel" "tfer--ts-002D-tech-002D-portfolio-002D-alerts-002D-3412493" {
-  name = "tts-tech-portfolio-alerts"
-  type = "slack"
 }

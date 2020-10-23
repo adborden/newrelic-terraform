@@ -1,7 +1,7 @@
-resource "newrelic_synthetics_monitor" "tfer--acesibility-002D-18f-002D-gov-002D-f2692df5-002D-d0f6-002D-4f8b-002D-97f4-002D-a624c96e93ab" {
+resource "newrelic_synthetics_monitor" "tfer--acesibility-002D-18f-002D-gov-002D-28168d96-002D-8fd6-002D-48f6-002D-9432-002D-757805f151d6" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "accessibility.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -11,10 +11,10 @@ resource "newrelic_synthetics_monitor" "tfer--acesibility-002D-18f-002D-gov-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--acesibility-002D-digital-002D-gov-002D-14944c2a-002D-7065-002D-46ac-002D-a082-002D-4ce1026896ad" {
+resource "newrelic_synthetics_monitor" "tfer--acesibility-002D-digital-002D-gov-002D-1c1507f0-002D-e3e2-002D-465c-002D-81f5-002D-51d0cf2e116c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "accessibility.digital.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -24,10 +24,10 @@ resource "newrelic_synthetics_monitor" "tfer--acesibility-002D-digital-002D-gov-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--acqstack-002D-journeymap-002D-18f-002D-gov-002D-09bb987e-002D-f03a-002D-42b5-002D-8848-002D-2ede9f0563c1" {
+resource "newrelic_synthetics_monitor" "tfer--acqstack-002D-journeymap-002D-18f-002D-gov-002D-5a8c46d1-002D-8919-002D-41d3-002D-baca-002D-a8b46a7f2ef5" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "acqstack-journeymap.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -37,23 +37,10 @@ resource "newrelic_synthetics_monitor" "tfer--acqstack-002D-journeymap-002D-18f-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--acquisitions-002D-18f-002D-gov-002F--002D-9300062f-002D-7d0b-002D-4a94-002D-a93e-002D-a5f5428c5b04" {
+resource "newrelic_synthetics_monitor" "tfer--admin-002D-catalog-002D-data-002D-gov-002D-b023352b-002D-6d32-002D-4ca9-002D-8a14-002D-630ce8bb3940" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "acquisitions.18f.gov/"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://acquisitions.18f.gov/"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--admin-002D-catalog-002D-data-002D-gov-002D-2ddd521e-002D-7390-002D-499b-002D-aaa1-002D-7021f250c5dc" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "admin-catalog.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -63,23 +50,10 @@ resource "newrelic_synthetics_monitor" "tfer--admin-002D-catalog-002D-data-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--admin-002D-digitalgov-002D-gov-002D-5ce38726-002D-ea41-002D-44f7-002D-8651-002D-690523f98b07" {
+resource "newrelic_synthetics_monitor" "tfer--ads-002D-18f-002D-gov-002D-80eb0c7d-002D-d549-002D-4ef3-002D-ba13-002D-d37121e97f4e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "admin.digitalgov.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://admin.digitalgov.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--ads-002D-18f-002D-gov-002D-eb5f4360-002D-50da-002D-47b8-002D-a3f4-002D-c5d5f7b864c9" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "ads.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -89,10 +63,10 @@ resource "newrelic_synthetics_monitor" "tfer--ads-002D-18f-002D-gov-002D-eb5f436
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--ag-002D-data-002D-gov-002D-9dcc0edb-002D-18dc-002D-4628-002D-8953-002D-0eb0832660ea" {
+resource "newrelic_synthetics_monitor" "tfer--ag-002D-data-002D-gov-002D-ab8a8b3b-002D-4ebd-002D-4665-002D-85e1-002D-28c0c57ac396" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "ag.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -102,10 +76,10 @@ resource "newrelic_synthetics_monitor" "tfer--ag-002D-data-002D-gov-002D-9dcc0ed
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--agile-002D-18f-002D-gov-002D-0533d5ac-002D-1614-002D-4676-002D-9ac8-002D-e1d22a1a7a9f" {
+resource "newrelic_synthetics_monitor" "tfer--agile-002D-18f-002D-gov-002D-76c9a3c3-002D-6230-002D-4fca-002D-8bfc-002D-8b96aa2cfbf5" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "agile.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -115,10 +89,10 @@ resource "newrelic_synthetics_monitor" "tfer--agile-002D-18f-002D-gov-002D-0533d
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--agile-002D-bpa-002D-18f-002D-gov-002D-e6f6a2fa-002D-83c0-002D-4b3d-002D-8f9d-002D-8202727e9d7c" {
+resource "newrelic_synthetics_monitor" "tfer--agile-002D-bpa-002D-18f-002D-gov-002D-0a9806c5-002D-1a6b-002D-4f31-002D-b523-002D-9f03613ca004" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "agile-bpa.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -128,10 +102,10 @@ resource "newrelic_synthetics_monitor" "tfer--agile-002D-bpa-002D-18f-002D-gov-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--agile-002D-labor-002D-categories-002D-18f-002D-gov-002D-87d0d02d-002D-e65c-002D-4389-002D-bd44-002D-8dd32d524398" {
+resource "newrelic_synthetics_monitor" "tfer--agile-002D-labor-002D-categories-002D-18f-002D-gov-002D-be95b693-002D-367b-002D-49dc-002D-a94e-002D-006805a7f73c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "agile-labor-categories.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -141,7 +115,7 @@ resource "newrelic_synthetics_monitor" "tfer--agile-002D-labor-002D-categories-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--agriculture-002D-data-002D-gov-002D-4ca5338e-002D-fb53-002D-4b79-002D-9a80-002D-724c18379101" {
+resource "newrelic_synthetics_monitor" "tfer--agriculture-002D-data-002D-gov-002D-1434f1ee-002D-d772-002D-425a-002D-9f9b-002D-11ce33201110" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -154,23 +128,10 @@ resource "newrelic_synthetics_monitor" "tfer--agriculture-002D-data-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--airnowtome-002D-ap-002D-cloud-002D-gov-002D-f4a5e7d7-002D-a1cc-002D-4207-002D-9cd9-002D-e93f1fdcc4c7" {
+resource "newrelic_synthetics_monitor" "tfer--alpha-002D-data-002D-gov-002D-5f2e5004-002D-71f3-002D-4ffe-002D-a6ad-002D-dcdba683d7f6" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "airnowtome.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://airnowtome.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--alpha-002D-data-002D-gov-002D-5c1c1dee-002D-94af-002D-47b3-002D-9056-002D-d2e883b7bd29" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "alpha.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -180,10 +141,10 @@ resource "newrelic_synthetics_monitor" "tfer--alpha-002D-data-002D-gov-002D-5c1c
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--analytics-002D-fr-002D-cloud-002D-gov-002D-02d945d4-002D-e0d4-002D-479d-002D-a517-002D-31214dd9e6b4" {
+resource "newrelic_synthetics_monitor" "tfer--analytics-002D-fr-002D-cloud-002D-gov-002D-bb8130a0-002D-8ebf-002D-4674-002D-a422-002D-2aa814880a74" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "analytics.fr.cloud.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -193,7 +154,7 @@ resource "newrelic_synthetics_monitor" "tfer--analytics-002D-fr-002D-cloud-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--analytics-002D-staging-002D-ap-002D-cloud-002D-gov-002D-3535d398-002D-bea0-002D-402a-002D-8a42-002D-6980c1565c1d" {
+resource "newrelic_synthetics_monitor" "tfer--analytics-002D-staging-002D-ap-002D-cloud-002D-gov-002D-47e288a0-002D-3cbb-002D-4257-002D-958a-002D-c957565bcb1b" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -206,10 +167,10 @@ resource "newrelic_synthetics_monitor" "tfer--analytics-002D-staging-002D-ap-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--analytics-002D-usa-002D-gov-002D-38e6bd83-002D-0fc6-002D-4823-002D-9b69-002D-951f8e96ef6a" {
+resource "newrelic_synthetics_monitor" "tfer--analytics-002D-usa-002D-gov-002D-066ca56d-002D-f0ab-002D-4dc7-002D-a7ae-002D-24a04c95bc39" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "analytics.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -219,10 +180,10 @@ resource "newrelic_synthetics_monitor" "tfer--analytics-002D-usa-002D-gov-002D-3
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--answers-002D-usa-002D-gov-002D-9645a460-002D-ad1d-002D-442a-002D-8fd3-002D-ae78dafd6d57" {
+resource "newrelic_synthetics_monitor" "tfer--answers-002D-usa-002D-gov-002D-89605a06-002D-1f7f-002D-4959-002D-9142-002D-25ceeb25752f" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "answers.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -232,75 +193,10 @@ resource "newrelic_synthetics_monitor" "tfer--answers-002D-usa-002D-gov-002D-964
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--ap-002D-brody-002D-identitysandbox-002D-gov-002D-34df8664-002D-8f00-002D-4737-002D-bd9f-002D-f23d5152991f" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "app.brody.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://app.brody.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--ap-002D-cloud-002D-gov-002D-b11a710a-002D-5172-002D-45fa-002D-8ef4-002D-ab929b88a3db" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--ap-002D-empathic-002D-oter-002D-ap-002D-cloud-002D-gov-002D-7e480583-002D-9a08-002D-4c93-002D-9888-002D-269df6374e40" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "app-empathic-otter.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://app-empathic-otter.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--ap-002D-markryan-002D-identitysandbox-002D-gov-002D-cf0faa0d-002D-e54b-002D-4970-002D-8db5-002D-ab690aa5c257" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "app.markryan.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://app.markryan.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--api-002D-18f-002D-gov-002D-07f36cee-002D-d560-002D-4b42-002D-ae32-002D-c79c9dfd3715" {
+resource "newrelic_synthetics_monitor" "tfer--api-002D-al-002D-the-002D-x-002D-18f-002D-gov-002D-44437528-002D-fbca-002D-4d79-002D-b9b9-002D-3dbcebec7e39" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "api.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://api.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--api-002D-al-002D-the-002D-x-002D-18f-002D-gov-002D-80e7c268-002D-5a1e-002D-45ed-002D-868f-002D-197ae260cfa7" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "api-all-the-x.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -310,36 +206,10 @@ resource "newrelic_synthetics_monitor" "tfer--api-002D-al-002D-the-002D-x-002D-1
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--api-002D-code-002D-gov-002D-b41c7364-002D-4660-002D-48f7-002D-a902-002D-b09cafa32ee3" {
+resource "newrelic_synthetics_monitor" "tfer--api-002D-data-002D-gov-002D-338abbe8-002D-7f21-002D-40b0-002D-bf52-002D-ea28a5d30cad" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "api.code.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://api.code.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--api-002D-data-002D-gov-002D-58bbe613-002D-7941-002D-45dd-002D-9f6a-002D-ab41090b37aa" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "aapi.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://aapi.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--api-002D-data-002D-gov-002D-807cebdf-002D-6d33-002D-479e-002D-a0d1-002D-3d5508c453da" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "api.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -349,10 +219,10 @@ resource "newrelic_synthetics_monitor" "tfer--api-002D-data-002D-gov-002D-807ceb
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--api-002D-program-002D-18f-002D-gov-002D-937585c6-002D-d5df-002D-430c-002D-bb51-002D-0d03f5d62606" {
+resource "newrelic_synthetics_monitor" "tfer--api-002D-program-002D-18f-002D-gov-002D-d4f37808-002D-8d2b-002D-42e2-002D-85c0-002D-86e8c88c1534" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "api-program.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -362,10 +232,10 @@ resource "newrelic_synthetics_monitor" "tfer--api-002D-program-002D-18f-002D-gov
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--api-002D-usa-002D-gov-002D-064d140b-002D-f2a8-002D-4fae-002D-9543-002D-c3f043893201" {
+resource "newrelic_synthetics_monitor" "tfer--api-002D-usa-002D-gov-002D-67334745-002D-7bdb-002D-407e-002D-b400-002D-e7aaae1c683b" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "api.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -375,10 +245,10 @@ resource "newrelic_synthetics_monitor" "tfer--api-002D-usa-002D-gov-002D-064d140
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--api-002D-usability-002D-testing-002D-18f-002D-gov-002D-f0e40b96-002D-fc44-002D-4d7b-002D-8c14-002D-b7c52931fbf2" {
+resource "newrelic_synthetics_monitor" "tfer--api-002D-usability-002D-testing-002D-18f-002D-gov-002D-68347316-002D-cfb5-002D-4b0e-002D-8a64-002D-559ce7d1cef2" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "api-usability-testing.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -388,10 +258,10 @@ resource "newrelic_synthetics_monitor" "tfer--api-002D-usability-002D-testing-00
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--aply-002D-pif-002D-gov-002D-a36d5cbd-002D-e327-002D-49a0-002D-a1f4-002D-e1ae8f897a8e" {
+resource "newrelic_synthetics_monitor" "tfer--aply-002D-pif-002D-gov-002D-98a126cd-002D-edca-002D-4118-002D-91d1-002D-fc177d1a017a" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "apply.pif.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -401,10 +271,10 @@ resource "newrelic_synthetics_monitor" "tfer--aply-002D-pif-002D-gov-002D-a36d5c
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--aps-002D-gobiernousa-002D-gov-002D-3a45f62d-002D-f88c-002D-4236-002D-88ef-002D-a7ab58b52b2c" {
+resource "newrelic_synthetics_monitor" "tfer--aps-002D-gobiernousa-002D-gov-002D-b4e6036f-002D-4e89-002D-4c96-002D-9151-002D-26ff87f5cf21" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "apps.gobiernousa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -414,23 +284,10 @@ resource "newrelic_synthetics_monitor" "tfer--aps-002D-gobiernousa-002D-gov-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--aps-002D-gov-002D-7d018696-002D-58f2-002D-45a3-002D-99e3-002D-e15c2fe7badf" {
+resource "newrelic_synthetics_monitor" "tfer--aps-002D-usa-002D-gov-002D-73007ece-002D-b838-002D-4c86-002D-b04d-002D-b08edb4692b4" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "apps.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://apps.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--aps-002D-usa-002D-gov-002D-9681c4fc-002D-550c-002D-415e-002D-b434-002D-94987d4eedfb" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "apps.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -440,7 +297,7 @@ resource "newrelic_synthetics_monitor" "tfer--aps-002D-usa-002D-gov-002D-9681c4f
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--asis-002D-search-002D-gov-002D-bd45103f-002D-289e-002D-4c34-002D-8b4f-002D-6a7c8f266555" {
+resource "newrelic_synthetics_monitor" "tfer--asis-002D-search-002D-gov-002D-7d21393c-002D-6df2-002D-42d2-002D-88b5-002D-9c01abbcb1f0" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -453,23 +310,10 @@ resource "newrelic_synthetics_monitor" "tfer--asis-002D-search-002D-gov-002D-bd4
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--asis-002D-search-002D-usa-002D-gov-002D-74f05468-002D-835d-002D-4cf9-002D-93e6-002D-976901a9b4b6" {
+resource "newrelic_synthetics_monitor" "tfer--atf-002D-eregs-002D-18f-002D-gov-002D-506cbe58-002D-40a9-002D-49f2-002D-b896-002D-5c09a44fcdb5" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "asis.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://asis.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--atf-002D-eregs-002D-18f-002D-gov-002D-05fa09b8-002D-4e25-002D-4fde-002D-8113-002D-7fc7da4d394a" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "atf-eregs.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -479,10 +323,10 @@ resource "newrelic_synthetics_monitor" "tfer--atf-002D-eregs-002D-18f-002D-gov-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--atf-002D-eregs-002D-ap-002D-cloud-002D-gov-002D-af75ecd8-002D-267d-002D-4f41-002D-9791-002D-0a25ece42ada" {
+resource "newrelic_synthetics_monitor" "tfer--atf-002D-eregs-002D-ap-002D-cloud-002D-gov-002D-989ca20f-002D-2949-002D-4a0b-002D-83f1-002D-ee16d00b5134" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "atf-eregs.app.cloud.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -492,10 +336,10 @@ resource "newrelic_synthetics_monitor" "tfer--atf-002D-eregs-002D-ap-002D-cloud-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--atf-002D-eregs-002D-demo-002D-ap-002D-cloud-002D-gov-002D-b58a651f-002D-f038-002D-4577-002D-8a30-002D-c25c473c9588" {
+resource "newrelic_synthetics_monitor" "tfer--atf-002D-eregs-002D-demo-002D-ap-002D-cloud-002D-gov-002D-77ec8ea8-002D-bd3e-002D-4fe7-002D-b049-002D-3e35fcacc709" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "atf-eregs-demo.app.cloud.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -505,49 +349,10 @@ resource "newrelic_synthetics_monitor" "tfer--atf-002D-eregs-002D-demo-002D-ap-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--atul-002D-docker-002D-presentation-002D-18f-002D-gov-002D-94e246eb-002D-37c1-002D-418c-002D-bac4-002D-ea2a6609d701" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "atul-docker-presentation.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://atul-docker-presentation.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--autoapi-002D-18f-002D-gov-002D-7264d82c-002D-00ee-002D-4523-002D-80c7-002D-2c5288d7f53f" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "autoapi.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://autoapi.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--autodiscover-002D-aps-002D-gov-002D-9d5f27b4-002D-1747-002D-40b4-002D-8362-002D-7d59a35f6b92" {
+resource "newrelic_synthetics_monitor" "tfer--automated-002D-testing-002D-playbok-002D-18f-002D-gov-002D-4fce0ef2-002D-1080-002D-4d78-002D-9349-002D-27db1e7ca83f" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "autodiscover.apps.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://autodiscover.apps.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--automated-002D-testing-002D-playbok-002D-18f-002D-gov-002D-53ded13e-002D-a73a-002D-4efe-002D-9caf-002D-c84452fd80a5" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "automated-testing-playbook.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -557,23 +362,10 @@ resource "newrelic_synthetics_monitor" "tfer--automated-002D-testing-002D-playbo
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--banks-002D-q-002D-ap-002D-cloud-002D-gov-002D-bc16e9d7-002D-300d-002D-4658-002D-a2e9-002D-b44d7719f407" {
+resource "newrelic_synthetics_monitor" "tfer--before-002D-you-002D-ship-002D-18f-002D-gov-002D-10fc4122-002D-1833-002D-465c-002D-acec-002D-751688d09c49" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "banks-q.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://banks-q.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--before-002D-you-002D-ship-002D-18f-002D-gov-002D-2a9c987a-002D-2c68-002D-4ed9-002D-acee-002D-5a6d98cd76ab" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "before-you-ship.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -583,23 +375,10 @@ resource "newrelic_synthetics_monitor" "tfer--before-002D-you-002D-ship-002D-18f
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--beta-002D-vote-002D-gov-002D-6158b588-002D-29d0-002D-4523-002D-8394-002D-6f9874e33fa0" {
+resource "newrelic_synthetics_monitor" "tfer--blog-002D-gobiernousa-002D-gov-002D-b48798eb-002D-30ad-002D-448a-002D-babb-002D-45755820fc9c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "beta.vote.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://beta.vote.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--blog-002D-gobiernousa-002D-gov-002D-320ef9ae-002D-12dd-002D-4ed1-002D-9de5-002D-da50b5d2a9b1" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "blog.gobiernousa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -609,10 +388,10 @@ resource "newrelic_synthetics_monitor" "tfer--blog-002D-gobiernousa-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--blog-002D-usa-002D-gov-002D-97c3bb5f-002D-5f39-002D-4374-002D-8307-002D-de03b39b2bea" {
+resource "newrelic_synthetics_monitor" "tfer--blog-002D-usa-002D-gov-002D-5a732d97-002D-7cb3-002D-48aa-002D-aa3e-002D-fd9c3a95f977" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "blog.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -622,10 +401,10 @@ resource "newrelic_synthetics_monitor" "tfer--blog-002D-usa-002D-gov-002D-97c3bb
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--bloging-002D-guide-002D-18f-002D-gov-002D-af51b79e-002D-505e-002D-4521-002D-9f7f-002D-09cb16a977d2" {
+resource "newrelic_synthetics_monitor" "tfer--bloging-002D-guide-002D-18f-002D-gov-002D-804320f1-002D-7824-002D-4b88-002D-92f8-002D-b1e3f3e585d4" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "blogging-guide.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -635,10 +414,10 @@ resource "newrelic_synthetics_monitor" "tfer--bloging-002D-guide-002D-18f-002D-g
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--boise-002D-18f-002D-gov-002D-308507dc-002D-b513-002D-4c9c-002D-bd02-002D-e3fb8ce0a754" {
+resource "newrelic_synthetics_monitor" "tfer--boise-002D-18f-002D-gov-002D-53580549-002D-ad40-002D-4aea-002D-ac8a-002D-99eaffeb2ea6" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "boise.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -648,7 +427,7 @@ resource "newrelic_synthetics_monitor" "tfer--boise-002D-18f-002D-gov-002D-30850
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--brand-002D-18f-002D-gov-002D-ed6e44f4-002D-6614-002D-44b8-002D-9e86-002D-c177efa3bbbd" {
+resource "newrelic_synthetics_monitor" "tfer--brand-002D-18f-002D-gov-002D-7f90260f-002D-62be-002D-4119-002D-a5d8-002D-0c18e2c68e4d" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
@@ -661,20 +440,7 @@ resource "newrelic_synthetics_monitor" "tfer--brand-002D-18f-002D-gov-002D-ed6e4
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--brody-002D-identitysandbox-002D-gov-002D-99b5a791-002D-bbf8-002D-4803-002D-ae66-002D-183568a13302" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "brody.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://brody.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--buscador-002D-usa-002D-gov-002D-87543375-002D-597a-002D-49ab-002D-bcf9-002D-9a74be68eb51" {
+resource "newrelic_synthetics_monitor" "tfer--buscador-002D-usa-002D-gov-002D-04e4d353-002D-d947-002D-4474-002D-9c03-002D-a80e554fc3a3" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
@@ -687,10 +453,10 @@ resource "newrelic_synthetics_monitor" "tfer--buscador-002D-usa-002D-gov-002D-87
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--busines-002D-usa-002D-gov-002D-d8c95239-002D-4c2c-002D-4af5-002D-8522-002D-f94ca24ae663" {
+resource "newrelic_synthetics_monitor" "tfer--busines-002D-usa-002D-gov-002D-cf8faf62-002D-22ad-002D-4574-002D-bb3f-002D-df74d711a017" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "business.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -700,23 +466,10 @@ resource "newrelic_synthetics_monitor" "tfer--busines-002D-usa-002D-gov-002D-d8c
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--businesusa-002D-data-002D-gov-002D-398dbcc5-002D-d1a0-002D-4867-002D-a6d6-002D-49cb767fe79d" {
+resource "newrelic_synthetics_monitor" "tfer--businesusa-002D-gov-002D-018aeee4-002D-56a2-002D-4493-002D-bb5a-002D-bef9688d46b4" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "businessusa.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://businessusa.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--businesusa-002D-gov-002D-998084fa-002D-ccaa-002D-431e-002D-b827-002D-6fec3c6b8852" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "businessusa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -726,23 +479,10 @@ resource "newrelic_synthetics_monitor" "tfer--businesusa-002D-gov-002D-998084fa-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--c2-002D-18f-002D-gov-002D-d45e89a4-002D-12ec-002D-4802-002D-b628-002D-a4fc2199b6f0" {
+resource "newrelic_synthetics_monitor" "tfer--calc-002D-dev-002D-ap-002D-cloud-002D-gov-002D-2a823047-002D-f666-002D-4f13-002D-9981-002D-ced9cf80f598" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "c2.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://c2.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--calc-002D-dev-002D-ap-002D-cloud-002D-gov-002D-4f44b810-002D-7fc8-002D-4552-002D-b51d-002D-2c336e53aec7" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "calc-dev.app.cloud.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -752,10 +492,10 @@ resource "newrelic_synthetics_monitor" "tfer--calc-002D-dev-002D-ap-002D-cloud-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--calc-002D-gsa-002D-gov-002D-0864e583-002D-4454-002D-4ddd-002D-9394-002D-5b21aa94d2d0" {
+resource "newrelic_synthetics_monitor" "tfer--calc-002D-gsa-002D-gov-002D-030a7aaa-002D-b609-002D-4c49-002D-9d22-002D-e354721792d2" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "calc.gsa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -765,10 +505,10 @@ resource "newrelic_synthetics_monitor" "tfer--calc-002D-gsa-002D-gov-002D-0864e5
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--cap-002D-18f-002D-gov-002D-03e379bc-002D-e0e4-002D-4fff-002D-a593-002D-1f8eb79ee6bb" {
+resource "newrelic_synthetics_monitor" "tfer--cap-002D-18f-002D-gov-002D-45d316f1-002D-d2e2-002D-40b4-002D-b0b0-002D-03cfc21df174" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "cap.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -778,10 +518,10 @@ resource "newrelic_synthetics_monitor" "tfer--cap-002D-18f-002D-gov-002D-03e379b
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--cap-002D-18f-002D-gov-002F--002D-8334db5e-002D-9806-002D-469e-002D-94bb-002D-5acd56027c95" {
+resource "newrelic_synthetics_monitor" "tfer--cap-002D-18f-002D-gov-002F--002D-0a99a098-002D-d14e-002D-4ce7-002D-b02c-002D-b59bce8f30a9" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "cap.18f.gov/"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -791,23 +531,10 @@ resource "newrelic_synthetics_monitor" "tfer--cap-002D-18f-002D-gov-002F--002D-8
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--catalog-002D-bsp-002D-data-002D-gov-002D-a104e907-002D-e4c5-002D-4f8a-002D-b696-002D-e512fefbb45f" {
+resource "newrelic_synthetics_monitor" "tfer--catalog-002D-data-002D-gov-002D-f52008a6-002D-5c51-002D-4972-002D-9588-002D-c45ea5381490" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "catalog-bsp.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://catalog-bsp.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--catalog-002D-data-002D-gov-002D-9015106a-002D-46f7-002D-4d38-002D-afc7-002D-da2c73811c73" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "catalog.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -817,7 +544,7 @@ resource "newrelic_synthetics_monitor" "tfer--catalog-002D-data-002D-gov-002D-90
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--catalog-002D-next-002D-data-002D-gov-002D-5e08a25a-002D-ee1f-002D-401a-002D-8030-002D-bb70e34cb482" {
+resource "newrelic_synthetics_monitor" "tfer--catalog-002D-next-002D-data-002D-gov-002D-f9fc5d3e-002D-18c4-002D-4cde-002D-9584-002D-aec9145c4d5f" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -830,7 +557,7 @@ resource "newrelic_synthetics_monitor" "tfer--catalog-002D-next-002D-data-002D-g
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--chalenge-002D-gov-002D-75206796-002D-f56c-002D-4cf4-002D-882c-002D-aa611aec1557" {
+resource "newrelic_synthetics_monitor" "tfer--chalenge-002D-gov-002D-c9f8d595-002D-9790-002D-4039-002D-afdf-002D-7d034b597969" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
@@ -843,36 +570,10 @@ resource "newrelic_synthetics_monitor" "tfer--chalenge-002D-gov-002D-75206796-00
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--chalenges-002D-gov-002D-6cfd9e34-002D-c6bd-002D-4f62-002D-953f-002D-f882d537d38c" {
+resource "newrelic_synthetics_monitor" "tfer--chat-002D-18f-002D-gov-002D-3d806a7a-002D-eca1-002D-4720-002D-ae82-002D-64961b7b778a" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "challenges.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://challenges.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--charlie-002D-18f-002D-gov-002D-411200c9-002D-2880-002D-4150-002D-9773-002D-42bf0a23db98" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "charlie.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://charlie.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--chat-002D-18f-002D-gov-002D-08fab9a3-002D-749b-002D-414b-002D-86b0-002D-d1c875879848" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "chat.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -882,7 +583,7 @@ resource "newrelic_synthetics_monitor" "tfer--chat-002D-18f-002D-gov-002D-08fab9
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--ci-002D-identitysandbox-002D-gov-002D-1d018aa6-002D-edb1-002D-46cc-002D-b2a4-002D-4368c02c4ddb" {
+resource "newrelic_synthetics_monitor" "tfer--ci-002D-identitysandbox-002D-gov-002D-5ed5b0b2-002D-c900-002D-4099-002D-b636-002D-0433c0e201fe" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
@@ -895,7 +596,7 @@ resource "newrelic_synthetics_monitor" "tfer--ci-002D-identitysandbox-002D-gov-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--cities-002D-data-002D-gov-002D-0b726435-002D-77dc-002D-4c69-002D-b51e-002D-7e75a5051afa" {
+resource "newrelic_synthetics_monitor" "tfer--cities-002D-data-002D-gov-002D-a38883c3-002D-5463-002D-45f5-002D-b292-002D-ae893cceca95" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
@@ -908,10 +609,10 @@ resource "newrelic_synthetics_monitor" "tfer--cities-002D-data-002D-gov-002D-0b7
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--citizenscience-002D-gov-002D-faf680fe-002D-b44b-002D-413f-002D-8057-002D-5038e33702c7" {
+resource "newrelic_synthetics_monitor" "tfer--citizenscience-002D-gov-002D-6f376af6-002D-1c82-002D-4462-002D-b041-002D-9aceae839a6f" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "citizenscience.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -921,23 +622,10 @@ resource "newrelic_synthetics_monitor" "tfer--citizenscience-002D-gov-002D-faf68
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--cld-002D-epa-002D-gov-002D-1c062375-002D-9fd5-002D-49da-002D-b292-002D-846b11f53591" {
+resource "newrelic_synthetics_monitor" "tfer--climate-002D-data-002D-gov-002D-85c95d40-002D-45f7-002D-4ede-002D-94ed-002D-4d67dcf6bed1" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "cld.epa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://cld.epa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--climate-002D-data-002D-gov-002D-8591f05d-002D-e03d-002D-492c-002D-bcf7-002D-6aaf0a2a1671" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "climate.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -947,7 +635,7 @@ resource "newrelic_synthetics_monitor" "tfer--climate-002D-data-002D-gov-002D-85
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--climate-002D-data-002D-user-002D-study-002D-18f-002D-gov-002D-77fb0df2-002D-4ba3-002D-462b-002D-a1fa-002D-0943b632f4c1" {
+resource "newrelic_synthetics_monitor" "tfer--climate-002D-data-002D-user-002D-study-002D-18f-002D-gov-002D-f62df8fb-002D-27f0-002D-401f-002D-b730-002D-ff65cc3abd15" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -960,10 +648,10 @@ resource "newrelic_synthetics_monitor" "tfer--climate-002D-data-002D-user-002D-s
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--cloud-002D-gov-002D-e73e0879-002D-0b6b-002D-4d62-002D-afa9-002D-cd28627781ec" {
+resource "newrelic_synthetics_monitor" "tfer--cloud-002D-gov-002D-3935474e-002D-15e3-002D-40b1-002D-bd93-002D-2aae9bf4a88d" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "cloud.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -973,10 +661,10 @@ resource "newrelic_synthetics_monitor" "tfer--cloud-002D-gov-002D-e73e0879-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--cm-002D-jira-002D-usa-002D-gov-002D-8d6c66bf-002D-b08b-002D-429e-002D-b87b-002D-b1c085f45092" {
+resource "newrelic_synthetics_monitor" "tfer--cm-002D-jira-002D-usa-002D-gov-002D-0acf5fe1-002D-e5d0-002D-48c2-002D-b901-002D-b4d59474c4da" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "cm-jira.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -986,10 +674,10 @@ resource "newrelic_synthetics_monitor" "tfer--cm-002D-jira-002D-usa-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--code-002D-gov-002D-e12fefcf-002D-fde2-002D-4aef-002D-b5f1-002D-d375d876d39d" {
+resource "newrelic_synthetics_monitor" "tfer--code-002D-gov-002D-a6ac6720-002D-7a53-002D-48c0-002D-b332-002D-a4ea9ab39131" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "code.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -999,7 +687,7 @@ resource "newrelic_synthetics_monitor" "tfer--code-002D-gov-002D-e12fefcf-002D-f
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--coe-002D-gsa-002D-gov-002D-ca2012f3-002D-0934-002D-41fb-002D-b548-002D-5f4a90fcc55c" {
+resource "newrelic_synthetics_monitor" "tfer--coe-002D-gsa-002D-gov-002D-0d93326c-002D-7ca6-002D-4bb7-002D-a1df-002D-c679661f8a04" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -1012,23 +700,10 @@ resource "newrelic_synthetics_monitor" "tfer--coe-002D-gsa-002D-gov-002D-ca2012f
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--colege-002D-scorecard-002D-ap-002D-cloud-002D-gov-002D-54b19173-002D-1537-002D-4d0b-002D-a6b2-002D-3b4a7ed3b599" {
+resource "newrelic_synthetics_monitor" "tfer--colegescorecard-002D-ed-002D-gov-002D-228d38d6-002D-345f-002D-40a5-002D-b982-002D-2ebed7d5c68d" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "college-scorecard.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://college-scorecard.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--colegescorecard-002D-ed-002D-gov-002D-3e0b5fab-002D-d62d-002D-4d17-002D-bd1b-002D-1879928f8a85" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "collegescorecard.ed.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1038,10 +713,10 @@ resource "newrelic_synthetics_monitor" "tfer--colegescorecard-002D-ed-002D-gov-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--compliance-002D-viewer-002D-18f-002D-gov-002D-1f0ce45e-002D-903a-002D-4fbc-002D-85a5-002D-0c1773add38b" {
+resource "newrelic_synthetics_monitor" "tfer--compliance-002D-viewer-002D-18f-002D-gov-002D-d3d0abd8-002D-c650-002D-4aef-002D-9c4c-002D-e2304ac5c825" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "compliance-viewer.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1051,7 +726,7 @@ resource "newrelic_synthetics_monitor" "tfer--compliance-002D-viewer-002D-18f-00
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--components-002D-designsystem-002D-digital-002D-gov-002D-2633d68d-002D-2179-002D-4963-002D-b63f-002D-382e73e086bf" {
+resource "newrelic_synthetics_monitor" "tfer--components-002D-designsystem-002D-digital-002D-gov-002D-4a2a2120-002D-83db-002D-44b7-002D-a517-002D-bca91e896053" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -1064,7 +739,7 @@ resource "newrelic_synthetics_monitor" "tfer--components-002D-designsystem-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--components-002D-standards-002D-usa-002D-gov-002D-f241e3d2-002D-bdfe-002D-42a6-002D-b738-002D-3bd55d9b887e" {
+resource "newrelic_synthetics_monitor" "tfer--components-002D-standards-002D-usa-002D-gov-002D-1b3ae08f-002D-1b3e-002D-4dd7-002D-932a-002D-a4429e4858a5" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
@@ -1077,10 +752,10 @@ resource "newrelic_synthetics_monitor" "tfer--components-002D-standards-002D-usa
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--computersforlearning-002D-gov-002D-98b35d56-002D-b6a1-002D-4244-002D-98f2-002D-ffc03312ce4f" {
+resource "newrelic_synthetics_monitor" "tfer--computersforlearning-002D-gov-002D-88c15155-002D-6793-002D-40bd-002D-b922-002D-5e28d77470e9" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "computersforlearning.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1090,23 +765,10 @@ resource "newrelic_synthetics_monitor" "tfer--computersforlearning-002D-gov-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--conect-002D-digitalgov-002D-gov-002D-251531a0-002D-5117-002D-441c-002D-a868-002D-acff08cb7592" {
+resource "newrelic_synthetics_monitor" "tfer--conect-002D-gov-002D-f4439a78-002D-5f73-002D-4c95-002D-a530-002D-930f2c95cd8d" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "connect.digitalgov.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://connect.digitalgov.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--conect-002D-gov-002D-b3bd4760-002D-55f0-002D-46bb-002D-8251-002D-e13e42a90f0e" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "connect.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1116,7 +778,7 @@ resource "newrelic_synthetics_monitor" "tfer--conect-002D-gov-002D-b3bd4760-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--conect-002D-usa-002D-gov-002D-a7831324-002D-5876-002D-42d4-002D-b8f1-002D-a23222e4d51d" {
+resource "newrelic_synthetics_monitor" "tfer--conect-002D-usa-002D-gov-002D-dc7833d2-002D-94eb-002D-4d8d-002D-ab9f-002D-dac5ee2c820c" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -1129,7 +791,7 @@ resource "newrelic_synthetics_monitor" "tfer--conect-002D-usa-002D-gov-002D-a783
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--conectate-002D-gobiernousa-002D-gov-002D-628cab96-002D-75ae-002D-48b1-002D-a697-002D-e06997c71ae2" {
+resource "newrelic_synthetics_monitor" "tfer--conectate-002D-gobiernousa-002D-gov-002D-f696de23-002D-50d5-002D-4efc-002D-b21f-002D-c8c031df14e7" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -1142,7 +804,7 @@ resource "newrelic_synthetics_monitor" "tfer--conectate-002D-gobiernousa-002D-go
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--consumer-002D-data-002D-gov-002D-56b6ba76-002D-b85f-002D-4c43-002D-912d-002D-796be1d4d6b5" {
+resource "newrelic_synthetics_monitor" "tfer--consumer-002D-data-002D-gov-002D-25dba1c1-002D-867f-002D-4baf-002D-b594-002D-7e8d16fd0b31" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -1155,10 +817,10 @@ resource "newrelic_synthetics_monitor" "tfer--consumer-002D-data-002D-gov-002D-5
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--consumeraction-002D-gov-002D-18825caf-002D-40d7-002D-4b45-002D-8ee3-002D-a5a813545e64" {
+resource "newrelic_synthetics_monitor" "tfer--consumeraction-002D-gov-002D-96d117e0-002D-6add-002D-47b5-002D-9d75-002D-f6984a139e8a" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "consumeraction.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1168,23 +830,10 @@ resource "newrelic_synthetics_monitor" "tfer--consumeraction-002D-gov-002D-18825
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--consumercomplaintleter-002D-usa-002D-gov-002D-776658ce-002D-c881-002D-4f60-002D-be2e-002D-d8325892afe1" {
+resource "newrelic_synthetics_monitor" "tfer--content-002D-guide-002D-18f-002D-gov-002D-4b2e5c3e-002D-8edb-002D-444c-002D-9a95-002D-645d4ffd6924" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "consumercomplaintletter.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://consumercomplaintletter.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--content-002D-guide-002D-18f-002D-gov-002D-5daa8fef-002D-c76f-002D-466b-002D-8786-002D-a58c3d379dff" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "content-guide.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1194,23 +843,10 @@ resource "newrelic_synthetics_monitor" "tfer--content-002D-guide-002D-18f-002D-g
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--continua1y-002D-18f-002D-gov-002D-6fd02b16-002D-cfdd-002D-45ba-002D-9372-002D-21a2d02898a8" {
+resource "newrelic_synthetics_monitor" "tfer--contracting-002D-cokbok-002D-18f-002D-gov-002D-25eb3da3-002D-ff53-002D-4a8d-002D-98b5-002D-732ae0f31247" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "continua11y.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://continua11y.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--contracting-002D-cokbok-002D-18f-002D-gov-002D-cd17d93c-002D-3851-002D-4618-002D-bddb-002D-7629e8c05908" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "contracting-cookbook.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1220,10 +856,10 @@ resource "newrelic_synthetics_monitor" "tfer--contracting-002D-cokbok-002D-18f-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--counties-002D-data-002D-gov-002D-1727126b-002D-1a1f-002D-4df6-002D-a733-002D-fafa6f061f84" {
+resource "newrelic_synthetics_monitor" "tfer--counties-002D-data-002D-gov-002D-425ca78a-002D-91ae-002D-42b7-002D-87ad-002D-7b3d50b4ec5f" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "counties.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1233,7 +869,7 @@ resource "newrelic_synthetics_monitor" "tfer--counties-002D-data-002D-gov-002D-1
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--crime-002D-data-002D-explorer-002D-fr-002D-cloud-002D-gov-002D-85addb58-002D-9f75-002D-444d-002D-9fdc-002D-1116fccb03ff" {
+resource "newrelic_synthetics_monitor" "tfer--crime-002D-data-002D-explorer-002D-fr-002D-cloud-002D-gov-002D-a3306788-002D-b9e4-002D-46ee-002D-ae63-002D-7bff957e4691" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -1246,10 +882,10 @@ resource "newrelic_synthetics_monitor" "tfer--crime-002D-data-002D-explorer-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--crisupb-002D-identitysandbox-002D-gov-002D-24d59b66-002D-0902-002D-4502-002D-be69-002D-0680df412200" {
+resource "newrelic_synthetics_monitor" "tfer--crisupb-002D-identitysandbox-002D-gov-002D-7f815924-002D-3278-002D-4b94-002D-8d46-002D-c251ee2777eb" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "crissupb.identitysandbox.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1259,75 +895,36 @@ resource "newrelic_synthetics_monitor" "tfer--crisupb-002D-identitysandbox-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--crm-002D-labs-002D-data-002D-gov-002D-8eb7a230-002D-9b22-002D-422c-002D-a430-002D-3b6fcef30f26" {
+resource "newrelic_synthetics_monitor" "tfer--dap-002D-digitalgov-002D-gov-002D-46096ce6-002D-f659-002D-4512-002D-8135-002D-5aebd51086a5" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "crm-labs.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://crm-labs.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--dap-002D-digitalgov-002D-gov-002D-73a18fee-002D-2e65-002D-4a68-002D-9e51-002D-aee54103df2b" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "dap.digitalgov.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
   treat_redirect_as_failure = "false"
   type                      = "SIMPLE"
-  uri                       = "https://dap.digitalgov.gov"
+  uri                       = "https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js"
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--dashboard-002D-brody-002D-identitysandbox-002D-gov-002D-bdfe157f-002D-ac7f-002D-45f1-002D-83bc-002D-d437fbcdfe8f" {
+resource "newrelic_synthetics_monitor" "tfer--dap-002D-digitalgov-002D-gov-002F-universal-002D-federated-002D-analytics-002D-min-002D-js-002D-fb7c41af-002D-c13f-002D-465d-002D-92d8-002D-a6b4fecfce65" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "dashboard.brody.identitysandbox.gov"
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  name                      = "dap.digitalgov.gov/Universal-Federated-Analytics-Min.js"
   sla_threshold             = "10"
   status                    = "ENABLED"
   treat_redirect_as_failure = "false"
   type                      = "SIMPLE"
-  uri                       = "https://dashboard.brody.identitysandbox.gov"
+  uri                       = "https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js"
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--dashboard-002D-labs-002D-data-002D-gov-002D-a9b60852-002D-5466-002D-4402-002D-88ea-002D-537a8e616a42" {
+resource "newrelic_synthetics_monitor" "tfer--data-002D-gov-002D-3c73bd9e-002D-4004-002D-4108-002D-a0f8-002D-209e6f713da0" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "dashboard-labs.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://dashboard-labs.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--dashboard-002D-markryan-002D-identitysandbox-002D-gov-002D-eec1b845-002D-88bd-002D-432d-002D-90db-002D-6d9426397de8" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "dashboard.markryan.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://dashboard.markryan.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--data-002D-gov-002D-ebf31d62-002D-9551-002D-496e-002D-9d81-002D-20d4543552e8" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1337,10 +934,10 @@ resource "newrelic_synthetics_monitor" "tfer--data-002D-gov-002D-ebf31d62-002D-9
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--demo-002D-10x-002D-gsa-002D-gov-002D-fcd6aff4-002D-f0b9-002D-4a83-002D-84dd-002D-9b744c7b3e30" {
+resource "newrelic_synthetics_monitor" "tfer--demo-002D-10x-002D-gsa-002D-gov-002D-7a3e3809-002D-0f92-002D-4dc1-002D-a761-002D-78673bfecb78" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "demo.10x.gsa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1350,10 +947,10 @@ resource "newrelic_synthetics_monitor" "tfer--demo-002D-10x-002D-gsa-002D-gov-00
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--demo-002D-acesibility-002D-digital-002D-gov-002D-ac632901-002D-22df-002D-4b55-002D-b1ed-002D-c727ae124366" {
+resource "newrelic_synthetics_monitor" "tfer--demo-002D-acesibility-002D-digital-002D-gov-002D-25cdf3fd-002D-4532-002D-4314-002D-984e-002D-973b3c482f73" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "demo.accessibility.digital.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1363,10 +960,10 @@ resource "newrelic_synthetics_monitor" "tfer--demo-002D-acesibility-002D-digital
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--demo-002D-digital-002D-gov-002D-d8fb408c-002D-ac10-002D-4839-002D-8d7b-002D-e53cc3cc8889" {
+resource "newrelic_synthetics_monitor" "tfer--demo-002D-digital-002D-gov-002D-0ab55124-002D-5e51-002D-4bc9-002D-8c7f-002D-875c852d1004" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "demo.digital.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1376,10 +973,10 @@ resource "newrelic_synthetics_monitor" "tfer--demo-002D-digital-002D-gov-002D-d8
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--demo-002D-digitalgov-002D-gov-002D-532a6a84-002D-901d-002D-40b2-002D-87cb-002D-1ee1ce038eaa" {
+resource "newrelic_synthetics_monitor" "tfer--demo-002D-digitalgov-002D-gov-002D-d6a3b8b6-002D-0774-002D-45c3-002D-9fcb-002D-03fcf1bbc370" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "demo.digitalgov.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1389,10 +986,10 @@ resource "newrelic_synthetics_monitor" "tfer--demo-002D-digitalgov-002D-gov-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--demo-002D-fedramp-002D-gov-002D-38937e13-002D-d31d-002D-413c-002D-8c15-002D-1788ad84f9b0" {
+resource "newrelic_synthetics_monitor" "tfer--demo-002D-fedramp-002D-gov-002D-4e13de0f-002D-7e8c-002D-47f9-002D-853c-002D-e60115dd0506" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "demo.fedramp.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1402,10 +999,10 @@ resource "newrelic_synthetics_monitor" "tfer--demo-002D-fedramp-002D-gov-002D-38
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--demo-002D-inovation-002D-gov-002D-a3f0e268-002D-3b23-002D-49ea-002D-8248-002D-488b11782f9c" {
+resource "newrelic_synthetics_monitor" "tfer--demo-002D-inovation-002D-gov-002D-a5e62251-002D-26c8-002D-4bae-002D-bd51-002D-c52668a3643f" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "demo.innovation.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1415,10 +1012,10 @@ resource "newrelic_synthetics_monitor" "tfer--demo-002D-inovation-002D-gov-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--demo-002D-plainlanguage-002D-gov-002D-ea2eed30-002D-8895-002D-4b82-002D-a431-002D-eb603cd9cd70" {
+resource "newrelic_synthetics_monitor" "tfer--demo-002D-plainlanguage-002D-gov-002D-78ec0350-002D-51de-002D-4236-002D-9352-002D-567d7a0a795e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "demo.plainlanguage.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1428,7 +1025,7 @@ resource "newrelic_synthetics_monitor" "tfer--demo-002D-plainlanguage-002D-gov-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--demo-002D-pra-002D-digital-002D-gov-002D-baf8b249-002D-33be-002D-46ff-002D-b8c9-002D-3f62027cab91" {
+resource "newrelic_synthetics_monitor" "tfer--demo-002D-pra-002D-digital-002D-gov-002D-a72164b8-002D-d28c-002D-4cb4-002D-b9d4-002D-1e47f1697092" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -1441,10 +1038,10 @@ resource "newrelic_synthetics_monitor" "tfer--demo-002D-pra-002D-digital-002D-go
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--demo-002D-touchpoints-002D-digital-002D-gov-002D-b71cbd86-002D-f099-002D-4f7c-002D-bbf8-002D-ffd3727d7ffd" {
+resource "newrelic_synthetics_monitor" "tfer--demo-002D-touchpoints-002D-digital-002D-gov-002D-93dbd69c-002D-bc09-002D-4c98-002D-bc83-002D-f7999af6f96c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "demo.touchpoints.digital.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1454,88 +1051,10 @@ resource "newrelic_synthetics_monitor" "tfer--demo-002D-touchpoints-002D-digital
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--demo1-002D-search-002D-usa-002D-gov-002D-1dcededb-002D-65b2-002D-487c-002D-b17a-002D-8389e1ff3aa2" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "demo1.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://demo1.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--demo1-002D-staging-002D-infr-002D-search-002D-usa-002D-gov-002D-e233402b-002D-0f3e-002D-4558-002D-bef1-002D-7fffb6f364b7" {
+resource "newrelic_synthetics_monitor" "tfer--design-002D-principles-002D-guide-002D-18f-002D-gov-002D-86a4402a-002D-d3a6-002D-4a44-002D-b36a-002D-2d7e69886c86" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "demo1.staging.infr.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://demo1.staging.infr.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--demo2-002D-search-002D-usa-002D-gov-002D-1c20f185-002D-8698-002D-4771-002D-9b3d-002D-bd0dcff4546d" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "demo2.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://demo2.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--demo2-002D-staging-002D-infr-002D-search-002D-usa-002D-gov-002D-9c256dfb-002D-562f-002D-4eaf-002D-9cce-002D-e91ea1607cd4" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "demo2.staging.infr.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://demo2.staging.infr.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--demo3-002D-search-002D-usa-002D-gov-002D-23f9e6f1-002D-98a0-002D-4153-002D-9e82-002D-07998bd666b3" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "demo3.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://demo3.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--demo3-002D-staging-002D-infr-002D-search-002D-usa-002D-gov-002D-7c580985-002D-eb73-002D-4fa1-002D-afbb-002D-c1995ba8ef1f" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "demo3.staging.infr.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://demo3.staging.infr.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--design-002D-principles-002D-guide-002D-18f-002D-gov-002D-5debd368-002D-561f-002D-47e6-002D-bfb5-002D-0994f069617e" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "design-principles-guide.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1545,10 +1064,10 @@ resource "newrelic_synthetics_monitor" "tfer--design-002D-principles-002D-guide-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--designsystem-002D-digital-002D-gov-002D-43c994ce-002D-d2b6-002D-47a7-002D-b958-002D-a3b523fc57c3" {
+resource "newrelic_synthetics_monitor" "tfer--designsystem-002D-digital-002D-gov-002D-1e874107-002D-d4ea-002D-4c67-002D-a52e-002D-4c44f621bab4" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "designsystem.digital.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1558,10 +1077,10 @@ resource "newrelic_synthetics_monitor" "tfer--designsystem-002D-digital-002D-gov
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--dev-002D-identitysandbox-002D-gov-002D-318ea5fd-002D-1ace-002D-4a2d-002D-a599-002D-c1b1eb8b457e" {
+resource "newrelic_synthetics_monitor" "tfer--dev-002D-identitysandbox-002D-gov-002D-e47327fa-002D-44d1-002D-4c42-002D-b015-002D-77985d9124c0" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "dev.identitysandbox.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1571,10 +1090,10 @@ resource "newrelic_synthetics_monitor" "tfer--dev-002D-identitysandbox-002D-gov-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--developer-002D-data-002D-gov-002D-9ff51a8a-002D-b6bd-002D-42bf-002D-b680-002D-62594cfddff7" {
+resource "newrelic_synthetics_monitor" "tfer--developer-002D-data-002D-gov-002D-ffd57b8a-002D-323a-002D-4c5d-002D-b952-002D-282088b8c5fa" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "developer.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1584,10 +1103,10 @@ resource "newrelic_synthetics_monitor" "tfer--developer-002D-data-002D-gov-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--developers-002D-code-002D-gov-002D-bebdfe3e-002D-8637-002D-4a4d-002D-b759-002D-4f897c88ef49" {
+resource "newrelic_synthetics_monitor" "tfer--developers-002D-code-002D-gov-002D-585a3e23-002D-d01f-002D-42f3-002D-84e2-002D-d00e1c6ffdd7" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "developers.code.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1597,10 +1116,10 @@ resource "newrelic_synthetics_monitor" "tfer--developers-002D-code-002D-gov-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--developers-002D-login-002D-gov-002D-c526e608-002D-5f8a-002D-4358-002D-8e34-002D-515ad525a3d5" {
+resource "newrelic_synthetics_monitor" "tfer--developers-002D-login-002D-gov-002D-ea67c217-002D-5187-002D-4b1b-002D-9eac-002D-223ab7c1c25a" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "developers.login.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1610,10 +1129,10 @@ resource "newrelic_synthetics_monitor" "tfer--developers-002D-login-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--devicepki-002D-idmanagement-002D-gov-002D-49d2d959-002D-c58e-002D-48bd-002D-83c7-002D-6d8cfbbfb45f" {
+resource "newrelic_synthetics_monitor" "tfer--devicepki-002D-idmanagement-002D-gov-002D-41049ab2-002D-e95d-002D-4aca-002D-b5e5-002D-2b883c26f2e5" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "devicepki.idmanagement.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1623,10 +1142,10 @@ resource "newrelic_synthetics_monitor" "tfer--devicepki-002D-idmanagement-002D-g
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--digital-002D-acquisition-002D-playbok-002D-18f-002D-gov-002D-2f9e2912-002D-be74-002D-458f-002D-a556-002D-860cd4878f7d" {
+resource "newrelic_synthetics_monitor" "tfer--digital-002D-acquisition-002D-playbok-002D-18f-002D-gov-002D-e99c2652-002D-54ea-002D-4b34-002D-822d-002D-07864acbf1e0" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "digital-acquisition-playbook.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1636,10 +1155,10 @@ resource "newrelic_synthetics_monitor" "tfer--digital-002D-acquisition-002D-play
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--digital-002D-gov-002D-cbdb6996-002D-19f7-002D-448d-002D-a5ee-002D-61549a1aec80" {
+resource "newrelic_synthetics_monitor" "tfer--digital-002D-gov-002D-de505065-002D-c637-002D-4827-002D-8287-002D-e8e5c797944c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "digital.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1649,10 +1168,10 @@ resource "newrelic_synthetics_monitor" "tfer--digital-002D-gov-002D-cbdb6996-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--digitalacelerator-002D-18f-002D-gov-002D-03084e20-002D-1e8d-002D-410c-002D-99dc-002D-4e401992ec5b" {
+resource "newrelic_synthetics_monitor" "tfer--digitalacelerator-002D-18f-002D-gov-002D-466f3071-002D-2fb7-002D-46b2-002D-8446-002D-87ca28874db2" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "digitalaccelerator.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1662,10 +1181,10 @@ resource "newrelic_synthetics_monitor" "tfer--digitalacelerator-002D-18f-002D-go
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--digitalgov-002D-gov-002D-e59df78f-002D-f51b-002D-4859-002D-beb2-002D-729111895a9e" {
+resource "newrelic_synthetics_monitor" "tfer--digitalgov-002D-gov-002D-ed9b26e1-002D-50a6-002D-4aca-002D-afb0-002D-0d2ef271c5ec" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "digitalgov.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1675,23 +1194,10 @@ resource "newrelic_synthetics_monitor" "tfer--digitalgov-002D-gov-002D-e59df78f-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--digitalgov-002D-sitesusa-002D-ap-002D-cloud-002D-gov-002D-1824b042-002D-51b4-002D-42fc-002D-ab9e-002D-49f4a93cce11" {
+resource "newrelic_synthetics_monitor" "tfer--disaster-002D-data-002D-gov-002D-cac7bfbf-002D-97b9-002D-46fe-002D-abca-002D-caa5b5aeb70a" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "digitalgov.sitesusa.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://digitalgov.sitesusa.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--disaster-002D-data-002D-gov-002D-eee2e03f-002D-0d20-002D-464b-002D-ad28-002D-47f622207617" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "disaster.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1701,10 +1207,10 @@ resource "newrelic_synthetics_monitor" "tfer--disaster-002D-data-002D-gov-002D-e
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--disasters-002D-data-002D-gov-002D-75e92342-002D-85c8-002D-40b4-002D-9544-002D-5dbe9c81d5d8" {
+resource "newrelic_synthetics_monitor" "tfer--disasters-002D-data-002D-gov-002D-c759c452-002D-c2fe-002D-41c8-002D-b347-002D-90ded9760f7e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "disasters.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1714,10 +1220,10 @@ resource "newrelic_synthetics_monitor" "tfer--disasters-002D-data-002D-gov-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--discovery-002D-gsa-002D-gov-002D-afbbd655-002D-c536-002D-4a06-002D-a198-002D-9b4fdedc640d" {
+resource "newrelic_synthetics_monitor" "tfer--discovery-002D-gsa-002D-gov-002D-0ebf82e0-002D-79f2-002D-4031-002D-81e0-002D-84fabc9d256f" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "discovery.gsa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1727,23 +1233,10 @@ resource "newrelic_synthetics_monitor" "tfer--discovery-002D-gsa-002D-gov-002D-a
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--discus-002D-pif-002D-gov-002D-43b67be7-002D-1148-002D-4f95-002D-8d64-002D-0b561133da88" {
+resource "newrelic_synthetics_monitor" "tfer--docs-002D-cloud-002D-gov-002D-3399b230-002D-6a67-002D-47c4-002D-abe9-002D-88e53c554d0f" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "discuss.pif.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://discuss.pif.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--docs-002D-cloud-002D-gov-002D-0a743f3e-002D-c697-002D-440b-002D-be9e-002D-1009de4ef0d2" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "docs.cloud.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1753,10 +1246,10 @@ resource "newrelic_synthetics_monitor" "tfer--docs-002D-cloud-002D-gov-002D-0a74
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--dolores-002D-ap-002D-18f-002D-gov-002D-b454bd2f-002D-2bac-002D-4471-002D-a1d2-002D-1677f1b20f43" {
+resource "newrelic_synthetics_monitor" "tfer--dolores-002D-ap-002D-18f-002D-gov-002D-eaf46bb5-002D-f62f-002D-4e03-002D-b7c0-002D-dab2bf6dc8b3" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "dolores-app.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1766,10 +1259,10 @@ resource "newrelic_synthetics_monitor" "tfer--dolores-002D-ap-002D-18f-002D-gov-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--dolores-002D-staging-002D-18f-002D-gov-002D-32861ace-002D-9e4f-002D-4e1b-002D-8738-002D-c0e1477243a7" {
+resource "newrelic_synthetics_monitor" "tfer--dolores-002D-staging-002D-18f-002D-gov-002D-902b2f50-002D-0534-002D-4513-002D-ad03-002D-ada8111697ed" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "dolores-staging.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1779,23 +1272,10 @@ resource "newrelic_synthetics_monitor" "tfer--dolores-002D-staging-002D-18f-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--download-002D-colegescorecard-002D-ed-002D-gov-002D-2811cd07-002D-2943-002D-41c1-002D-8a67-002D-e56c8e4342bf" {
+resource "newrelic_synthetics_monitor" "tfer--ecosystems-002D-data-002D-gov-002D-92d36e4a-002D-a346-002D-4fb3-002D-8013-002D-322ae6f21fb6" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "download.collegescorecard.ed.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://download.collegescorecard.ed.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--ecosystems-002D-data-002D-gov-002D-5ec9fed7-002D-785a-002D-4e8e-002D-baff-002D-146137d071bc" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "ecosystems.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1805,10 +1285,10 @@ resource "newrelic_synthetics_monitor" "tfer--ecosystems-002D-data-002D-gov-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--ed-002D-data-002D-gov-002D-80aa9f26-002D-c66a-002D-4522-002D-873f-002D-6fdb671f6109" {
+resource "newrelic_synthetics_monitor" "tfer--ed-002D-data-002D-gov-002D-84a85d3a-002D-7b6d-002D-4682-002D-905f-002D-02d8e5979aa0" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "ed.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1818,7 +1298,7 @@ resource "newrelic_synthetics_monitor" "tfer--ed-002D-data-002D-gov-002D-80aa9f2
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--education-002D-data-002D-gov-002D-8685d6af-002D-3d3d-002D-469f-002D-bdfe-002D-c7e7d80d067c" {
+resource "newrelic_synthetics_monitor" "tfer--education-002D-data-002D-gov-002D-03278ad3-002D-4340-002D-457b-002D-859f-002D-7b10b2545147" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -1831,10 +1311,10 @@ resource "newrelic_synthetics_monitor" "tfer--education-002D-data-002D-gov-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--emerging-002D-digital-002D-gov-002D-991fbf19-002D-91f0-002D-47eb-002D-9373-002D-3f977295371d" {
+resource "newrelic_synthetics_monitor" "tfer--emerging-002D-digital-002D-gov-002D-aeec3b09-002D-24b1-002D-432e-002D-a2c4-002D-a32ccc11091d" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "emerging.digital.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1844,23 +1324,10 @@ resource "newrelic_synthetics_monitor" "tfer--emerging-002D-digital-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--energy-002D-data-002D-gov-002D-5bedc28f-002D-76b9-002D-498f-002D-b53a-002D-fc4056b1b0d7" {
+resource "newrelic_synthetics_monitor" "tfer--eng-002D-hiring-002D-18f-002D-gov-002D-9fdc5f7b-002D-63f6-002D-47bd-002D-a6b1-002D-a579939fcbf4" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "energy.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://energy.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--eng-002D-hiring-002D-18f-002D-gov-002D-72f57344-002D-d364-002D-4c22-002D-b1f8-002D-04b03bbd30fa" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "eng-hiring.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1870,10 +1337,10 @@ resource "newrelic_synthetics_monitor" "tfer--eng-002D-hiring-002D-18f-002D-gov-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--enginering-002D-18f-002D-gov-002D-3f8f4a93-002D-cc06-002D-439a-002D-bd2e-002D-3f80bf1ea191" {
+resource "newrelic_synthetics_monitor" "tfer--enginering-002D-18f-002D-gov-002D-889926e9-002D-1705-002D-426c-002D-b1e9-002D-1945cccb576d" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "engineering.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1883,7 +1350,7 @@ resource "newrelic_synthetics_monitor" "tfer--enginering-002D-18f-002D-gov-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--epa-002D-notice-002D-usa-002D-gov-002D-bce859fe-002D-c6c2-002D-4c8a-002D-8ecf-002D-74aef3ca6c4d" {
+resource "newrelic_synthetics_monitor" "tfer--epa-002D-notice-002D-usa-002D-gov-002D-d96e86b9-002D-5d80-002D-4f59-002D-9998-002D-23b4ab413ee5" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
@@ -1896,10 +1363,10 @@ resource "newrelic_synthetics_monitor" "tfer--epa-002D-notice-002D-usa-002D-gov-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--ethics-002D-data-002D-gov-002D-f0b8e8ce-002D-6782-002D-4fd8-002D-b17c-002D-a91bdae074db" {
+resource "newrelic_synthetics_monitor" "tfer--ethics-002D-data-002D-gov-002D-c43194cc-002D-0c82-002D-404d-002D-9a8a-002D-453a902cf6f2" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "ethics.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1909,10 +1376,10 @@ resource "newrelic_synthetics_monitor" "tfer--ethics-002D-data-002D-gov-002D-f0b
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--everykidinapark-002D-gov-002D-0a087f8d-002D-38ca-002D-402c-002D-ac7c-002D-53081e025274" {
+resource "newrelic_synthetics_monitor" "tfer--everykidinapark-002D-gov-002D-3e8a2960-002D-9fd7-002D-4a81-002D-aa13-002D-fe5c519e37b7" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "everykidinapark.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1922,36 +1389,10 @@ resource "newrelic_synthetics_monitor" "tfer--everykidinapark-002D-gov-002D-0a08
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--explore-002D-data-002D-gov-002D-3c5e72af-002D-79a0-002D-444b-002D-9feb-002D-7c4cb531bad2" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "explore.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://explore.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--f-002D-domains-002D-api-002D-data-002D-gov-002D-1ffd5188-002D-87ca-002D-4408-002D-8090-002D-c6acc938a5fc" {
+resource "newrelic_synthetics_monitor" "tfer--f-002D-gov-002D-a11da73e-002D-1cb1-002D-42bf-002D-bce9-002D-5214ad31f891" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "18f.domains.api.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://18f.domains.api.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--f-002D-gov-002D-31d50a32-002D-100a-002D-4a0d-002D-9738-002D-750acb4481ac" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1961,10 +1402,10 @@ resource "newrelic_synthetics_monitor" "tfer--f-002D-gov-002D-31d50a32-002D-100a
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--f-002D-gsa-002D-gov-002D-861ae4e6-002D-b32c-002D-4d0e-002D-9b7b-002D-1f9913af362b" {
+resource "newrelic_synthetics_monitor" "tfer--f-002D-gsa-002D-gov-002D-a6800a1a-002D-16b2-002D-4c3c-002D-8c1b-002D-698c2abd658e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "18f.gsa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -1974,36 +1415,10 @@ resource "newrelic_synthetics_monitor" "tfer--f-002D-gsa-002D-gov-002D-861ae4e6-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fcsm-002D-sitesusa-002D-ap-002D-cloud-002D-gov-002D-191205fe-002D-692e-002D-469d-002D-96b2-002D-ab1107ca94a3" {
+resource "newrelic_synthetics_monitor" "tfer--fdic-002D-search-002D-ap-002D-cloud-002D-gov-002D-7940773d-002D-34d4-002D-4c00-002D-9177-002D-3183f1c3c228" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "fcsm.sitesusa.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://fcsm.sitesusa.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--fdic-002D-cloudworkspace-002D-ap-002D-cloud-002D-gov-002D-8d5e314d-002D-ec7c-002D-40a7-002D-85a2-002D-4afa46f9c9ea" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "fdic-cloudworkspace.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://fdic-cloudworkspace.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--fdic-002D-search-002D-ap-002D-cloud-002D-gov-002D-664507ca-002D-3305-002D-4535-002D-8370-002D-024be976b521" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "fdic-search.app.cloud.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2013,23 +1428,10 @@ resource "newrelic_synthetics_monitor" "tfer--fdic-002D-search-002D-ap-002D-clou
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fdic-002D-wdev-002D-ap-002D-cloud-002D-gov-002D-9aed1c3a-002D-2668-002D-4b6b-002D-b009-002D-55ef53eee196" {
+resource "newrelic_synthetics_monitor" "tfer--fedback-002D-staging-002D-usa-002D-gov-002D-60adf4dd-002D-06ee-002D-4eed-002D-8f8f-002D-2b557f65b93e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "fdic-wwwdev.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://fdic-wwwdev.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--fedback-002D-staging-002D-usa-002D-gov-002D-967c5536-002D-b809-002D-43b8-002D-93ec-002D-110c148d8d50" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "feedback-staging.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2039,7 +1441,7 @@ resource "newrelic_synthetics_monitor" "tfer--fedback-002D-staging-002D-usa-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fedback-002D-usa-002D-gov-002D-5f79efe2-002D-4766-002D-45ba-002D-9f07-002D-274f36e2199b" {
+resource "newrelic_synthetics_monitor" "tfer--fedback-002D-usa-002D-gov-002D-00bca701-002D-433b-002D-4b7c-002D-a3d1-002D-753bb54b9548" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -2052,10 +1454,10 @@ resource "newrelic_synthetics_monitor" "tfer--fedback-002D-usa-002D-gov-002D-5f7
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--federalist-002D-18f-002D-gov-002D-59b4f546-002D-01fe-002D-4e94-002D-a763-002D-7c553925b119" {
+resource "newrelic_synthetics_monitor" "tfer--federalist-002D-18f-002D-gov-002D-5246ba50-002D-c849-002D-4dc0-002D-a56d-002D-f3ae5d89e3cb" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "federalist.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2065,23 +1467,10 @@ resource "newrelic_synthetics_monitor" "tfer--federalist-002D-18f-002D-gov-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--federalist-002D-builder-002D-18f-002D-gov-002D-7fa3f4db-002D-b71e-002D-45d6-002D-be3a-002D-3b888865a5ac" {
+resource "newrelic_synthetics_monitor" "tfer--federalist-002D-docs-002D-18f-002D-gov-002D-5e5e8128-002D-7de5-002D-4b3f-002D-8098-002D-1af8b90fad39" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "federalist-builder.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://federalist-builder.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--federalist-002D-docs-002D-18f-002D-gov-002D-80cb427e-002D-f0e3-002D-4a1c-002D-ac20-002D-fdb8580ba8b0" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "federalist-docs.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2091,101 +1480,10 @@ resource "newrelic_synthetics_monitor" "tfer--federalist-002D-docs-002D-18f-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--federalist-002D-docs-002D-staging-002D-18f-002D-gov-002D-6eb69ec0-002D-43dc-002D-44a2-002D-b5fb-002D-49027bf5296c" {
+resource "newrelic_synthetics_monitor" "tfer--federalistap-002D-18f-002D-gov-002D-72bce247-002D-bf43-002D-4e06-002D-9ed7-002D-500b08470757" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "federalist-docs-staging.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://federalist-docs-staging.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--federalist-002D-landing-002D-template-002D-18f-002D-gov-002D-4de22baa-002D-eb20-002D-4293-002D-a13b-002D-fb9f1ea9d21b" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "federalist-landing-template.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://federalist-landing-template.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--federalist-002D-modern-002D-team-002D-template-002D-18f-002D-gov-002D-08fda455-002D-b633-002D-4e60-002D-a892-002D-cf56549ddc81" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "federalist-modern-team-template.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://federalist-modern-team-template.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--federalist-002D-proxy-002D-ap-002D-cloud-002D-gov-002D-3b953b71-002D-82f9-002D-404b-002D-ad24-002D-3606051f0132" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "federalist-proxy.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://federalist-proxy.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--federalist-002D-report-002D-template-002D-18f-002D-gov-002D-3387e10b-002D-0d2b-002D-4754-002D-b644-002D-00dac85cfe36" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "federalist-report-template.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://federalist-report-template.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--federalist-002D-staging-002D-18f-002D-gov-002D-8dcb0f8e-002D-93df-002D-4f24-002D-bfef-002D-4e8f6d5be64c" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "federalist-staging.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://federalist-staging.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--federalist-002D-uswds-002D-template-002D-18f-002D-gov-002D-2b284284-002D-1556-002D-44ea-002D-8d77-002D-880e0b47869b" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "federalist-uswds-template.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://federalist-uswds-template.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--federalistap-002D-18f-002D-gov-002D-91d7b738-002D-9e23-002D-4c76-002D-8a5d-002D-d60fc5a3df51" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "federalistapp.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2195,10 +1493,10 @@ resource "newrelic_synthetics_monitor" "tfer--federalistap-002D-18f-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--federalistap-002D-staging-002D-18f-002D-gov-002D-347d77e7-002D-d9fd-002D-4f0f-002D-8fe5-002D-23cdebd3e70a" {
+resource "newrelic_synthetics_monitor" "tfer--federalistap-002D-staging-002D-18f-002D-gov-002D-a1c2a5dd-002D-45eb-002D-43f0-002D-870e-002D-4a9695991b5c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "federalistapp-staging.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2208,10 +1506,10 @@ resource "newrelic_synthetics_monitor" "tfer--federalistap-002D-staging-002D-18f
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--federation-002D-data-002D-gov-002D-5d190b9f-002D-242b-002D-4ec3-002D-a946-002D-52c4ec414c52" {
+resource "newrelic_synthetics_monitor" "tfer--federation-002D-data-002D-gov-002D-8efe97e2-002D-7073-002D-4538-002D-af72-002D-3c15da78b6b4" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "federation.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2221,10 +1519,10 @@ resource "newrelic_synthetics_monitor" "tfer--federation-002D-data-002D-gov-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--federation-002D-staging-002D-data-002D-gov-002D-2f827291-002D-4712-002D-4825-002D-981f-002D-e028059201d5" {
+resource "newrelic_synthetics_monitor" "tfer--federation-002D-staging-002D-data-002D-gov-002D-cd72fa94-002D-b1b6-002D-4029-002D-8386-002D-a78eb161aeee" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "federation-staging.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2234,36 +1532,10 @@ resource "newrelic_synthetics_monitor" "tfer--federation-002D-staging-002D-data-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fedinfo-002D-gov-002D-11843860-002D-475f-002D-4edb-002D-b727-002D-6780fbf953e9" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "fedinfo.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://fedinfo.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--fedramp-002D-dashboard-002D-fr-002D-cloud-002D-gov-002D-ec4a05e0-002D-01c9-002D-4bf9-002D-a71d-002D-4c25ee240954" {
+resource "newrelic_synthetics_monitor" "tfer--fedramp-002D-develop-002D-fr-002D-cloud-002D-gov-002D-40106a87-002D-8510-002D-4163-002D-b44f-002D-2206500d3190" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "fedramp-dashboard.fr.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://fedramp-dashboard.fr.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--fedramp-002D-develop-002D-fr-002D-cloud-002D-gov-002D-f47cfc99-002D-acb4-002D-422d-002D-b41a-002D-957555507db1" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "fedramp-develop.fr.cloud.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2273,10 +1545,10 @@ resource "newrelic_synthetics_monitor" "tfer--fedramp-002D-develop-002D-fr-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fedramp-002D-gov-002D-220494aa-002D-241b-002D-437e-002D-881d-002D-8300cc2f37a2" {
+resource "newrelic_synthetics_monitor" "tfer--fedramp-002D-gov-002D-df780fed-002D-9ce7-002D-45a3-002D-9fb1-002D-d44f843de9ce" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "fedramp.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2286,23 +1558,10 @@ resource "newrelic_synthetics_monitor" "tfer--fedramp-002D-gov-002D-220494aa-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fedramp-002D-sitesusa-002D-ap-002D-cloud-002D-gov-002D-03418a2e-002D-6159-002D-4d9b-002D-b5f6-002D-54f2f7acf015" {
+resource "newrelic_synthetics_monitor" "tfer--fedspendingtransparency-002D-18f-002D-gov-002D-da0c2139-002D-6213-002D-44c4-002D-add5-002D-4c1c610151fd" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "fedramp.sitesusa.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://fedramp.sitesusa.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--fedspendingtransparency-002D-18f-002D-gov-002D-340a02db-002D-a2fd-002D-4065-002D-b1c0-002D-9a751e06053b" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "fedspendingtransparency.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2312,7 +1571,7 @@ resource "newrelic_synthetics_monitor" "tfer--fedspendingtransparency-002D-18f-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fedthefuture-002D-gov-002D-33fa72ed-002D-bc69-002D-423e-002D-b9a6-002D-2fa400ca4dae" {
+resource "newrelic_synthetics_monitor" "tfer--fedthefuture-002D-gov-002D-25b5fbeb-002D-ba3c-002D-445c-002D-9700-002D-9f171265e913" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
@@ -2325,36 +1584,10 @@ resource "newrelic_synthetics_monitor" "tfer--fedthefuture-002D-gov-002D-33fa72e
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--felows-002D-in-002D-inovation-002D-pif-002D-gov-002D-316081cc-002D-0dff-002D-407d-002D-a2a4-002D-dc4ab00f60e5" {
+resource "newrelic_synthetics_monitor" "tfer--finance-002D-data-002D-gov-002D-cf8afdef-002D-a6f9-002D-475d-002D-8358-002D-fe27ff30197c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "fellows-in-innovation.pif.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://fellows-in-innovation.pif.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--files-002D-18f-002D-gov-002D-5d5336b7-002D-f53e-002D-411e-002D-bd77-002D-a1e4b893c964" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "files.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://files.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--finance-002D-data-002D-gov-002D-30885b6f-002D-5566-002D-49cb-002D-9eb3-002D-d84774a2ddad" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "finance.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2364,7 +1597,7 @@ resource "newrelic_synthetics_monitor" "tfer--finance-002D-data-002D-gov-002D-30
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--find-002D-digitalgov-002D-gov-002D-e3b2ed16-002D-5439-002D-44eb-002D-9995-002D-a2aa35612cc2" {
+resource "newrelic_synthetics_monitor" "tfer--find-002D-digitalgov-002D-gov-002D-79778455-002D-6d56-002D-4138-002D-91fd-002D-328bdf928660" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
@@ -2377,10 +1610,10 @@ resource "newrelic_synthetics_monitor" "tfer--find-002D-digitalgov-002D-gov-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--find-002D-search-002D-gov-002D-fb6f252e-002D-c54d-002D-4625-002D-8417-002D-6d9be1f7f593" {
+resource "newrelic_synthetics_monitor" "tfer--find-002D-search-002D-gov-002D-569ddae3-002D-0be1-002D-4f99-002D-bb90-002D-c28f22d956cb" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "find.search.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2390,10 +1623,10 @@ resource "newrelic_synthetics_monitor" "tfer--find-002D-search-002D-gov-002D-fb6
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--findtreatment-002D-gov-002D-c4e1e2a9-002D-ed95-002D-41d0-002D-9eca-002D-d0a69c45008f" {
+resource "newrelic_synthetics_monitor" "tfer--findtreatment-002D-gov-002D-59c9aabc-002D-3c95-002D-4c84-002D-b3e7-002D-e0b306c9b7ce" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "findtreatment.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2403,10 +1636,10 @@ resource "newrelic_synthetics_monitor" "tfer--findtreatment-002D-gov-002D-c4e1e2
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--firstgov-002D-gov-002D-6b8b3621-002D-a39b-002D-4669-002D-8175-002D-62611aef66e8" {
+resource "newrelic_synthetics_monitor" "tfer--firstgov-002D-gov-002D-d179c0ff-002D-ba46-002D-48c8-002D-9c0c-002D-4379a1337d3c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "firstgov.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2416,10 +1649,10 @@ resource "newrelic_synthetics_monitor" "tfer--firstgov-002D-gov-002D-6b8b3621-00
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fod-002D-data-002D-gov-002D-f4b0c1d5-002D-4d2b-002D-47cc-002D-a072-002D-cd9d7c040c2b" {
+resource "newrelic_synthetics_monitor" "tfer--fod-002D-data-002D-gov-002D-4f3e08e4-002D-18ab-002D-4577-002D-8467-002D-76d7a596bc68" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "food.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2429,7 +1662,7 @@ resource "newrelic_synthetics_monitor" "tfer--fod-002D-data-002D-gov-002D-f4b0c1
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fodsecurity-002D-data-002D-gov-002D-98943372-002D-4a1a-002D-4b7c-002D-9aeb-002D-f18656e6b271" {
+resource "newrelic_synthetics_monitor" "tfer--fodsecurity-002D-data-002D-gov-002D-cc5ac379-002D-7b0f-002D-4660-002D-87d3-002D-0f0766dc74d1" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -2442,10 +1675,10 @@ resource "newrelic_synthetics_monitor" "tfer--fodsecurity-002D-data-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--forms-002D-gov-002D-6f34dfdb-002D-5527-002D-44d8-002D-a527-002D-d757080750f5" {
+resource "newrelic_synthetics_monitor" "tfer--forms-002D-gov-002D-59866071-002D-86ba-002D-4fb8-002D-858e-002D-9d84e0db2eb1" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "forms.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2455,49 +1688,10 @@ resource "newrelic_synthetics_monitor" "tfer--forms-002D-gov-002D-6f34dfdb-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fr-002D-cloud-002D-gov-002D-020b41fe-002D-5d4e-002D-4973-002D-8721-002D-27e22374ce32" {
+resource "newrelic_synthetics_monitor" "tfer--frontend-002D-18f-002D-gov-002D-0fc2137e-002D-eec3-002D-478a-002D-ae2f-002D-f96e527208c3" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "fr.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://fr.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--fr-002D-stage-002D-cloud-002D-gov-002D-dd273eec-002D-e317-002D-48be-002D-b426-002D-addd17a601fb" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "fr-stage.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://fr-stage.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--franklin-002D-18f-002D-gov-002D-4be3aca2-002D-7dee-002D-46dd-002D-bda9-002D-97f9c78a97f6" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "18franklin.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://18franklin.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--frontend-002D-18f-002D-gov-002D-eb553d15-002D-0720-002D-499c-002D-a819-002D-71c66e13bd64" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "frontend.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2507,23 +1701,10 @@ resource "newrelic_synthetics_monitor" "tfer--frontend-002D-18f-002D-gov-002D-eb
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fugacious-002D-18f-002D-gov-002D-570cc216-002D-8cb5-002D-4315-002D-807f-002D-c7ab451ea75d" {
+resource "newrelic_synthetics_monitor" "tfer--geospatial-002D-data-002D-gov-002D-bb6ecd43-002D-3a7f-002D-4681-002D-b438-002D-4a4891807637" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "fugacious.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://fugacious.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--geospatial-002D-data-002D-gov-002D-695b2de3-002D-be96-002D-4c4e-002D-87a5-002D-0c0612807601" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "geospatial.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2533,10 +1714,10 @@ resource "newrelic_synthetics_monitor" "tfer--geospatial-002D-data-002D-gov-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--globaldevelopment-002D-data-002D-gov-002D-76fe3dd6-002D-3292-002D-4a39-002D-b145-002D-0cfc563e0ccd" {
+resource "newrelic_synthetics_monitor" "tfer--globaldevelopment-002D-data-002D-gov-002D-bf856c44-002D-8cae-002D-4c49-002D-a0cc-002D-f1d8b885850e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "globaldevelopment.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2546,10 +1727,10 @@ resource "newrelic_synthetics_monitor" "tfer--globaldevelopment-002D-data-002D-g
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--go-002D-usa-002D-gov-002D-c75d2d5e-002D-fc7b-002D-4ca4-002D-b8c5-002D-2d5e9da9bd31" {
+resource "newrelic_synthetics_monitor" "tfer--go-002D-usa-002D-gov-002D-10a86aa1-002D-2541-002D-4e21-002D-9dbb-002D-0e72811e1cd7" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "go.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2559,10 +1740,10 @@ resource "newrelic_synthetics_monitor" "tfer--go-002D-usa-002D-gov-002D-c75d2d5e
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--gobierno-002D-usa-002D-gov-002D-b638acd1-002D-4d48-002D-43d6-002D-bda3-002D-0cdb8e849a30" {
+resource "newrelic_synthetics_monitor" "tfer--gobierno-002D-usa-002D-gov-002D-c45ad469-002D-4081-002D-42fa-002D-a63b-002D-8de5823280bc" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "gobierno.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2572,10 +1753,10 @@ resource "newrelic_synthetics_monitor" "tfer--gobierno-002D-usa-002D-gov-002D-b6
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--gobiernousa-002D-gov-002D-1cd92ff7-002D-f525-002D-4a24-002D-8555-002D-013d08289354" {
+resource "newrelic_synthetics_monitor" "tfer--gobiernousa-002D-gov-002D-c38219b3-002D-26f8-002D-4754-002D-ba5e-002D-93937ada921f" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "gobiernousa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2585,7 +1766,7 @@ resource "newrelic_synthetics_monitor" "tfer--gobiernousa-002D-gov-002D-1cd92ff7
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--govconect-002D-18f-002D-gov-002D-23541ab9-002D-b7cd-002D-4676-002D-8f17-002D-a051ca918240" {
+resource "newrelic_synthetics_monitor" "tfer--govconect-002D-18f-002D-gov-002D-740f5f26-002D-ccb7-002D-49d0-002D-b1b0-002D-4b039e7453de" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
@@ -2598,23 +1779,10 @@ resource "newrelic_synthetics_monitor" "tfer--govconect-002D-18f-002D-gov-002D-2
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--grafana-002D-18f-002D-gov-002D-24e4c19b-002D-25e6-002D-4bf9-002D-b3c8-002D-b8886fc03789" {
+resource "newrelic_synthetics_monitor" "tfer--grouplet-002D-playbok-002D-18f-002D-gov-002D-4a0ac8a2-002D-f502-002D-413e-002D-bd66-002D-fc7b813f941f" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "grafana.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://grafana.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--grouplet-002D-playbok-002D-18f-002D-gov-002D-fb29e11d-002D-ca6d-002D-4830-002D-adff-002D-5946b0a3a51d" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "grouplet-playbook.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2624,23 +1792,10 @@ resource "newrelic_synthetics_monitor" "tfer--grouplet-002D-playbok-002D-18f-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--gsaforecast-002D-gsa-002D-gov-002D-fb3ffad6-002D-3ffd-002D-4639-002D-baf2-002D-3eb97b906726" {
+resource "newrelic_synthetics_monitor" "tfer--guides-002D-18f-002D-gov-002D-b486dddb-002D-f8bc-002D-4028-002D-8d07-002D-30848ff46185" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "gsaforecast.gsa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://gsaforecast.gsa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--guides-002D-18f-002D-gov-002D-0ceb02ef-002D-6a75-002D-464c-002D-97c0-002D-b80a8dfe6033" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "guides.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2650,10 +1805,10 @@ resource "newrelic_synthetics_monitor" "tfer--guides-002D-18f-002D-gov-002D-0ceb
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--guides-002D-template-002D-18f-002D-gov-002D-3faa5004-002D-e8b0-002D-458e-002D-9ed1-002D-b62cc5d7a598" {
+resource "newrelic_synthetics_monitor" "tfer--guides-002D-template-002D-18f-002D-gov-002D-efe1ec7c-002D-25ca-002D-4947-002D-b04f-002D-53cbf1f321b3" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "guides-template.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2663,10 +1818,10 @@ resource "newrelic_synthetics_monitor" "tfer--guides-002D-template-002D-18f-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--hackerone-002D-com-002F-ts-002D-35689c85-002D-6e95-002D-44a0-002D-abe0-002D-a1bd8e2b4293" {
+resource "newrelic_synthetics_monitor" "tfer--hackerone-002D-com-002F-ts-002D-0cc32df1-002D-b54b-002D-4563-002D-b515-002D-27aac21dd5db" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "hackerone.com/tts"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2676,23 +1831,10 @@ resource "newrelic_synthetics_monitor" "tfer--hackerone-002D-com-002F-ts-002D-35
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--hamilton-002D-ap-002D-cloud-002D-gov-002D-1618893b-002D-124c-002D-42f2-002D-9500-002D-738307ef80f4" {
+resource "newrelic_synthetics_monitor" "tfer--handbok-002D-18f-002D-gov-002D-c930ea2e-002D-61f8-002D-4282-002D-a5e3-002D-c38371c50268" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "hamilton.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://hamilton.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--handbok-002D-18f-002D-gov-002D-2d1f890c-002D-6590-002D-46a5-002D-9cde-002D-98c3bfe64d31" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "handbook.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2702,10 +1844,10 @@ resource "newrelic_synthetics_monitor" "tfer--handbok-002D-18f-002D-gov-002D-2d1
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--handbok-002D-ts-002D-gsa-002D-gov-002D-e35c118a-002D-513c-002D-4283-002D-af2e-002D-f703714939f3" {
+resource "newrelic_synthetics_monitor" "tfer--handbok-002D-ts-002D-gsa-002D-gov-002D-2b4f145c-002D-f027-002D-420d-002D-b15a-002D-28f53ae2e6d3" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "handbook.tts.gsa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2715,10 +1857,10 @@ resource "newrelic_synthetics_monitor" "tfer--handbok-002D-ts-002D-gsa-002D-gov-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--health-002D-data-002D-gov-002D-c1d1fe36-002D-22d8-002D-436f-002D-829d-002D-e0eec843e552" {
+resource "newrelic_synthetics_monitor" "tfer--health-002D-data-002D-gov-002D-bd629970-002D-e885-002D-47bf-002D-99df-002D-07855f1f6f3c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "health.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2728,10 +1870,10 @@ resource "newrelic_synthetics_monitor" "tfer--health-002D-data-002D-gov-002D-c1d
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--highlights-002D-data-002D-gov-002D-42202860-002D-51b9-002D-4ccb-002D-ba48-002D-5529e09d7f90" {
+resource "newrelic_synthetics_monitor" "tfer--highlights-002D-data-002D-gov-002D-9073d747-002D-cdeb-002D-4938-002D-8db6-002D-dc9585d1fb46" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "highlights.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2741,23 +1883,10 @@ resource "newrelic_synthetics_monitor" "tfer--highlights-002D-data-002D-gov-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--howto-002D-gov-002D-63958749-002D-be53-002D-4c58-002D-95f8-002D-1e29de992776" {
+resource "newrelic_synthetics_monitor" "tfer--htps-002D-ap-002D-cloud-002D-gov-002D-7c71827e-002D-f559-002D-4459-002D-a196-002D-25c0f624824c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "howto.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://howto.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--htps-002D-ap-002D-cloud-002D-gov-002D-f23dd1cf-002D-a466-002D-460a-002D-9b91-002D-b7726ac11376" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "https.app.cloud.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2767,10 +1896,10 @@ resource "newrelic_synthetics_monitor" "tfer--htps-002D-ap-002D-cloud-002D-gov-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--htps-002D-cio-002D-gov-002D-6bb58001-002D-f6f8-002D-4262-002D-a49f-002D-543ac2e80aa4" {
+resource "newrelic_synthetics_monitor" "tfer--htps-002D-cio-002D-gov-002D-776f9cce-002D-a98e-002D-4ab0-002D-900e-002D-de94fafcfca2" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "https.cio.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2780,23 +1909,10 @@ resource "newrelic_synthetics_monitor" "tfer--htps-002D-cio-002D-gov-002D-6bb580
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--hub-002D-18f-002D-gov-002D-a2807ae5-002D-0694-002D-4fc4-002D-87d4-002D-3bb4fa0c7e81" {
+resource "newrelic_synthetics_monitor" "tfer--humanrights-002D-data-002D-gov-002D-df7c52f0-002D-eab9-002D-4239-002D-9aae-002D-b882ce81d0b0" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "hub.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://hub.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--humanrights-002D-data-002D-gov-002D-28770b10-002D-f505-002D-4121-002D-b38f-002D-eacd707ced20" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "humanrights.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2806,49 +1922,10 @@ resource "newrelic_synthetics_monitor" "tfer--humanrights-002D-data-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--i14y-002D-search-002D-gov-002D-d087654b-002D-b67d-002D-4d92-002D-baac-002D-c58ef9be59da" {
+resource "newrelic_synthetics_monitor" "tfer--ia-002D-forms-002D-18f-002D-gov-002D-6fb871e7-002D-2bb9-002D-4258-002D-a92b-002D-686f47baf062" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "i14y.search.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://i14y.search.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--i14y-002D-search-002D-usa-002D-gov-002D-bb1ee800-002D-1e70-002D-4616-002D-b66f-002D-bffbace216bd" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "i14y.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://i14y.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--i14y-002D-usa-002D-gov-002D-e99b42c6-002D-ee93-002D-4b1f-002D-a755-002D-a306aabc3bd0" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "i14y.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://i14y.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--ia-002D-forms-002D-18f-002D-gov-002D-0768cfe5-002D-06f0-002D-4f86-002D-9ed9-002D-ceceba3cafd0" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "iaa-forms.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2858,10 +1935,10 @@ resource "newrelic_synthetics_monitor" "tfer--ia-002D-forms-002D-18f-002D-gov-00
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--identity-002D-dev-002D-docs-002D-18f-002D-gov-002D-e8f0a94e-002D-120c-002D-498a-002D-a5d7-002D-8b0de96ae56b" {
+resource "newrelic_synthetics_monitor" "tfer--identity-002D-dev-002D-docs-002D-18f-002D-gov-002D-30838bec-002D-6b0e-002D-4131-002D-b666-002D-ee1e44ab0ee7" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "identity-dev-docs.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2871,20 +1948,7 @@ resource "newrelic_synthetics_monitor" "tfer--identity-002D-dev-002D-docs-002D-1
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--identitysandbox-002D-gov-002D-02fa32e7-002D-89e6-002D-400a-002D-8a9b-002D-5403b0a0e222" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--idmanagement-002D-gov-002D-ac5620cc-002D-348c-002D-43e6-002D-9fb3-002D-4d7f87d62537" {
+resource "newrelic_synthetics_monitor" "tfer--idmanagement-002D-gov-002D-445d3a8e-002D-79a2-002D-400e-002D-8daf-002D-81f800e77f97" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
@@ -2897,36 +1961,10 @@ resource "newrelic_synthetics_monitor" "tfer--idmanagement-002D-gov-002D-ac5620c
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--idp-002D-brody-002D-identitysandbox-002D-gov-002D-e4f1ba91-002D-58e5-002D-41bc-002D-b13c-002D-f2870cc6d4a5" {
+resource "newrelic_synthetics_monitor" "tfer--idp-002D-crisupb-002D-identitysandbox-002D-gov-002D-ee179e42-002D-3a63-002D-4c11-002D-beeb-002D-f19c34ff8b55" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "idp.brody.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://idp.brody.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--idp-002D-ci-002D-identitysandbox-002D-gov-002D-d9cf8ac6-002D-1bfe-002D-4bf4-002D-9d51-002D-2f2a37848a82" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "idp.ci.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://idp.ci.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--idp-002D-crisupb-002D-identitysandbox-002D-gov-002D-f14377c8-002D-b4e4-002D-4861-002D-8111-002D-d18c1cbd847d" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "idp.crissupb.identitysandbox.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2936,10 +1974,10 @@ resource "newrelic_synthetics_monitor" "tfer--idp-002D-crisupb-002D-identitysand
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--idp-002D-dev-002D-identitysandbox-002D-gov-002D-c62ca20b-002D-b43f-002D-44ce-002D-9214-002D-dd32410fa8b9" {
+resource "newrelic_synthetics_monitor" "tfer--idp-002D-dev-002D-identitysandbox-002D-gov-002D-dbacf56d-002D-aa57-002D-46e6-002D-966a-002D-dccae3a966fc" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "idp.dev.identitysandbox.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2949,10 +1987,10 @@ resource "newrelic_synthetics_monitor" "tfer--idp-002D-dev-002D-identitysandbox-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--idp-002D-int-002D-identitysandbox-002D-gov-002D-6da83bf3-002D-319f-002D-4296-002D-8562-002D-d7b47472e008" {
+resource "newrelic_synthetics_monitor" "tfer--idp-002D-int-002D-identitysandbox-002D-gov-002D-fbfb8d5e-002D-596b-002D-4078-002D-b8bf-002D-1d192f0083fd" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "idp.int.identitysandbox.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2962,10 +2000,10 @@ resource "newrelic_synthetics_monitor" "tfer--idp-002D-int-002D-identitysandbox-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--idp-002D-jg-002D-identitysandbox-002D-gov-002D-b869b7a9-002D-7be0-002D-4afa-002D-b33e-002D-4c8398546e77" {
+resource "newrelic_synthetics_monitor" "tfer--idp-002D-jg-002D-identitysandbox-002D-gov-002D-6a2fdca7-002D-7a8f-002D-4454-002D-93ae-002D-a712874ca21a" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "idp.jjg.identitysandbox.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -2975,36 +2013,10 @@ resource "newrelic_synthetics_monitor" "tfer--idp-002D-jg-002D-identitysandbox-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--idp-002D-markryan-002D-identitysandbox-002D-gov-002D-f92b7929-002D-ce4d-002D-467f-002D-a5ab-002D-da6e07ecd3f9" {
+resource "newrelic_synthetics_monitor" "tfer--idp-002D-staging-002D-login-002D-gov-002D-651ea509-002D-2937-002D-44e7-002D-a638-002D-ddb8f382d930" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "idp.markryan.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://idp.markryan.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--idp-002D-qa-002D-identitysandbox-002D-gov-002D-b4ade83c-002D-24c2-002D-4048-002D-9d15-002D-f7d939e8482b" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "idp.qa.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://idp.qa.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--idp-002D-staging-002D-login-002D-gov-002D-3840520e-002D-65c4-002D-424a-002D-ae13-002D-d06a0dfe7e51" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "idp.staging.login.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3014,10 +2026,10 @@ resource "newrelic_synthetics_monitor" "tfer--idp-002D-staging-002D-login-002D-g
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--info-002D-gov-002D-b42fa5d1-002D-5edc-002D-476d-002D-86a6-002D-7d6a1119c0aa" {
+resource "newrelic_synthetics_monitor" "tfer--info-002D-gov-002D-a2c0733b-002D-01c7-002D-4e14-002D-a6d7-002D-b229754b0cd9" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "info.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3027,10 +2039,10 @@ resource "newrelic_synthetics_monitor" "tfer--info-002D-gov-002D-b42fa5d1-002D-5
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--inovation-002D-gov-002D-36250364-002D-1f98-002D-4ef4-002D-8b87-002D-c67be0c6dbbd" {
+resource "newrelic_synthetics_monitor" "tfer--inovation-002D-gov-002D-830b8cdd-002D-6dc6-002D-4262-002D-867e-002D-0d09ec34ac7e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "innovation.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3040,10 +2052,10 @@ resource "newrelic_synthetics_monitor" "tfer--inovation-002D-gov-002D-36250364-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--inovation-002D-tolkit-002D-prototype-002D-18f-002D-gov-002D-375427b3-002D-2b43-002D-4a39-002D-ad84-002D-f71cbd9b1f86" {
+resource "newrelic_synthetics_monitor" "tfer--inovation-002D-tolkit-002D-prototype-002D-18f-002D-gov-002D-5f23d4e4-002D-59bb-002D-48e1-002D-9e1e-002D-996289a3dc92" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "innovation-toolkit-prototype.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3053,10 +2065,10 @@ resource "newrelic_synthetics_monitor" "tfer--inovation-002D-tolkit-002D-prototy
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--int-002D-identitysandbox-002D-gov-002D-ac9f585a-002D-e76f-002D-49ec-002D-b2ea-002D-3657e5740724" {
+resource "newrelic_synthetics_monitor" "tfer--int-002D-identitysandbox-002D-gov-002D-7d65ea1b-002D-a18b-002D-4871-002D-88a9-002D-9a79bf2ece81" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "int.identitysandbox.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3066,10 +2078,10 @@ resource "newrelic_synthetics_monitor" "tfer--int-002D-identitysandbox-002D-gov-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--inventory-002D-data-002D-gov-002D-e4bd1f43-002D-dc14-002D-4161-002D-95ee-002D-ff0fbffbcea6" {
+resource "newrelic_synthetics_monitor" "tfer--inventory-002D-data-002D-gov-002D-e8acc64b-002D-8827-002D-47f7-002D-847e-002D-0485c9f724b3" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "inventory.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3079,10 +2091,10 @@ resource "newrelic_synthetics_monitor" "tfer--inventory-002D-data-002D-gov-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--jg-002D-identitysandbox-002D-gov-002D-7e3d26f1-002D-0ac7-002D-4ec8-002D-b896-002D-b50b0cc9f6ef" {
+resource "newrelic_synthetics_monitor" "tfer--jg-002D-identitysandbox-002D-gov-002D-f8d4635c-002D-336f-002D-47ee-002D-a27d-002D-68bc1860e142" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "jjg.identitysandbox.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3092,10 +2104,10 @@ resource "newrelic_synthetics_monitor" "tfer--jg-002D-identitysandbox-002D-gov-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--jobkit-002D-data-002D-gov-002D-a1bf496e-002D-3dff-002D-40f4-002D-9e1b-002D-97a49e31cc06" {
+resource "newrelic_synthetics_monitor" "tfer--jobkit-002D-data-002D-gov-002D-6a8efefc-002D-326a-002D-4cf4-002D-a7e8-002D-e116f71cfd58" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "jobkit.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3105,7 +2117,7 @@ resource "newrelic_synthetics_monitor" "tfer--jobkit-002D-data-002D-gov-002D-a1b
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--jobs-002D-18f-002D-gov-002D-ae222d1e-002D-25d7-002D-4cba-002D-ab79-002D-b49ab3fd0834" {
+resource "newrelic_synthetics_monitor" "tfer--jobs-002D-18f-002D-gov-002D-97b39e12-002D-cef8-002D-4599-002D-9bdf-002D-200bfb278085" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
@@ -3118,10 +2130,10 @@ resource "newrelic_synthetics_monitor" "tfer--jobs-002D-18f-002D-gov-002D-ae222d
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--join-002D-18f-002D-gov-002D-b9f27b79-002D-9565-002D-4450-002D-842c-002D-ecaca0ac7df7" {
+resource "newrelic_synthetics_monitor" "tfer--join-002D-18f-002D-gov-002D-0b711d5e-002D-1218-002D-4000-002D-83a2-002D-862ef54626c5" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "join.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3131,10 +2143,10 @@ resource "newrelic_synthetics_monitor" "tfer--join-002D-18f-002D-gov-002D-b9f27b
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--join-002D-ts-002D-gsa-002D-gov-002D-d65de10d-002D-8414-002D-438a-002D-a09c-002D-4fe3853b646c" {
+resource "newrelic_synthetics_monitor" "tfer--join-002D-ts-002D-gsa-002D-gov-002D-940aae8b-002D-6ea6-002D-400d-002D-b263-002D-9fadbe01856b" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "join.tts.gsa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3144,127 +2156,10 @@ resource "newrelic_synthetics_monitor" "tfer--join-002D-ts-002D-gsa-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--kibana-002D-demo1-002D-search-002D-usa-002D-gov-002D-58b975cd-002D-a02d-002D-45ec-002D-992e-002D-b10953e34d4f" {
+resource "newrelic_synthetics_monitor" "tfer--kids-002D-gov-002D-7b882d14-002D-2fe0-002D-404d-002D-abf0-002D-b03b516548c4" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "kibana.demo1.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://kibana.demo1.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--kibana-002D-demo2-002D-search-002D-usa-002D-gov-002D-5bc057ad-002D-ca00-002D-460f-002D-9902-002D-ad0157bf0a12" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "kibana.demo2.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://kibana.demo2.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--kibana-002D-demo3-002D-search-002D-usa-002D-gov-002D-7ddfe72d-002D-4963-002D-41d1-002D-b80b-002D-0d1fae5de320" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "kibana.demo3.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://kibana.demo3.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--kibana-002D-search-002D-gov-002D-15dc1e0a-002D-0a3e-002D-4691-002D-8ed1-002D-62bbcb2aecd7" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "kibana.search.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://kibana.search.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--kibana-002D-search-002D-usa-002D-gov-002D-ad9706d0-002D-1e36-002D-4775-002D-9c0c-002D-21e71bbc5642" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "kibana.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://kibana.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--kibana5-002D-demo1-002D-search-002D-usa-002D-gov-002D-f52d0d05-002D-1b83-002D-44b7-002D-a204-002D-4c0219a0d8ef" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "kibana5.demo1.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://kibana5.demo1.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--kibana5-002D-demo2-002D-search-002D-usa-002D-gov-002D-8dfa443c-002D-1e36-002D-439c-002D-9eb5-002D-6c454fca3071" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "kibana5.demo2.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://kibana5.demo2.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--kibana5-002D-demo3-002D-search-002D-usa-002D-gov-002D-05f55000-002D-e7db-002D-4346-002D-afda-002D-4719533af212" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "kibana5.demo3.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://kibana5.demo3.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--kibana5-002D-search-002D-gov-002D-aa44ed61-002D-13d4-002D-4704-002D-a42c-002D-faa17686e2ed" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "kibana5.search.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://kibana5.search.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--kids-002D-gov-002D-c029f651-002D-82ee-002D-41d5-002D-917e-002D-ec6859fa19c7" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "kids.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3274,10 +2169,10 @@ resource "newrelic_synthetics_monitor" "tfer--kids-002D-gov-002D-c029f651-002D-8
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--kids-002D-usa-002D-gov-002D-6897ebc5-002D-74f4-002D-48c1-002D-bf57-002D-d030041ec646" {
+resource "newrelic_synthetics_monitor" "tfer--kids-002D-usa-002D-gov-002D-341d3bd4-002D-2707-002D-405a-002D-8699-002D-89374e46293e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "kids.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3287,23 +2182,10 @@ resource "newrelic_synthetics_monitor" "tfer--kids-002D-usa-002D-gov-002D-6897eb
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--labs-002D-bsp-002D-data-002D-gov-002D-95eba79a-002D-670d-002D-484d-002D-9169-002D-51eb43c0bbc7" {
+resource "newrelic_synthetics_monitor" "tfer--labs-002D-data-002D-gov-002D-c7cf34d9-002D-6c12-002D-487c-002D-a889-002D-0e8d646e2b9d" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "labs-bsp.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://labs-bsp.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--labs-002D-data-002D-gov-002D-24444fbc-002D-06fa-002D-42c4-002D-932a-002D-a937839cf96b" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "labs.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3313,10 +2195,10 @@ resource "newrelic_synthetics_monitor" "tfer--labs-002D-data-002D-gov-002D-24444
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--labs-002D-usa-002D-gov-002D-3c9cbf4b-002D-89f2-002D-480c-002D-97d2-002D-0a3299f813ef" {
+resource "newrelic_synthetics_monitor" "tfer--labs-002D-usa-002D-gov-002D-887a812f-002D-e8ec-002D-4f59-002D-97b4-002D-5d83f280fede" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "labs.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3326,10 +2208,10 @@ resource "newrelic_synthetics_monitor" "tfer--labs-002D-usa-002D-gov-002D-3c9cbf
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--law-002D-data-002D-gov-002D-80e851e6-002D-f919-002D-4010-002D-8a36-002D-3f97eeffd2c8" {
+resource "newrelic_synthetics_monitor" "tfer--law-002D-data-002D-gov-002D-a7db53b3-002D-4990-002D-4a63-002D-96ae-002D-c8d8b9c753fa" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "law.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3339,10 +2221,10 @@ resource "newrelic_synthetics_monitor" "tfer--law-002D-data-002D-gov-002D-80e851
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--lean-002D-product-002D-design-002D-18f-002D-gov-002D-28d3bd0e-002D-211a-002D-4c0f-002D-85d1-002D-2c69e80623cb" {
+resource "newrelic_synthetics_monitor" "tfer--lean-002D-product-002D-design-002D-18f-002D-gov-002D-5ab51119-002D-eae3-002D-4711-002D-8039-002D-865934b58d30" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "lean-product-design.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3352,10 +2234,10 @@ resource "newrelic_synthetics_monitor" "tfer--lean-002D-product-002D-design-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--login-002D-fr-002D-cloud-002D-gov-002D-1590b054-002D-23ab-002D-41c4-002D-a984-002D-817c49b6aa8e" {
+resource "newrelic_synthetics_monitor" "tfer--login-002D-fr-002D-cloud-002D-gov-002D-19da72d8-002D-6614-002D-4ab9-002D-a665-002D-e1cde3775ef2" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "login.fr.cloud.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3365,7 +2247,7 @@ resource "newrelic_synthetics_monitor" "tfer--login-002D-fr-002D-cloud-002D-gov-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--login-002D-gov-002D-83a8b838-002D-0c7f-002D-4b62-002D-a249-002D-4a626b22dfec" {
+resource "newrelic_synthetics_monitor" "tfer--login-002D-gov-002D-f1237507-002D-d603-002D-4558-002D-b7e4-002D-47a522365866" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
@@ -3378,7 +2260,7 @@ resource "newrelic_synthetics_monitor" "tfer--login-002D-gov-002D-83a8b838-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--lokforwatersense-002D-prod-002D-ap-002D-cloud-002D-gov-002D-795f9edf-002D-cef4-002D-4e9b-002D-8312-002D-cf97d13ecb6f" {
+resource "newrelic_synthetics_monitor" "tfer--lokforwatersense-002D-prod-002D-ap-002D-cloud-002D-gov-002D-05c20b2a-002D-302a-002D-4b32-002D-97e2-002D-7c67429cdf41" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
@@ -3391,23 +2273,10 @@ resource "newrelic_synthetics_monitor" "tfer--lokforwatersense-002D-prod-002D-ap
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--lokforwatersense-002D-stage-002D-ap-002D-cloud-002D-gov-002D-9aad2448-002D-8d6c-002D-4355-002D-a05f-002D-5d8bd5760fa6" {
+resource "newrelic_synthetics_monitor" "tfer--m-002D-gobiernousa-002D-gov-002D-4149e385-002D-3cba-002D-415d-002D-a92c-002D-1f7ac4532812" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "lookforwatersense-stage.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://lookforwatersense-stage.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--m-002D-gobiernousa-002D-gov-002D-db6346fb-002D-faba-002D-4faf-002D-9b9b-002D-1fd181f2b06c" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "m.gobiernousa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3417,10 +2286,10 @@ resource "newrelic_synthetics_monitor" "tfer--m-002D-gobiernousa-002D-gov-002D-d
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--m-002D-usa-002D-gov-002D-a4263b92-002D-38bf-002D-4fac-002D-8a26-002D-5c13797e2043" {
+resource "newrelic_synthetics_monitor" "tfer--m-002D-usa-002D-gov-002D-1d743508-002D-91da-002D-4233-002D-af86-002D-8f39457a0bbd" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "m.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3430,10 +2299,10 @@ resource "newrelic_synthetics_monitor" "tfer--m-002D-usa-002D-gov-002D-a4263b92-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--make-002D-data-002D-gov-002D-a2a4298d-002D-5653-002D-40f7-002D-b9ca-002D-5e409d8706ca" {
+resource "newrelic_synthetics_monitor" "tfer--make-002D-data-002D-gov-002D-ce1ce267-002D-e2ed-002D-4b15-002D-9b74-002D-b682c627833b" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "make.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3443,10 +2312,10 @@ resource "newrelic_synthetics_monitor" "tfer--make-002D-data-002D-gov-002D-a2a42
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--manufacturing-002D-data-002D-gov-002D-6d7608ff-002D-0bef-002D-4981-002D-839b-002D-4909d811dbb5" {
+resource "newrelic_synthetics_monitor" "tfer--manufacturing-002D-data-002D-gov-002D-4c9d8ee6-002D-2401-002D-4d6f-002D-9323-002D-16cb7264e111" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "manufacturing.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3456,10 +2325,10 @@ resource "newrelic_synthetics_monitor" "tfer--manufacturing-002D-data-002D-gov-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--markdown-002D-helper-002D-18f-002D-gov-002D-a6cc46f4-002D-ede0-002D-4b41-002D-b983-002D-4f4bf926d427" {
+resource "newrelic_synthetics_monitor" "tfer--markdown-002D-helper-002D-18f-002D-gov-002D-45674ed8-002D-cd4d-002D-472f-002D-a563-002D-80511f75e614" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "markdown-helper.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3469,7 +2338,7 @@ resource "newrelic_synthetics_monitor" "tfer--markdown-002D-helper-002D-18f-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--marketplace-002D-fedramp-002D-gov-002D-4da594bf-002D-1948-002D-4c34-002D-a5c2-002D-2a5dc7a87a02" {
+resource "newrelic_synthetics_monitor" "tfer--marketplace-002D-fedramp-002D-gov-002D-125d1b69-002D-55e1-002D-4f18-002D-92a7-002D-4ea7b0c2d967" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
@@ -3482,23 +2351,10 @@ resource "newrelic_synthetics_monitor" "tfer--marketplace-002D-fedramp-002D-gov-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--markryan-002D-identitysandbox-002D-gov-002D-d9750403-002D-e632-002D-46a9-002D-a1d8-002D-7a7318c9de1f" {
+resource "newrelic_synthetics_monitor" "tfer--methods-002D-18f-002D-gov-002D-c35069e7-002D-a840-002D-42b7-002D-9bf9-002D-54311045d5e9" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "markryan.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://markryan.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--methods-002D-18f-002D-gov-002D-8940d024-002D-04ff-002D-4ff7-002D-a294-002D-2648e5fae7be" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "methods.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3508,10 +2364,10 @@ resource "newrelic_synthetics_monitor" "tfer--methods-002D-18f-002D-gov-002D-894
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--micropurchase-002D-18f-002D-gov-002D-0f8f7e66-002D-a4c1-002D-4a20-002D-945e-002D-3247382dc549" {
+resource "newrelic_synthetics_monitor" "tfer--micropurchase-002D-18f-002D-gov-002D-4b1d3e0e-002D-1b47-002D-41d2-002D-a212-002D-3a0c387098e1" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "micropurchase.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3521,10 +2377,10 @@ resource "newrelic_synthetics_monitor" "tfer--micropurchase-002D-18f-002D-gov-00
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--modularcontracting-002D-18f-002D-gov-002D-81860f16-002D-db88-002D-4b02-002D-91e9-002D-b1b1b9ab9d81" {
+resource "newrelic_synthetics_monitor" "tfer--modularcontracting-002D-18f-002D-gov-002D-ef0e288c-002D-761f-002D-4a40-002D-be94-002D-a3232e5f1277" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "modularcontracting.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3534,10 +2390,10 @@ resource "newrelic_synthetics_monitor" "tfer--modularcontracting-002D-18f-002D-g
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--my-002D-usa-002D-gov-002D-a4c03155-002D-7957-002D-4adc-002D-bf35-002D-e14c392c5c8f" {
+resource "newrelic_synthetics_monitor" "tfer--my-002D-usa-002D-gov-002D-6333825b-002D-b25d-002D-47f7-002D-9a95-002D-df132662772e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "my.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3547,49 +2403,10 @@ resource "newrelic_synthetics_monitor" "tfer--my-002D-usa-002D-gov-002D-a4c03155
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--mywaterway-002D-dev-002D-ap-002D-cloud-002D-gov-002D-7e9c81a0-002D-21c2-002D-4ed0-002D-990e-002D-00e10c8a5811" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "mywaterway-dev.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://mywaterway-dev.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--mywaterway-002D-stage-002D-ap-002D-cloud-002D-gov-002D-e8384a69-002D-de15-002D-46c2-002D-abf4-002D-1f13b72ee62f" {
+resource "newrelic_synthetics_monitor" "tfer--next-002D-data-002D-gov-002D-19afb80a-002D-eb19-002D-41c9-002D-af7b-002D-ed2f013531ce" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "mywaterway-stage.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://mywaterway-stage.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--new-002D-vote-002D-gov-002D-5f9d9bd2-002D-836b-002D-4157-002D-89ca-002D-62823557985d" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "new.vote.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://new.vote.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--next-002D-data-002D-gov-002D-a5b51a4f-002D-6553-002D-4a49-002D-bbec-002D-bbf227c47bcb" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "next.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3599,7 +2416,7 @@ resource "newrelic_synthetics_monitor" "tfer--next-002D-data-002D-gov-002D-a5b51
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--notice-002D-data-002D-gov-002D-ffc959e6-002D-e71e-002D-4e9a-002D-a348-002D-a9c2c22e0143" {
+resource "newrelic_synthetics_monitor" "tfer--notice-002D-data-002D-gov-002D-59722dcf-002D-131e-002D-42b0-002D-97f6-002D-917f87dbad43" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
@@ -3612,7 +2429,7 @@ resource "newrelic_synthetics_monitor" "tfer--notice-002D-data-002D-gov-002D-ffc
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--notice-002D-usa-002D-gov-002D-a00d6f14-002D-22ac-002D-4544-002D-9d59-002D-10d59baacc77" {
+resource "newrelic_synthetics_monitor" "tfer--notice-002D-usa-002D-gov-002D-ba567862-002D-bf32-002D-4309-002D-88d9-002D-01d22dc58a06" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
@@ -3625,10 +2442,10 @@ resource "newrelic_synthetics_monitor" "tfer--notice-002D-usa-002D-gov-002D-a00d
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--notifications-002D-usa-002D-gov-002D-218083c9-002D-6886-002D-47e2-002D-a948-002D-41837d7e0ee5" {
+resource "newrelic_synthetics_monitor" "tfer--notifications-002D-usa-002D-gov-002D-de562e4f-002D-7c13-002D-4f64-002D-b272-002D-97f5d43e5300" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "notifications.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3638,10 +2455,10 @@ resource "newrelic_synthetics_monitor" "tfer--notifications-002D-usa-002D-gov-00
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--nutrition-002D-data-002D-gov-002D-511c436f-002D-a3a5-002D-4498-002D-b974-002D-f2d35d26481b" {
+resource "newrelic_synthetics_monitor" "tfer--nutrition-002D-data-002D-gov-002D-27858e3d-002D-f1c1-002D-4d0f-002D-8a6a-002D-93c092a533f7" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "nutrition.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3651,23 +2468,10 @@ resource "newrelic_synthetics_monitor" "tfer--nutrition-002D-data-002D-gov-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--o16-002D-email-002D-digitalgov-002D-gov-002D-23875b16-002D-0983-002D-4bd0-002D-b822-002D-6770da3456cd" {
+resource "newrelic_synthetics_monitor" "tfer--ocean-002D-data-002D-gov-002D-34e10aa2-002D-4307-002D-4d16-002D-9b9d-002D-ff3b3e405a26" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "o166.email.digitalgov.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://o166.email.digitalgov.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--ocean-002D-data-002D-gov-002D-6031b59d-002D-aee6-002D-41b6-002D-adf8-002D-ab1767525649" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "ocean.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3677,23 +2481,10 @@ resource "newrelic_synthetics_monitor" "tfer--ocean-002D-data-002D-gov-002D-6031
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--onepagetest-002D-18f-002D-gov-002D-e3ca4876-002D-f592-002D-43bb-002D-b27e-002D-641c8e92d4af" {
+resource "newrelic_synthetics_monitor" "tfer--open-002D-foia-002D-gov-002D-a48fee3a-002D-473f-002D-40b4-002D-af26-002D-48bf95b52adf" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "onepagetest.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://onepagetest.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--open-002D-foia-002D-gov-002D-d015d270-002D-0a62-002D-41c7-002D-a1ca-002D-79989987d819" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "open.foia.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3703,10 +2494,10 @@ resource "newrelic_synthetics_monitor" "tfer--open-002D-foia-002D-gov-002D-d015d
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--open-002D-forest-002D-dev-002D-ap-002D-cloud-002D-gov-002D-b01815b0-002D-b6d5-002D-4985-002D-9a03-002D-d072819a59f4" {
+resource "newrelic_synthetics_monitor" "tfer--open-002D-forest-002D-dev-002D-ap-002D-cloud-002D-gov-002D-6313fcee-002D-0319-002D-49ce-002D-88c6-002D-971ab9e35c07" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "open-forest-dev.app.cloud.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3716,10 +2507,10 @@ resource "newrelic_synthetics_monitor" "tfer--open-002D-forest-002D-dev-002D-ap-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--open-002D-forest-002D-staging-002D-ap-002D-cloud-002D-gov-002D-3cfd10d1-002D-3d65-002D-4e3e-002D-a9d9-002D-fb6fb11f4d6a" {
+resource "newrelic_synthetics_monitor" "tfer--open-002D-forest-002D-staging-002D-ap-002D-cloud-002D-gov-002D-9736d4fa-002D-1bf0-002D-430d-002D-8197-002D-8366d5222469" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "open-forest-staging.app.cloud.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3729,7 +2520,7 @@ resource "newrelic_synthetics_monitor" "tfer--open-002D-forest-002D-staging-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--open-002D-source-002D-guide-002D-18f-002D-gov-002D-1c39fc3b-002D-5207-002D-41e5-002D-b33b-002D-6bc7e7f7dca3" {
+resource "newrelic_synthetics_monitor" "tfer--open-002D-source-002D-guide-002D-18f-002D-gov-002D-4c0fad83-002D-7712-002D-4b08-002D-9bb9-002D-9ff5d7b912a5" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
@@ -3742,10 +2533,10 @@ resource "newrelic_synthetics_monitor" "tfer--open-002D-source-002D-guide-002D-1
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--open-002D-source-002D-program-002D-18f-002D-gov-002D-554d4714-002D-cbb4-002D-4785-002D-ac58-002D-e6e4770fafa3" {
+resource "newrelic_synthetics_monitor" "tfer--open-002D-source-002D-program-002D-18f-002D-gov-002D-c8231fc4-002D-3cb2-002D-440b-002D-bc90-002D-3f52f5a0964a" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "open-source-program.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3755,7 +2546,7 @@ resource "newrelic_synthetics_monitor" "tfer--open-002D-source-002D-program-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--open-002D-staging-002D-usa-002D-gov-002D-7e8b2b38-002D-b6ce-002D-4176-002D-8652-002D-597ed4d7d62b" {
+resource "newrelic_synthetics_monitor" "tfer--open-002D-staging-002D-usa-002D-gov-002D-9ba3ad55-002D-98f6-002D-4e89-002D-ae06-002D-ff436ef2b61d" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -3768,10 +2559,10 @@ resource "newrelic_synthetics_monitor" "tfer--open-002D-staging-002D-usa-002D-go
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--open-002D-usa-002D-gov-002D-d3479dc4-002D-199f-002D-44bb-002D-b484-002D-d59dae9fc89f" {
+resource "newrelic_synthetics_monitor" "tfer--open-002D-usa-002D-gov-002D-ce6dc4ec-002D-cebc-002D-4137-002D-8899-002D-915c3890095c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "open.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3781,10 +2572,10 @@ resource "newrelic_synthetics_monitor" "tfer--open-002D-usa-002D-gov-002D-d3479d
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--openops-002D-digitalgov-002D-gov-002D-9aeccb83-002D-c796-002D-414b-002D-a60e-002D-298719e69a44" {
+resource "newrelic_synthetics_monitor" "tfer--openops-002D-digitalgov-002D-gov-002D-ebd7df3e-002D-0431-002D-42e7-002D-aa02-002D-7b3a0e7ad882" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "openopps.digitalgov.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3794,10 +2585,10 @@ resource "newrelic_synthetics_monitor" "tfer--openops-002D-digitalgov-002D-gov-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--pages-002D-18f-002D-gov-002D-a244bec7-002D-7089-002D-4b38-002D-9dc6-002D-e87f4643be4a" {
+resource "newrelic_synthetics_monitor" "tfer--pages-002D-18f-002D-gov-002D-4dccdd84-002D-ae62-002D-49d6-002D-8c88-002D-aafabf641a0b" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "pages.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3807,10 +2598,10 @@ resource "newrelic_synthetics_monitor" "tfer--pages-002D-18f-002D-gov-002D-a244b
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--paid-002D-leave-002D-prototype-002D-18f-002D-gov-002D-0adf8faa-002D-a26e-002D-4a68-002D-a39e-002D-3171164e3da7" {
+resource "newrelic_synthetics_monitor" "tfer--paid-002D-leave-002D-prototype-002D-18f-002D-gov-002D-0e829f39-002D-caf9-002D-40bf-002D-b5c6-002D-99858fbf49d7" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "paid-leave-prototype.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3820,10 +2611,10 @@ resource "newrelic_synthetics_monitor" "tfer--paid-002D-leave-002D-prototype-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--participation-002D-usa-002D-gov-002D-5c918bb2-002D-28b9-002D-4d80-002D-8ad3-002D-324441a8f91c" {
+resource "newrelic_synthetics_monitor" "tfer--participation-002D-usa-002D-gov-002D-e79eb582-002D-094d-002D-4433-002D-a367-002D-069dbe9e7de2" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "participation.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3833,10 +2624,10 @@ resource "newrelic_synthetics_monitor" "tfer--participation-002D-usa-002D-gov-00
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--partnership-002D-playbok-002D-18f-002D-gov-002D-34c3adbf-002D-01b6-002D-4606-002D-859b-002D-898f13967343" {
+resource "newrelic_synthetics_monitor" "tfer--partnership-002D-playbok-002D-18f-002D-gov-002D-f4a9f32e-002D-b057-002D-4704-002D-8ab6-002D-40e0cf622059" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "partnership-playbook.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3846,10 +2637,10 @@ resource "newrelic_synthetics_monitor" "tfer--partnership-002D-playbok-002D-18f-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--paygap-002D-pif-002D-gov-002D-3f0f045b-002D-13b7-002D-4851-002D-bb9a-002D-6e4d345c2db1" {
+resource "newrelic_synthetics_monitor" "tfer--paygap-002D-pif-002D-gov-002D-dc3228e8-002D-a79d-002D-4c9f-002D-bdb0-002D-b92b7b9baf53" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "paygap.pif.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3859,23 +2650,10 @@ resource "newrelic_synthetics_monitor" "tfer--paygap-002D-pif-002D-gov-002D-3f0f
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--paygap-002D-slack-002D-pif-002D-gov-002D-fc88210c-002D-f9ce-002D-454d-002D-80db-002D-e82318e1e051" {
+resource "newrelic_synthetics_monitor" "tfer--performance-002D-gov-002D-1c7a84fb-002D-f104-002D-4bd4-002D-87bc-002D-15979cef57ae" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "paygap-slack.pif.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://paygap-slack.pif.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--performance-002D-gov-002D-bef1c3e9-002D-d17c-002D-432d-002D-86fd-002D-ba551c3349b2" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "performance.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3885,10 +2663,10 @@ resource "newrelic_synthetics_monitor" "tfer--performance-002D-gov-002D-bef1c3e9
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--performance-002D-gov-002D-research-002D-18f-002D-gov-002D-025307ae-002D-fed8-002D-49e4-002D-93b1-002D-4c7d6752c085" {
+resource "newrelic_synthetics_monitor" "tfer--performance-002D-gov-002D-research-002D-18f-002D-gov-002D-99656628-002D-a39c-002D-446b-002D-bee7-002D-75fc1792cfc3" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "performance-gov-research.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -3898,111 +2676,7 @@ resource "newrelic_synthetics_monitor" "tfer--performance-002D-gov-002D-research
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--pfabankapi-002D-ap-002D-cloud-002D-gov-002D-0edce44e-002D-b2f2-002D-4bce-002D-ae91-002D-26b2dabb3393" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "pfabankapi.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pfabankapi.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pfabankapi-002D-d-002D-ap-002D-cloud-002D-gov-002D-7a143373-002D-89d5-002D-4d1d-002D-8f35-002D-6bd6f1515130" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "pfabankapi-d.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pfabankapi-d.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pfabankapi-002D-q-002D-ap-002D-cloud-002D-gov-002D-d34caf85-002D-6b1a-002D-4282-002D-b023-002D-80cde70ae931" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "pfabankapi-q.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pfabankapi-q.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pfabankfindui-002D-ap-002D-cloud-002D-gov-002D-af5eceda-002D-d479-002D-4e61-002D-963f-002D-479061f0a210" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "pfabankfindui.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pfabankfindui.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pfabankfindui-002D-d-002D-ap-002D-cloud-002D-gov-002D-d55be14b-002D-d069-002D-4472-002D-a3d4-002D-8a41c3290acc" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "pfabankfindui-d.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pfabankfindui-d.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pfabankfindui-002D-n-002D-ap-002D-cloud-002D-gov-002D-7145d965-002D-72ef-002D-4917-002D-b95d-002D-6492dfa89a51" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "pfabankfindui-n.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pfabankfindui-n.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pfabankfindui-002D-q-002D-ap-002D-cloud-002D-gov-002D-009bf8c5-002D-1368-002D-4a04-002D-b131-002D-e00430a00ca8" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "pfabankfindui-q.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pfabankfindui-q.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pfabankui-002D-q-002D-ap-002D-cloud-002D-gov-002D-c6bf54a3-002D-cedc-002D-4206-002D-a0d0-002D-d142eae91a1e" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "pfabankui-q.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pfabankui-q.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pif-002D-gov-002D-27ef8b19-002D-407f-002D-497d-002D-a4a6-002D-6402eb0a0ea4" {
+resource "newrelic_synthetics_monitor" "tfer--pif-002D-gov-002D-81a9ab16-002D-c9f5-002D-4f39-002D-9025-002D-51be8f9e68c8" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
@@ -4015,23 +2689,10 @@ resource "newrelic_synthetics_monitor" "tfer--pif-002D-gov-002D-27ef8b19-002D-40
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--pif-002D-gsa-002D-gov-002D-29222f6d-002D-8278-002D-4956-002D-982f-002D-2592c2eb2279" {
+resource "newrelic_synthetics_monitor" "tfer--piv-002D-idmanagement-002D-gov-002D-bbabdcdc-002D-fb3f-002D-4b9a-002D-8a77-002D-94071527b960" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "pif.gsa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pif.gsa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--piv-002D-idmanagement-002D-gov-002D-bd1ce7fa-002D-2a5b-002D-46ef-002D-a26d-002D-61a09b246036" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "piv.idmanagement.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4041,98 +2702,7 @@ resource "newrelic_synthetics_monitor" "tfer--piv-002D-idmanagement-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--pivcac-002D-ci-002D-identitysandbox-002D-gov-002D-0d4ed4b2-002D-206e-002D-4ccb-002D-a84f-002D-739ca3fe441f" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "pivcac.ci.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pivcac.ci.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pivcac-002D-crisupb-002D-identitysandbox-002D-gov-002D-e26daf3f-002D-bf65-002D-4f69-002D-9b39-002D-5f79565c15ea" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "pivcac.crissupb.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pivcac.crissupb.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pivcac-002D-int-002D-identitysandbox-002D-gov-002D-a44060d9-002D-0fb0-002D-466c-002D-bc98-002D-dd75ef32383c" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "pivcac.int.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pivcac.int.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pivcac-002D-jg-002D-identitysandbox-002D-gov-002D-2f404920-002D-cf07-002D-4351-002D-99e3-002D-4b7e287f5ed3" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "pivcac.jjg.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pivcac.jjg.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pivcac-002D-markryan-002D-identitysandbox-002D-gov-002D-53a5172e-002D-5fa3-002D-400a-002D-a181-002D-d371dbaf64bf" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "pivcac.markryan.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pivcac.markryan.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pivcac-002D-prod-002D-login-002D-gov-002D-5de24832-002D-71dc-002D-48d4-002D-8911-002D-4815afafbad0" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "pivcac.prod.login.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pivcac.prod.login.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--pivcac-002D-staging-002D-login-002D-gov-002D-e5627407-002D-0c18-002D-473a-002D-8e7a-002D-d1d620d8e1ec" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "pivcac.staging.login.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://pivcac.staging.login.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--plain-002D-language-002D-tutorial-002D-18f-002D-gov-002D-8185a90b-002D-12f5-002D-40c3-002D-9077-002D-32b198e8c124" {
+resource "newrelic_synthetics_monitor" "tfer--plain-002D-language-002D-tutorial-002D-18f-002D-gov-002D-f7e3925a-002D-58fd-002D-4dc2-002D-93e3-002D-63cc303cfb6f" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -4145,7 +2715,7 @@ resource "newrelic_synthetics_monitor" "tfer--plain-002D-language-002D-tutorial-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--plainlanguage-002D-gov-002D-c0db9415-002D-940c-002D-4efc-002D-8e6c-002D-ae26462a8bf9" {
+resource "newrelic_synthetics_monitor" "tfer--plainlanguage-002D-gov-002D-bfadec31-002D-139b-002D-4dbe-002D-9529-002D-5c8737a06979" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
@@ -4158,10 +2728,10 @@ resource "newrelic_synthetics_monitor" "tfer--plainlanguage-002D-gov-002D-c0db94
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--pra-002D-digital-002D-gov-002D-fdd2f901-002D-3eff-002D-4d07-002D-988a-002D-3fdd3e8f60e1" {
+resource "newrelic_synthetics_monitor" "tfer--pra-002D-digital-002D-gov-002D-96bfd8d2-002D-a713-002D-4fe7-002D-a602-002D-f82f265bff3e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "pra.digital.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4171,10 +2741,10 @@ resource "newrelic_synthetics_monitor" "tfer--pra-002D-digital-002D-gov-002D-fdd
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--presidentialinovationfelows-002D-gov-002D-6350bc5b-002D-da52-002D-4ae5-002D-a1b9-002D-b847701db3f9" {
+resource "newrelic_synthetics_monitor" "tfer--presidentialinovationfelows-002D-gov-002D-5ef4a9c0-002D-bb12-002D-4fc8-002D-870d-002D-298c36051bf8" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "presidentialinnovationfellows.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4184,23 +2754,10 @@ resource "newrelic_synthetics_monitor" "tfer--presidentialinovationfelows-002D-g
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--preview-002D-login-002D-gov-002D-f82e4588-002D-c561-002D-40a0-002D-ad31-002D-d0cfc0b52330" {
+resource "newrelic_synthetics_monitor" "tfer--private-002D-eye-002D-18f-002D-gov-002D-b7d5990f-002D-99dc-002D-4434-002D-b275-002D-c9cef4fa764d" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "preview.login.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://preview.login.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--private-002D-eye-002D-18f-002D-gov-002D-e70fa9eb-002D-a29b-002D-4f85-002D-9d3e-002D-d8e59ac431a4" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "private-eye.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4210,10 +2767,10 @@ resource "newrelic_synthetics_monitor" "tfer--private-002D-eye-002D-18f-002D-gov
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--product-002D-guide-002D-18f-002D-gov-002D-db338156-002D-ab56-002D-4883-002D-87b7-002D-c074655a2037" {
+resource "newrelic_synthetics_monitor" "tfer--product-002D-guide-002D-18f-002D-gov-002D-2fbc2b8c-002D-38d8-002D-4444-002D-b47a-002D-6ba49fab77fb" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "product-guide.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4223,10 +2780,10 @@ resource "newrelic_synthetics_monitor" "tfer--product-002D-guide-002D-18f-002D-g
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--promotions-002D-usa-002D-gov-002D-1bc1aaf7-002D-e745-002D-42ac-002D-816d-002D-79f8b932a612" {
+resource "newrelic_synthetics_monitor" "tfer--promotions-002D-usa-002D-gov-002D-a8c9c09b-002D-1473-002D-4a78-002D-8740-002D-ec78533d5903" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "promotions.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4236,7 +2793,7 @@ resource "newrelic_synthetics_monitor" "tfer--promotions-002D-usa-002D-gov-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--proposal-002D-pif-002D-gov-002D-d9fb45fb-002D-49ef-002D-4f4c-002D-8168-002D-0028d101b6e7" {
+resource "newrelic_synthetics_monitor" "tfer--proposal-002D-pif-002D-gov-002D-4780d119-002D-fcbe-002D-4102-002D-98d3-002D-5a06c034f080" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
@@ -4249,10 +2806,10 @@ resource "newrelic_synthetics_monitor" "tfer--proposal-002D-pif-002D-gov-002D-d9
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--public-002D-sans-002D-digital-002D-gov-002D-6a1bd820-002D-e736-002D-48df-002D-83a7-002D-918e6d29dbaa" {
+resource "newrelic_synthetics_monitor" "tfer--public-002D-sans-002D-digital-002D-gov-002D-fa84d254-002D-f9e8-002D-44d4-002D-a748-002D-5c589201880d" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "public-sans.digital.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4262,10 +2819,10 @@ resource "newrelic_synthetics_monitor" "tfer--public-002D-sans-002D-digital-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--publications-002D-usa-002D-gov-002D-33a4373b-002D-eccc-002D-4baf-002D-963d-002D-22557b6f2d91" {
+resource "newrelic_synthetics_monitor" "tfer--publications-002D-usa-002D-gov-002D-1be0bc40-002D-7618-002D-44d2-002D-9746-002D-55b106ea036c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "publications.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4275,10 +2832,10 @@ resource "newrelic_synthetics_monitor" "tfer--publications-002D-usa-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--pulse-002D-cio-002D-gov-002D-03b35a30-002D-1e54-002D-4240-002D-9cdf-002D-f648386dd810" {
+resource "newrelic_synthetics_monitor" "tfer--pulse-002D-cio-002D-gov-002D-7bb4d60b-002D-23e4-002D-4601-002D-b404-002D-a025f9a972a6" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "pulse.cio.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4288,23 +2845,10 @@ resource "newrelic_synthetics_monitor" "tfer--pulse-002D-cio-002D-gov-002D-03b35
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--qa-002D-identitysandbox-002D-gov-002D-b4cf569b-002D-6029-002D-4e44-002D-a975-002D-f4e2be08e330" {
+resource "newrelic_synthetics_monitor" "tfer--reference-002D-data-002D-gov-002D-88a1ac82-002D-df1c-002D-4c27-002D-bb79-002D-4427d569fc84" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "qa.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://qa.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--reference-002D-data-002D-gov-002D-2d8a3229-002D-8a67-002D-4bf0-002D-a5dd-002D-0346818cc328" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "reference.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4314,7 +2858,7 @@ resource "newrelic_synthetics_monitor" "tfer--reference-002D-data-002D-gov-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--registry-002D-usa-002D-gov-002D-f2bd907a-002D-1c00-002D-421e-002D-8cf5-002D-b7f26d332ce2" {
+resource "newrelic_synthetics_monitor" "tfer--registry-002D-usa-002D-gov-002D-e2e8f28c-002D-f2d3-002D-45cb-002D-854d-002D-42f56465953b" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -4327,10 +2871,10 @@ resource "newrelic_synthetics_monitor" "tfer--registry-002D-usa-002D-gov-002D-f2
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--requests-002D-18f-002D-gov-002D-cd82d8ce-002D-c751-002D-43ac-002D-a4f9-002D-4c6c5f6a1a11" {
+resource "newrelic_synthetics_monitor" "tfer--requests-002D-18f-002D-gov-002D-7510f92a-002D-7923-002D-45d5-002D-8926-002D-6d9b7fd891ee" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "requests.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4340,10 +2884,10 @@ resource "newrelic_synthetics_monitor" "tfer--requests-002D-18f-002D-gov-002D-cd
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--research-002D-data-002D-gov-002D-51d83d3d-002D-3519-002D-4199-002D-a4ca-002D-ed1ef3e29a98" {
+resource "newrelic_synthetics_monitor" "tfer--research-002D-data-002D-gov-002D-5d398746-002D-839b-002D-43ae-002D-afaf-002D-9e1594abb800" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "research.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4353,10 +2897,10 @@ resource "newrelic_synthetics_monitor" "tfer--research-002D-data-002D-gov-002D-5
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--resources-002D-data-002D-gov-002D-018f7ee2-002D-4590-002D-4b46-002D-80d1-002D-a88951f27d29" {
+resource "newrelic_synthetics_monitor" "tfer--resources-002D-data-002D-gov-002D-40ab6c62-002D-ab13-002D-4d2f-002D-8aeb-002D-89af4a4b7980" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "resources.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4366,10 +2910,10 @@ resource "newrelic_synthetics_monitor" "tfer--resources-002D-data-002D-gov-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--resources-002D-staging-002D-data-002D-gov-002D-7f70f561-002D-1a3e-002D-49d0-002D-9988-002D-6a80e7609b58" {
+resource "newrelic_synthetics_monitor" "tfer--resources-002D-staging-002D-data-002D-gov-002D-e777b994-002D-bd94-002D-4fa8-002D-9b57-002D-071828d5f19e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "resources-staging.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4379,10 +2923,10 @@ resource "newrelic_synthetics_monitor" "tfer--resources-002D-staging-002D-data-0
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--respuestas-002D-gobiernousa-002D-gov-002D-64ee3aac-002D-59c9-002D-4423-002D-8d55-002D-0924da79670f" {
+resource "newrelic_synthetics_monitor" "tfer--respuestas-002D-gobiernousa-002D-gov-002D-c2292de8-002D-df47-002D-4d36-002D-b4bf-002D-5d9826c33c2c" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "respuestas.gobiernousa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4392,75 +2936,10 @@ resource "newrelic_synthetics_monitor" "tfer--respuestas-002D-gobiernousa-002D-g
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--resque-002D-demo1-002D-search-002D-usa-002D-gov-002D-9155e970-002D-8a4a-002D-454e-002D-bc28-002D-bed32628822f" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "resque.demo1.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://resque.demo1.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--resque-002D-demo2-002D-search-002D-usa-002D-gov-002D-102c02f3-002D-1bf6-002D-4713-002D-8bbb-002D-dbc54f0f0c0a" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "resque.demo2.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://resque.demo2.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--resque-002D-demo3-002D-search-002D-usa-002D-gov-002D-36229ca3-002D-3089-002D-4b09-002D-a9a4-002D-934ec4eecfd1" {
+resource "newrelic_synthetics_monitor" "tfer--rural-002D-data-002D-gov-002D-ab323903-002D-ad11-002D-4276-002D-8a26-002D-6b430f15d3b8" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "resque.demo3.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://resque.demo3.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--resque-002D-search-002D-usa-002D-gov-002D-2d98254e-002D-78ec-002D-4798-002D-9623-002D-1136b2a3d183" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "resque.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://resque.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--review-002D-pif-002D-gov-002D-dcb83a6b-002D-ecc9-002D-4c77-002D-9552-002D-37ff84600360" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "review.pif.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://review.pif.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--rural-002D-data-002D-gov-002D-b9afa319-002D-daab-002D-4845-002D-8f50-002D-ab367d798b00" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "rural.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4470,10 +2949,10 @@ resource "newrelic_synthetics_monitor" "tfer--rural-002D-data-002D-gov-002D-b9af
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--safety-002D-data-002D-gov-002D-565fb3a9-002D-1e1f-002D-48f4-002D-8cac-002D-607c519165b2" {
+resource "newrelic_synthetics_monitor" "tfer--safety-002D-data-002D-gov-002D-741d8a5f-002D-67f0-002D-4161-002D-bd98-002D-fc1410432bb4" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "safety.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4483,23 +2962,10 @@ resource "newrelic_synthetics_monitor" "tfer--safety-002D-data-002D-gov-002D-565
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--sandbox-002D-gov-002D-236bbcad-002D-5739-002D-47fe-002D-b2bb-002D-e3d7c17f85d8" {
+resource "newrelic_synthetics_monitor" "tfer--sbst-002D-gov-002D-4c48f674-002D-0e2f-002D-4987-002D-adcd-002D-2417b757f710" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "sandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sbst-002D-gov-002D-edfebd66-002D-c507-002D-4ea9-002D-9398-002D-b8128f5f0385" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "sbst.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4509,10 +2975,10 @@ resource "newrelic_synthetics_monitor" "tfer--sbst-002D-gov-002D-edfebd66-002D-c
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--science-002D-data-002D-gov-002D-fbb9c4c4-002D-0282-002D-40ae-002D-9fdc-002D-ae10846f388c" {
+resource "newrelic_synthetics_monitor" "tfer--science-002D-data-002D-gov-002D-3c36f466-002D-60d8-002D-4c44-002D-b3f4-002D-14e75532ef23" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "science.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4522,20 +2988,7 @@ resource "newrelic_synthetics_monitor" "tfer--science-002D-data-002D-gov-002D-fb
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--sdg-002D-bsp-002D-data-002D-gov-002D-9d176660-002D-9a0e-002D-487f-002D-91c0-002D-9648118aa121" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "sdg-bsp.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sdg-bsp.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sdg-002D-data-002D-gov-002D-fb40c7c8-002D-c47d-002D-43c6-002D-a758-002D-f941450c5e20" {
+resource "newrelic_synthetics_monitor" "tfer--sdg-002D-data-002D-gov-002D-bb28293f-002D-57a5-002D-4ffb-002D-924b-002D-6bdd76216d0e" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
@@ -4548,10 +3001,10 @@ resource "newrelic_synthetics_monitor" "tfer--sdg-002D-data-002D-gov-002D-fb40c7
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--sdg-002D-staging-002D-data-002D-gov-002D-3e7af0db-002D-a6cc-002D-4ad1-002D-8677-002D-264c1afa414a" {
+resource "newrelic_synthetics_monitor" "tfer--sdg-002D-staging-002D-data-002D-gov-002D-28b10e6d-002D-75a2-002D-4bbc-002D-95ad-002D-38fada02eea4" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "sdg-staging.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4561,20 +3014,7 @@ resource "newrelic_synthetics_monitor" "tfer--sdg-002D-staging-002D-data-002D-go
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--search-002D-data-002D-gov-002D-1bd97b72-002D-123f-002D-4868-002D-addb-002D-5d28b12b0ea1" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "search.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://search.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--search-002D-digitalgov-002D-gov-002D-b0b383c6-002D-1620-002D-4ca5-002D-98a8-002D-2892ff0b9290" {
+resource "newrelic_synthetics_monitor" "tfer--search-002D-digitalgov-002D-gov-002D-09f0bd37-002D-259d-002D-4c4f-002D-95e0-002D-353df156c221" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
@@ -4587,10 +3027,10 @@ resource "newrelic_synthetics_monitor" "tfer--search-002D-digitalgov-002D-gov-00
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--search-002D-gov-002D-43bb8b52-002D-c892-002D-4e8c-002D-bd47-002D-4faa0e7c599c" {
+resource "newrelic_synthetics_monitor" "tfer--search-002D-gov-002D-574d3819-002D-e974-002D-4337-002D-aba9-002D-360b6dad46a0" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "search.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4600,10 +3040,10 @@ resource "newrelic_synthetics_monitor" "tfer--search-002D-gov-002D-43bb8b52-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--search-002D-usa-002D-gov-002D-9a50d679-002D-2d4d-002D-40e5-002D-8ed0-002D-79573a153162" {
+resource "newrelic_synthetics_monitor" "tfer--search-002D-usa-002D-gov-002D-c8c0e268-002D-40d5-002D-4668-002D-888e-002D-76e7a60d55aa" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "search.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4613,10 +3053,10 @@ resource "newrelic_synthetics_monitor" "tfer--search-002D-usa-002D-gov-002D-9a50
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--secure-002D-login-002D-gov-002D-25e677f4-002D-4a23-002D-4d21-002D-8a74-002D-fd2fe9324cfc" {
+resource "newrelic_synthetics_monitor" "tfer--secure-002D-login-002D-gov-002D-915c36b8-002D-445e-002D-40c4-002D-aaa8-002D-7f52540f2ef2" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "secure.login.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4626,10 +3066,10 @@ resource "newrelic_synthetics_monitor" "tfer--secure-002D-login-002D-gov-002D-25
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--semantic-002D-data-002D-gov-002D-622001c4-002D-ec5a-002D-4c21-002D-a8fd-002D-cc3e254dfd14" {
+resource "newrelic_synthetics_monitor" "tfer--semantic-002D-data-002D-gov-002D-22eb4a9e-002D-5cf0-002D-4aab-002D-a947-002D-6bcacb9c3131" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "semantic.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4639,10 +3079,10 @@ resource "newrelic_synthetics_monitor" "tfer--semantic-002D-data-002D-gov-002D-6
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--services-002D-data-002D-gov-002D-507da2c1-002D-29bf-002D-45ed-002D-aeb3-002D-ee4b7a40752a" {
+resource "newrelic_synthetics_monitor" "tfer--services-002D-data-002D-gov-002D-b59f816e-002D-2a30-002D-4fe3-002D-9a5b-002D-e01d8d1a92dc" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "services.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4652,7 +3092,7 @@ resource "newrelic_synthetics_monitor" "tfer--services-002D-data-002D-gov-002D-5
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--site-002D-scaning-002D-ap-002D-cloud-002D-gov-002D-55127c7d-002D-7f3f-002D-4a0a-002D-9aab-002D-4d8b8b8dfaf1" {
+resource "newrelic_synthetics_monitor" "tfer--site-002D-scaning-002D-ap-002D-cloud-002D-gov-002D-f55bff1a-002D-ffcc-002D-4c30-002D-8cb8-002D-e573625b5def" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -4665,23 +3105,10 @@ resource "newrelic_synthetics_monitor" "tfer--site-002D-scaning-002D-ap-002D-clo
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--sites-002D-usa-002D-gov-002D-b06b730c-002D-dee5-002D-4887-002D-a68a-002D-78e10f0d058c" {
+resource "newrelic_synthetics_monitor" "tfer--skils-002D-data-002D-gov-002D-918436d9-002D-03db-002D-4d83-002D-bac2-002D-845448e4c02f" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "Sites.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://Sites.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--skils-002D-data-002D-gov-002D-bdabd4f9-002D-9bed-002D-449a-002D-9491-002D-53d0f24a838d" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "skills.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4691,7 +3118,7 @@ resource "newrelic_synthetics_monitor" "tfer--skils-002D-data-002D-gov-002D-bdab
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--slides-002D-18f-002D-gov-002D-439d3659-002D-9530-002D-488e-002D-8b94-002D-3b2212e50d45" {
+resource "newrelic_synthetics_monitor" "tfer--slides-002D-18f-002D-gov-002D-f3117157-002D-b4f5-002D-4140-002D-8e84-002D-6e8bba633c74" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
@@ -4704,10 +3131,10 @@ resource "newrelic_synthetics_monitor" "tfer--slides-002D-18f-002D-gov-002D-439d
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--smalbusines-002D-data-002D-gov-002D-2f8107ab-002D-77dd-002D-4602-002D-a90b-002D-4fc3f6ee2344" {
+resource "newrelic_synthetics_monitor" "tfer--smalbusines-002D-data-002D-gov-002D-4af93657-002D-c4ff-002D-4034-002D-ac10-002D-277020a6e170" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
   name                      = "smallbusiness.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4717,10 +3144,10 @@ resource "newrelic_synthetics_monitor" "tfer--smalbusines-002D-data-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--smartdisclosure-002D-data-002D-gov-002D-59533c85-002D-af18-002D-4bf8-002D-a511-002D-51dc4a7f6b2f" {
+resource "newrelic_synthetics_monitor" "tfer--smartdisclosure-002D-data-002D-gov-002D-001d1ec5-002D-b513-002D-4f29-002D-9566-002D-d06b5acaf28e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "smartdisclosure.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4730,192 +3157,10 @@ resource "newrelic_synthetics_monitor" "tfer--smartdisclosure-002D-data-002D-gov
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-brody-002D-identitysandbox-002D-gov-002D-ef475a1c-002D-318e-002D-48cf-002D-804b-002D-5f6155675f09" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "sp.brody.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp.brody.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-ci-002D-identitysandbox-002D-gov-002D-704b64f8-002D-b006-002D-488d-002D-824d-002D-a8b47298fff8" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "sp.ci.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp.ci.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-crisupb-002D-identitysandbox-002D-gov-002D-06728aab-002D-3daa-002D-4b58-002D-aa7f-002D-1b48b4f869fe" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "sp.crissupb.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp.crissupb.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-dev-002D-identitysandbox-002D-gov-002D-d8116d23-002D-7f38-002D-49ff-002D-810a-002D-822178a3ea8a" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "sp.dev.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp.dev.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-int-002D-identitysandbox-002D-gov-002D-34bcb874-002D-f8d1-002D-46a3-002D-99ce-002D-de8246198f46" {
+resource "newrelic_synthetics_monitor" "tfer--stage-002D-socialmobileregistry-002D-digitalgov-002D-gov-002D-56a33077-002D-a555-002D-47ea-002D-b998-002D-03712db16262" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "sp.int.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp.int.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-jg-002D-identitysandbox-002D-gov-002D-6e446ba9-002D-42b3-002D-4eb8-002D-a47e-002D-b1ebb99e6374" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "sp.jjg.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp.jjg.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-markryan-002D-identitysandbox-002D-gov-002D-bfb6d3b3-002D-94c0-002D-4815-002D-a86e-002D-7a12b5e26c51" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "sp.markryan.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp.markryan.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-oidc-002D-sinatra-002D-brody-002D-identitysandbox-002D-gov-002D-5da9b481-002D-9712-002D-4cb0-002D-9b85-002D-ebcf43237770" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "sp-oidc-sinatra.brody.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp-oidc-sinatra.brody.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-oidc-002D-sinatra-002D-markryan-002D-identitysandbox-002D-gov-002D-66f876c2-002D-0394-002D-45db-002D-a32c-002D-1623ce6e66a5" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "sp-oidc-sinatra.markryan.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp-oidc-sinatra.markryan.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-qa-002D-identitysandbox-002D-gov-002D-a75be00b-002D-745f-002D-4f2b-002D-8db4-002D-2882472b6efe" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "sp.qa.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp.qa.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-rails-002D-brody-002D-identitysandbox-002D-gov-002D-f5cd3ce2-002D-9123-002D-482d-002D-b455-002D-37456316e285" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "sp-rails.brody.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp-rails.brody.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-rails-002D-markryan-002D-identitysandbox-002D-gov-002D-e12a25df-002D-29bf-002D-4867-002D-97fd-002D-ccf9699a54c6" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "sp-rails.markryan.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp-rails.markryan.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-sinatra-002D-brody-002D-identitysandbox-002D-gov-002D-62754c27-002D-de20-002D-4fa0-002D-9241-002D-cb7bd303c1bc" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "sp-sinatra.brody.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp-sinatra.brody.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--sp-002D-sinatra-002D-markryan-002D-identitysandbox-002D-gov-002D-5c06139e-002D-0fc0-002D-4c14-002D-89ad-002D-c8be0614a4ad" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "sp-sinatra.markryan.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://sp-sinatra.markryan.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--stage-002D-socialmobileregistry-002D-digitalgov-002D-gov-002D-f90ebeeb-002D-185d-002D-4c1c-002D-bfc2-002D-0e48909468aa" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "stage-socialmobileregistry.digitalgov.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4925,23 +3170,10 @@ resource "newrelic_synthetics_monitor" "tfer--stage-002D-socialmobileregistry-00
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--staging-002D-api-002D-data-002D-gov-002D-5220b00a-002D-b1d4-002D-4c5f-002D-9698-002D-77242ba87721" {
+resource "newrelic_synthetics_monitor" "tfer--staging-002D-code-002D-gov-002D-fc578937-002D-16a4-002D-46de-002D-ad7a-002D-e6f024e6cd21" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "staging.api.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://staging.api.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--staging-002D-code-002D-gov-002D-3590195a-002D-b7ff-002D-45d1-002D-89cf-002D-a2a1ef665458" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "staging.code.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4951,10 +3183,10 @@ resource "newrelic_synthetics_monitor" "tfer--staging-002D-code-002D-gov-002D-35
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--staging-002D-login-002D-gov-002D-a542582c-002D-980e-002D-4faf-002D-a995-002D-8297493c86aa" {
+resource "newrelic_synthetics_monitor" "tfer--staging-002D-login-002D-gov-002D-3a594dcb-002D-5b89-002D-41aa-002D-9445-002D-034131aa4a87" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "staging.login.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -4964,7 +3196,7 @@ resource "newrelic_synthetics_monitor" "tfer--staging-002D-login-002D-gov-002D-a
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--staging-002D-performance-002D-gov-002D-cf6eb052-002D-f7aa-002D-4a9f-002D-8d94-002D-197feaf839be" {
+resource "newrelic_synthetics_monitor" "tfer--staging-002D-performance-002D-gov-002D-b61ad094-002D-d3c8-002D-455a-002D-bf11-002D-9c3cb5cb4714" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
@@ -4977,23 +3209,10 @@ resource "newrelic_synthetics_monitor" "tfer--staging-002D-performance-002D-gov-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--staging-002D-pulse-002D-cio-002D-gov-002D-fade010d-002D-41c4-002D-42c6-002D-8ed3-002D-fd1ee49fe217" {
+resource "newrelic_synthetics_monitor" "tfer--staging-002D-vote-002D-gov-002D-4f03ff9d-002D-5a7a-002D-42ce-002D-969e-002D-8d3a7f7c240d" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "staging.pulse.cio.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://staging.pulse.cio.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--staging-002D-vote-002D-gov-002D-3b698279-002D-2c11-002D-448b-002D-87b4-002D-73c52fde28ad" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "staging.vote.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5003,10 +3222,10 @@ resource "newrelic_synthetics_monitor" "tfer--staging-002D-vote-002D-gov-002D-3b
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--standards-002D-usa-002D-gov-002D-36bcc8ef-002D-65c4-002D-4ce2-002D-8841-002D-e0383c783fb9" {
+resource "newrelic_synthetics_monitor" "tfer--standards-002D-usa-002D-gov-002D-6bb6f957-002D-7883-002D-47a0-002D-84e2-002D-6c55ee54cd1a" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "standards.usa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5016,23 +3235,10 @@ resource "newrelic_synthetics_monitor" "tfer--standards-002D-usa-002D-gov-002D-3
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--standupbot-002D-18f-002D-gov-002D-992769dc-002D-a14a-002D-4023-002D-96c0-002D-5d9f7121e92f" {
+resource "newrelic_synthetics_monitor" "tfer--states-002D-data-002D-gov-002D-9f9a60a4-002D-4184-002D-4162-002D-86b1-002D-2390eae15a12" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "standupbot.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://standupbot.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--states-002D-data-002D-gov-002D-a7ad0611-002D-834a-002D-4950-002D-934f-002D-0383420c8861" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "states.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5042,36 +3248,10 @@ resource "newrelic_synthetics_monitor" "tfer--states-002D-data-002D-gov-002D-a7a
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--static-002D-data-002D-gov-002D-39938100-002D-a572-002D-4e6e-002D-92ab-002D-eace398cd33b" {
+resource "newrelic_synthetics_monitor" "tfer--strategy-002D-data-002D-gov-002D-496dd393-002D-089e-002D-4308-002D-b516-002D-b8b93cad9620" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "static.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://static.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--stats-002D-search-002D-usa-002D-gov-002D-f3ce0112-002D-faab-002D-4c2c-002D-bbdf-002D-83018fbfcf39" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "stats.search.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://stats.search.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--strategy-002D-data-002D-gov-002D-f65628ce-002D-9640-002D-4d5d-002D-89d8-002D-dd810358f685" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "strategy.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5081,10 +3261,10 @@ resource "newrelic_synthetics_monitor" "tfer--strategy-002D-data-002D-gov-002D-f
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--sumit-002D-digitalgov-002D-gov-002D-a434030a-002D-eea4-002D-47af-002D-92aa-002D-07476b8e6d8b" {
+resource "newrelic_synthetics_monitor" "tfer--sumit-002D-digitalgov-002D-gov-002D-204da753-002D-ca12-002D-4d04-002D-a02d-002D-a6f8391913e5" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "summit.digitalgov.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5094,36 +3274,10 @@ resource "newrelic_synthetics_monitor" "tfer--sumit-002D-digitalgov-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--suport-002D-digitalgov-002D-gov-002D-d62714ac-002D-ca41-002D-4089-002D-b37d-002D-7bfaedb8a68b" {
+resource "newrelic_synthetics_monitor" "tfer--tailored-002D-fedramp-002D-gov-002D-da505f5b-002D-50c4-002D-403b-002D-ba66-002D-3194aa035e8a" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "support.digitalgov.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://support.digitalgov.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--survey-002D-aps-002D-cloud-002D-gov-002D-86ae27fe-002D-3c78-002D-4c39-002D-846f-002D-ae6c07553014" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "survey.apps.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://survey.apps.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--tailored-002D-fedramp-002D-gov-002D-4e22b460-002D-fd32-002D-4a5e-002D-adf3-002D-d819171cfd6a" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "tailored.fedramp.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5133,88 +3287,10 @@ resource "newrelic_synthetics_monitor" "tfer--tailored-002D-fedramp-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--tel-002D-us-002D-usa-002D-gov-002D-8045b376-002D-fee7-002D-40dd-002D-a01d-002D-5892692174b0" {
+resource "newrelic_synthetics_monitor" "tfer--testing-002D-cokbok-002D-18f-002D-gov-002D-f9f2fc0e-002D-1812-002D-4414-002D-be3d-002D-3afbbbd8e151" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "tell-us.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://tell-us.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--telus-002D-usa-002D-gov-002D-cca1a24c-002D-26e1-002D-4fd8-002D-9cfa-002D-016590bd7445" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "tellus.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://tellus.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--test-002D-18f-002D-us-002D-f3f7bab8-002D-ec1e-002D-4a99-002D-8bd5-002D-93d2328c8117" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "test.18f.us"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://test.18f.us"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--test-002D-colegescorecard-002D-ed-002D-gov-002D-27511840-002D-438a-002D-4877-002D-80d9-002D-d403a29d68ce" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "test.collegescorecard.ed.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://test.collegescorecard.ed.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--test-002D-migrate-002D-ap-002D-cloud-002D-gov-002D-2fb915c8-002D-d4c7-002D-4765-002D-bf69-002D-145d88d51143" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "test-migrate.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://test-migrate.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--test-002D-onr-002D-ap-002D-cloud-002D-gov-002D-6afda768-002D-12de-002D-4454-002D-9f38-002D-d73febe6a943" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "test-onrr.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://test-onrr.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--testing-002D-cokbok-002D-18f-002D-gov-002D-14035a63-002D-954f-002D-43f7-002D-be34-002D-890713a04aa1" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = "testing-cookbook.18f.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5224,20 +3300,7 @@ resource "newrelic_synthetics_monitor" "tfer--testing-002D-cokbok-002D-18f-002D-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--tmate-002D-18f-002D-gov-002D-6868f89f-002D-3141-002D-46f3-002D-b613-002D-b39fef84c530" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "tmate.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://tmate.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--tock-002D-18f-002D-gov-002D-b726aaf9-002D-d658-002D-4738-002D-a4bf-002D-d2a4f3db93b2" {
+resource "newrelic_synthetics_monitor" "tfer--tock-002D-18f-002D-gov-002D-95975494-002D-b40c-002D-451e-002D-bcec-002D-2fd7d96dc02e" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
@@ -5250,49 +3313,10 @@ resource "newrelic_synthetics_monitor" "tfer--tock-002D-18f-002D-gov-002D-b726aa
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--tome-002D-ap-002D-cloud-002D-gov-002D-c4b8a573-002D-76b8-002D-47a5-002D-bad0-002D-07cc1401f12e" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "tome.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://tome.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--tomeairnow-002D-ap-002D-cloud-002D-gov-002D-2fc7fc81-002D-de96-002D-4a25-002D-8f66-002D-dfe82f94d524" {
+resource "newrelic_synthetics_monitor" "tfer--tophealth-002D-pif-002D-gov-002D-3a15294b-002D-e26b-002D-4e1a-002D-8d1d-002D-7841fc404788" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "tomeairnow.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://tomeairnow.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--tomeairnow1-002D-ap-002D-cloud-002D-gov-002D-44565b55-002D-8234-002D-4a6c-002D-8ef2-002D-2c3ec24cfcff" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "tomeairnow1.app.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://tomeairnow1.app.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--tophealth-002D-pif-002D-gov-002D-455a8593-002D-7063-002D-44fb-002D-b4f2-002D-89eb7631d459" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "tophealth.pif.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5302,10 +3326,10 @@ resource "newrelic_synthetics_monitor" "tfer--tophealth-002D-pif-002D-gov-002D-4
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--touchpoints-002D-digital-002D-gov-002D-b59a0c6b-002D-4343-002D-4dea-002D-b073-002D-53f0428a91a3" {
+resource "newrelic_synthetics_monitor" "tfer--touchpoints-002D-digital-002D-gov-002D-ee5ece2b-002D-ec89-002D-4f2d-002D-bd6e-002D-56a344057077" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "touchpoints.digital.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5315,10 +3339,10 @@ resource "newrelic_synthetics_monitor" "tfer--touchpoints-002D-digital-002D-gov-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--us-002D-gov-002D-918bd326-002D-aa1b-002D-44fa-002D-a86e-002D-1e3349da884b" {
+resource "newrelic_synthetics_monitor" "tfer--us-002D-gov-002D-78b6590e-002D-f0cb-002D-446f-002D-8e62-002D-57cdf31117c2" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "us.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5328,7 +3352,7 @@ resource "newrelic_synthetics_monitor" "tfer--us-002D-gov-002D-918bd326-002D-aa1
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--usa-002D-gov-002D-f7db01e5-002D-b604-002D-4c3a-002D-aaa2-002D-1eb7fdb9732d" {
+resource "newrelic_synthetics_monitor" "tfer--usa-002D-gov-002D-b05fdd07-002D-047f-002D-4209-002D-a0fd-002D-09923cd97797" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
@@ -5341,10 +3365,10 @@ resource "newrelic_synthetics_monitor" "tfer--usa-002D-gov-002D-f7db01e5-002D-b6
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--usagov-002D-gov-002D-b1ffcda9-002D-5fb9-002D-43ef-002D-934b-002D-6ac9e21d585c" {
+resource "newrelic_synthetics_monitor" "tfer--usagov-002D-gov-002D-16d999ef-002D-a1e1-002D-4e2a-002D-8ebf-002D-a26b982eb1a6" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "usagov.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5354,7 +3378,7 @@ resource "newrelic_synthetics_monitor" "tfer--usagov-002D-gov-002D-b1ffcda9-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--usdigitalregistry-002D-digitalgov-002D-gov-002D-59824320-002D-8c6c-002D-40f8-002D-819e-002D-65cde6ee9cb8" {
+resource "newrelic_synthetics_monitor" "tfer--usdigitalregistry-002D-digitalgov-002D-gov-002D-ec68dac7-002D-ef90-002D-41a0-002D-9fa1-002D-ffdfed8cc571" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
@@ -5367,7 +3391,7 @@ resource "newrelic_synthetics_monitor" "tfer--usdigitalregistry-002D-digitalgov-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--v1-002D-designsystem-002D-digital-002D-gov-002D-bc422b6e-002D-9005-002D-4900-002D-a179-002D-b11eea5cb524" {
+resource "newrelic_synthetics_monitor" "tfer--v1-002D-designsystem-002D-digital-002D-gov-002D-60d2f9f5-002D-f0ed-002D-44e7-002D-9059-002D-c0b014e181f7" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
@@ -5380,10 +3404,10 @@ resource "newrelic_synthetics_monitor" "tfer--v1-002D-designsystem-002D-digital-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--v2-002D-designsystem-002D-digital-002D-gov-002D-d3e14675-002D-bf46-002D-45b5-002D-9fcd-002D-83b860405d75" {
+resource "newrelic_synthetics_monitor" "tfer--v2-002D-designsystem-002D-digital-002D-gov-002D-0496ed93-002D-1be0-002D-4dfa-002D-9c42-002D-c9442d166d0e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "v2.designsystem.digital.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5393,10 +3417,10 @@ resource "newrelic_synthetics_monitor" "tfer--v2-002D-designsystem-002D-digital-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--v2-002D-designsystem-002D-digital-002D-gov-002F--002D-2d9df0a8-002D-2ae4-002D-4387-002D-aa73-002D-1fbbee06efc1" {
+resource "newrelic_synthetics_monitor" "tfer--v2-002D-designsystem-002D-digital-002D-gov-002F--002D-4e7c6c97-002D-b956-002D-414d-002D-ad9a-002D-fb3dd4c06eec" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "v2.designsystem.digital.gov/"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5406,23 +3430,10 @@ resource "newrelic_synthetics_monitor" "tfer--v2-002D-designsystem-002D-digital-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--v2alt-002D-designsystem-002D-digital-002D-gov-002D-934fb8c9-002D-17ab-002D-4c38-002D-bf17-002D-b8f799ec778b" {
+resource "newrelic_synthetics_monitor" "tfer--vocab-002D-data-002D-gov-002D-7d02742f-002D-d63d-002D-4796-002D-a14d-002D-c8eb99f87fe8" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "v2alt.designsystem.digital.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://v2alt.designsystem.digital.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--vocab-002D-data-002D-gov-002D-f9721d79-002D-3a7b-002D-43e6-002D-aeb7-002D-45040b0ec0fe" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
   name                      = "vocab.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5435,7 +3446,7 @@ resource "newrelic_synthetics_monitor" "tfer--vocab-002D-data-002D-gov-002D-f972
 resource "newrelic_synthetics_monitor" "tfer--vote-002D-gov-002D-3de1a7c0-002D-6acf-002D-4ed1-002D-8f1b-002D-0840da8ce98d" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "vote.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5445,7 +3456,7 @@ resource "newrelic_synthetics_monitor" "tfer--vote-002D-gov-002D-3de1a7c0-002D-6
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--vote-002D-usa-002D-gov-002D-7a12ec85-002D-d134-002D-4362-002D-afa9-002D-f02102b206bc" {
+resource "newrelic_synthetics_monitor" "tfer--vote-002D-usa-002D-gov-002D-6a835e53-002D-21ca-002D-4f33-002D-b6db-002D-913325c804ea" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
@@ -5458,10 +3469,10 @@ resource "newrelic_synthetics_monitor" "tfer--vote-002D-usa-002D-gov-002D-7a12ec
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--weather-002D-data-002D-gov-002D-941e84f0-002D-46d9-002D-4e77-002D-9dba-002D-708730489c9c" {
+resource "newrelic_synthetics_monitor" "tfer--weather-002D-data-002D-gov-002D-643fa853-002D-ea45-002D-45bc-002D-82ba-002D-80f83b09a697" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
   name                      = "weather.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5471,23 +3482,10 @@ resource "newrelic_synthetics_monitor" "tfer--weather-002D-data-002D-gov-002D-94
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--wekofmaking-002D-pif-002D-gov-002D-2b71f709-002D-05f2-002D-41ba-002D-9551-002D-71053c45a17e" {
+resource "newrelic_synthetics_monitor" "tfer--workflow-002D-digital-002D-gov-002D-6addd8e1-002D-76c0-002D-49db-002D-9c1b-002D-e5b9a2b48e81" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_WEST_1", "AWS_US_EAST_1"]
-  name                      = "weekofmaking.pif.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://weekofmaking.pif.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--workflow-002D-digital-002D-gov-002D-3a65e391-002D-a662-002D-4196-002D-bcef-002D-ad279625b8f9" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
   name                      = "workflow.digital.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5497,10 +3495,10 @@ resource "newrelic_synthetics_monitor" "tfer--workflow-002D-digital-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--wp-002D-bsp-002D-data-002D-gov-002D-d91ea7f7-002D-1cdb-002D-4664-002D-9018-002D-292c83a6b7bc" {
+resource "newrelic_synthetics_monitor" "tfer--wp-002D-bsp-002D-data-002D-gov-002D-a13dc179-002D-0dca-002D-48c6-002D-9ab5-002D-57f6069dfff6" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "wp-bsp.data.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"
@@ -5510,7 +3508,7 @@ resource "newrelic_synthetics_monitor" "tfer--wp-002D-bsp-002D-data-002D-gov-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--writing-002D-lab-002D-guide-002D-18f-002D-gov-002D-ac8ba3e2-002D-d257-002D-4191-002D-bd7b-002D-142b455655da" {
+resource "newrelic_synthetics_monitor" "tfer--writing-002D-lab-002D-guide-002D-18f-002D-gov-002D-a7e87d54-002D-bb93-002D-404f-002D-a6b6-002D-6296b85b5301" {
   bypass_head_request       = "false"
   frequency                 = "10"
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
@@ -5523,10 +3521,10 @@ resource "newrelic_synthetics_monitor" "tfer--writing-002D-lab-002D-guide-002D-1
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--x-002D-gsa-002D-gov-002D-e09eb415-002D-c2ae-002D-4043-002D-8242-002D-2081a3491fef" {
+resource "newrelic_synthetics_monitor" "tfer--x-002D-gsa-002D-gov-002D-a8219ed4-002D-d3df-002D-4848-002D-9fde-002D-66acee3b683e" {
   bypass_head_request       = "false"
   frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
+  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
   name                      = "10x.gsa.gov"
   sla_threshold             = "10"
   status                    = "ENABLED"

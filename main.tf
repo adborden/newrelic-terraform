@@ -1,3 +1,0 @@
-module "newrelic" {
-  source = "./newrelic"
-}
