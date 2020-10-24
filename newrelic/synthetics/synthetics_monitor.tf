@@ -544,19 +544,6 @@ resource "newrelic_synthetics_monitor" "tfer--chat-002D-18f-002D-gov-002D-3d806a
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--ci-002D-identitysandbox-002D-gov-002D-5ed5b0b2-002D-c900-002D-4099-002D-b636-002D-0433c0e201fe" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "ci.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://ci.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
 resource "newrelic_synthetics_monitor" "tfer--cities-002D-data-002D-gov-002D-a38883c3-002D-5463-002D-45f5-002D-b292-002D-ae893cceca95" {
   bypass_head_request       = "false"
   frequency                 = "10"
