@@ -38,16 +38,36 @@ output "newrelic_alert_channel_tfer--melanie-002D-leopold-002D-melanie-002D-leop
   value = "${newrelic_alert_channel.tfer--melanie-002D-leopold-002D-melanie-002D-leopold-002D-gsa-002D-gov-002D-3370906.id}"
 }
 
-output "newrelic_alert_policy_tfer--new-002D-host-002D-usage-002D-against-002D-license-002D-1094796_id" {
-  value = "${newrelic_alert_policy.tfer--new-002D-host-002D-usage-002D-against-002D-license-002D-1094796.id}"
+output "newrelic_alert_channel_tfer--ts-002D-tech-002D-portfolio-002D-alerts-002D-4155314_id" {
+  value = "${newrelic_alert_channel.tfer--ts-002D-tech-002D-portfolio-002D-alerts-002D-4155314.id}"
 }
 
 output "newrelic_alert_policy_tfer--new-002D-host-002D-usage-002D-against-002D-license-002D-1094828_id" {
   value = "${newrelic_alert_policy.tfer--new-002D-host-002D-usage-002D-against-002D-license-002D-1094828.id}"
 }
 
-output "newrelic_alert_policy_tfer--usage-002D-code-002D-gov-002D-synthetics-002D-1094797_id" {
-  value = "${newrelic_alert_policy.tfer--usage-002D-code-002D-gov-002D-synthetics-002D-1094797.id}"
+output "newrelic_alert_policy_tfer--outage-002D-1099448_id" {
+  value = "${newrelic_alert_policy.tfer--outage-002D-1099448.id}"
+}
+
+output "newrelic_alert_policy_tfer--outage2-002D-1099458_id" {
+  value = "${newrelic_alert_policy.tfer--outage2-002D-1099458.id}"
+}
+
+output "newrelic_alert_policy_tfer--outage3-002D-1099773_id" {
+  value = "${newrelic_alert_policy.tfer--outage3-002D-1099773.id}"
+}
+
+output "newrelic_alert_policy_tfer--outage4-002D-1099774_id" {
+  value = "${newrelic_alert_policy.tfer--outage4-002D-1099774.id}"
+}
+
+output "newrelic_alert_policy_tfer--outage5-002D-1099775_id" {
+  value = "${newrelic_alert_policy.tfer--outage5-002D-1099775.id}"
+}
+
+output "newrelic_alert_policy_tfer--outage6-002D-1099776_id" {
+  value = "${newrelic_alert_policy.tfer--outage6-002D-1099776.id}"
 }
 
 output "newrelic_alert_policy_tfer--usage-002D-code-002D-gov-002D-synthetics-002D-1094829_id" {

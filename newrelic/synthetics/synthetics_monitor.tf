@@ -232,19 +232,6 @@ resource "newrelic_synthetics_monitor" "tfer--api-002D-program-002D-18f-002D-gov
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--api-002D-usa-002D-gov-002D-67334745-002D-7bdb-002D-407e-002D-b400-002D-e7aaae1c683b" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "api.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://api.usa.gov"
-  verify_ssl                = "false"
-}
-
 resource "newrelic_synthetics_monitor" "tfer--api-002D-usability-002D-testing-002D-18f-002D-gov-002D-68347316-002D-cfb5-002D-4b0e-002D-8a64-002D-559ce7d1cef2" {
   bypass_head_request       = "false"
   frequency                 = "10"
@@ -294,19 +281,6 @@ resource "newrelic_synthetics_monitor" "tfer--aps-002D-usa-002D-gov-002D-73007ec
   treat_redirect_as_failure = "false"
   type                      = "SIMPLE"
   uri                       = "https://apps.usa.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--asis-002D-search-002D-gov-002D-7d21393c-002D-6df2-002D-42d2-002D-88b5-002D-9c01abbcb1f0" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "asis.search.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://asis.search.gov"
   verify_ssl                = "false"
 }
 
@@ -544,19 +518,6 @@ resource "newrelic_synthetics_monitor" "tfer--catalog-002D-data-002D-gov-002D-f5
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--catalog-002D-next-002D-data-002D-gov-002D-f9fc5d3e-002D-18c4-002D-4cde-002D-9584-002D-aec9145c4d5f" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "catalog-next.data.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://catalog-next.data.gov"
-  verify_ssl                = "false"
-}
-
 resource "newrelic_synthetics_monitor" "tfer--chalenge-002D-gov-002D-c9f8d595-002D-9790-002D-4039-002D-afdf-002D-7d034b597969" {
   bypass_head_request       = "false"
   frequency                 = "10"
@@ -580,19 +541,6 @@ resource "newrelic_synthetics_monitor" "tfer--chat-002D-18f-002D-gov-002D-3d806a
   treat_redirect_as_failure = "false"
   type                      = "SIMPLE"
   uri                       = "https://chat.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--ci-002D-identitysandbox-002D-gov-002D-5ed5b0b2-002D-c900-002D-4099-002D-b636-002D-0433c0e201fe" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "ci.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://ci.identitysandbox.gov"
   verify_ssl                = "false"
 }
 
@@ -879,19 +827,6 @@ resource "newrelic_synthetics_monitor" "tfer--crime-002D-data-002D-explorer-002D
   treat_redirect_as_failure = "false"
   type                      = "SIMPLE"
   uri                       = "https://crime-data-explorer.fr.cloud.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--crisupb-002D-identitysandbox-002D-gov-002D-7f815924-002D-3278-002D-4b94-002D-8d46-002D-c251ee2777eb" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "crissupb.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://crissupb.identitysandbox.gov"
   verify_ssl                = "false"
 }
 
@@ -1532,19 +1467,6 @@ resource "newrelic_synthetics_monitor" "tfer--federation-002D-staging-002D-data-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fedramp-002D-develop-002D-fr-002D-cloud-002D-gov-002D-40106a87-002D-8510-002D-4163-002D-b44f-002D-2206500d3190" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "fedramp-develop.fr.cloud.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://fedramp-develop.fr.cloud.gov"
-  verify_ssl                = "false"
-}
-
 resource "newrelic_synthetics_monitor" "tfer--fedramp-002D-gov-002D-df780fed-002D-9ce7-002D-45a3-002D-9fb1-002D-d44f843de9ce" {
   bypass_head_request       = "false"
   frequency                 = "10"
@@ -1958,19 +1880,6 @@ resource "newrelic_synthetics_monitor" "tfer--idmanagement-002D-gov-002D-445d3a8
   treat_redirect_as_failure = "false"
   type                      = "SIMPLE"
   uri                       = "https://idmanagement.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--idp-002D-crisupb-002D-identitysandbox-002D-gov-002D-ee179e42-002D-3a63-002D-4c11-002D-beeb-002D-f19c34ff8b55" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "idp.crissupb.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://idp.crissupb.identitysandbox.gov"
   verify_ssl                = "false"
 }
 
@@ -2611,19 +2520,6 @@ resource "newrelic_synthetics_monitor" "tfer--paid-002D-leave-002D-prototype-002
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--participation-002D-usa-002D-gov-002D-e79eb582-002D-094d-002D-4433-002D-a367-002D-069dbe9e7de2" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "participation.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://participation.usa.gov"
-  verify_ssl                = "false"
-}
-
 resource "newrelic_synthetics_monitor" "tfer--partnership-002D-playbok-002D-18f-002D-gov-002D-f4a9f32e-002D-b057-002D-4704-002D-8ab6-002D-40e0cf622059" {
   bypass_head_request       = "false"
   frequency                 = "10"
@@ -3154,19 +3050,6 @@ resource "newrelic_synthetics_monitor" "tfer--smartdisclosure-002D-data-002D-gov
   treat_redirect_as_failure = "false"
   type                      = "SIMPLE"
   uri                       = "https://smartdisclosure.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--stage-002D-socialmobileregistry-002D-digitalgov-002D-gov-002D-56a33077-002D-a555-002D-47ea-002D-b998-002D-03712db16262" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "stage-socialmobileregistry.digitalgov.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://stage-socialmobileregistry.digitalgov.gov"
   verify_ssl                = "false"
 }
 

@@ -91,3 +91,12 @@ resource "newrelic_alert_channel" "tfer--melanie-002D-leopold-002D-melanie-002D-
   name = "Melanie Leopold <melanie.leopold@gsa.gov>"
   type = "user"
 }
+
+resource "newrelic_alert_channel" "tfer--ts-002D-tech-002D-portfolio-002D-alerts-002D-4155314" {
+  config {
+    channel = "tts-tech-portfolio-alerts"
+  }
+
+  name = "tts-tech-portfolio-alerts"
+  type = "slack"
+}
