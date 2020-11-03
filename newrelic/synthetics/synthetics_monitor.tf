@@ -1181,31 +1181,6 @@ resource "newrelic_synthetics_monitor" "tfer--docs-002D-cloud-002D-gov-002D-3399
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--dolores-002D-ap-002D-18f-002D-gov-002D-eaf46bb5-002D-f62f-002D-4e03-002D-b7c0-002D-dab2bf6dc8b3" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_2", "AWS_US_EAST_1", "AWS_US_WEST_1"]
-  name                      = "dolores-app.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://dolores-app.18f.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--dolores-002D-staging-002D-18f-002D-gov-002D-902b2f50-002D-0534-002D-4513-002D-ad03-002D-ada8111697ed" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "dolores-staging.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://dolores-staging.18f.gov"
-  verify_ssl                = "false"
-}
 
 resource "newrelic_synthetics_monitor" "tfer--ecosystems-002D-data-002D-gov-002D-92d36e4a-002D-a346-002D-4fb3-002D-8013-002D-322ae6f21fb6" {
   bypass_head_request       = "false"
@@ -1909,19 +1884,6 @@ resource "newrelic_synthetics_monitor" "tfer--idp-002D-int-002D-identitysandbox-
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--idp-002D-jg-002D-identitysandbox-002D-gov-002D-6a2fdca7-002D-7a8f-002D-4454-002D-93ae-002D-a712874ca21a" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_1", "AWS_US_WEST_2"]
-  name                      = "idp.jjg.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://idp.jjg.identitysandbox.gov"
-  verify_ssl                = "false"
-}
-
 resource "newrelic_synthetics_monitor" "tfer--idp-002D-staging-002D-login-002D-gov-002D-651ea509-002D-2937-002D-44e7-002D-a638-002D-ddb8f382d930" {
   bypass_head_request       = "false"
   frequency                 = "10"
@@ -1997,19 +1959,6 @@ resource "newrelic_synthetics_monitor" "tfer--inventory-002D-data-002D-gov-002D-
   treat_redirect_as_failure = "false"
   type                      = "SIMPLE"
   uri                       = "https://inventory.data.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--jg-002D-identitysandbox-002D-gov-002D-f8d4635c-002D-336f-002D-47ee-002D-a27d-002D-68bc1860e142" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "jjg.identitysandbox.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://jjg.identitysandbox.gov"
   verify_ssl                = "false"
 }
 
