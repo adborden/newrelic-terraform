@@ -1338,19 +1338,6 @@ resource "newrelic_synthetics_monitor" "tfer--fdic-002D-search-002D-ap-002D-clou
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--fedback-002D-staging-002D-usa-002D-gov-002D-60adf4dd-002D-06ee-002D-4eed-002D-8f8f-002D-2b557f65b93e" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
-  name                      = "feedback-staging.usa.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://feedback-staging.usa.gov"
-  verify_ssl                = "false"
-}
-
 resource "newrelic_synthetics_monitor" "tfer--fedback-002D-usa-002D-gov-002D-00bca701-002D-433b-002D-4b7c-002D-a3d1-002D-753bb54b9548" {
   bypass_head_request       = "false"
   frequency                 = "10"
