@@ -700,19 +700,6 @@ resource "newrelic_synthetics_monitor" "tfer--computersforlearning-002D-gov-002D
   verify_ssl                = "false"
 }
 
-resource "newrelic_synthetics_monitor" "tfer--conect-002D-gov-002D-f4439a78-002D-5f73-002D-4c95-002D-a530-002D-930f2c95cd8d" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_WEST_2", "AWS_US_EAST_1"]
-  name                      = "connect.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://connect.gov"
-  verify_ssl                = "false"
-}
-
 resource "newrelic_synthetics_monitor" "tfer--conect-002D-usa-002D-gov-002D-dc7833d2-002D-94eb-002D-4d8d-002D-ab9f-002D-dac5ee2c820c" {
   bypass_head_request       = "false"
   frequency                 = "10"
@@ -2479,19 +2466,6 @@ resource "newrelic_synthetics_monitor" "tfer--performance-002D-gov-002D-1c7a84fb
   treat_redirect_as_failure = "false"
   type                      = "SIMPLE"
   uri                       = "https://performance.gov"
-  verify_ssl                = "false"
-}
-
-resource "newrelic_synthetics_monitor" "tfer--performance-002D-gov-002D-research-002D-18f-002D-gov-002D-99656628-002D-a39c-002D-446b-002D-bee7-002D-75fc1792cfc3" {
-  bypass_head_request       = "false"
-  frequency                 = "10"
-  locations                 = ["AWS_US_WEST_1", "AWS_US_EAST_1", "AWS_US_WEST_2"]
-  name                      = "performance-gov-research.18f.gov"
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
-  type                      = "SIMPLE"
-  uri                       = "https://performance-gov-research.18f.gov"
   verify_ssl                = "false"
 }
 

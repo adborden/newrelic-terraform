@@ -8,11 +8,17 @@ The terraform state is not managed directly, the account is used as the state an
 
 ```bash
 $ brew install terraform terraformer
+# If you need a specific version of terraform use https://github.com/tfutils/tfenv instead of brew
+$ brew uninstall terraform
+$ brew install tfenv
+$ tfenv install 0.12.29
+$ tfenv use 0.12.29
 ```
 
 Import an existing New Relic account into terraform:
 ```bash
-$ export NEWRELIC_API_KEY=REPLACEMEterra
+$ export NEWRELIC_API_KEY=REPLACE
+$ export NEW_RELIC_ACCOUNT_ID=REPLACE
 $ terraformer import newrelic -o "." -r alert,infra,synthetics
 $ cd newrelic/synthetics
 $ terraform init
