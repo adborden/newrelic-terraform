@@ -3,11 +3,12 @@ data "local_file" "sites" {
 }
 
 locals {
-  sites = csvdecode(data.local_file.sites.content)
+  sites               = csvdecode(data.local_file.sites.content)
+  tts_sites_by_domain = { for site in local.sites : site["Public-Facing Sites/Domains"] => site if length(regexall("^TTS", site["Sub-office"])) > 0 }
 }
 
 resource "newrelic_synthetics_monitor" "uptime" {
-  for_each = { for site in local.sites : site["Public-Facing Sites/Domains"] => site }
+  for_each = local.tts_sites_by_domain
 
   bypass_head_request       = "false"
   frequency                 = "10"
