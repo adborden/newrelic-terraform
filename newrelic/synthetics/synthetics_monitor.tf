@@ -10,14 +10,13 @@ locals {
 resource "newrelic_synthetics_monitor" "uptime" {
   for_each = local.tts_sites_by_domain
 
-  bypass_head_request       = "false"
-  frequency                 = "10"
+  frequency                 = 10
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = each.key
-  sla_threshold             = "10"
-  status                    = "ENABLED"
-  treat_redirect_as_failure = "false"
+  sla_threshold             = 10
+  status                    = each.value["Production Status"] == "Decommissioned" ? "DISABLED" : "ENABLED"
+  treat_redirect_as_failure = false
   type                      = "SIMPLE"
   uri                       = "https://${each.key}"
-  verify_ssl                = "false"
+  verify_ssl                = true
 }
