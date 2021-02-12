@@ -2,31 +2,34 @@
 
 ## Getting Started
 
-The terraform state is not managed directly, the account is used as the state and imported into terraform using terraformer. Both are required locally to make updates:
-- [Terraform](https://www.terraform.io/downloads.html)
-- [Terraformer](https://github.com/GoogleCloudPlatform/terraformer)
+1. [Install Terraform](https://www.terraform.io/downloads.html).
+   - If you need a specific version of Terraform, use [tfenv](https://github.com/tfutils/tfenv) or [asdf](https://asdf-vm.com/) instead of [Homebrew](https://brew.sh/).
+1. [Get an API key for New Relic.](https://one.newrelic.com/launcher/api-keys-ui.launcher)
+1. Save the API key as an environment variable.
 
-```bash
-$ brew install terraform terraformer
-# If you need a specific version of terraform use https://github.com/tfutils/tfenv instead of brew
-$ brew uninstall terraform
-$ brew install tfenv
-$ tfenv install 0.12.29
-$ tfenv use 0.12.29
-```
+   ```sh
+   export NEW_RELIC_API_KEY=...
+   ```
 
-Import an existing New Relic account into terraform:
-```bash
-$ export NEWRELIC_API_KEY=REPLACE
-$ export NEW_RELIC_ACCOUNT_ID=REPLACE
-$ terraformer import newrelic -o "." -r alert,infra,synthetics
-$ cd newrelic/synthetics
-$ terraform init
-# Make changes directly and apply to update
-$ terraform apply
-```
-### Continuous Integration
-TBD
+1. Go to the `synthetics/` directory.
+
+   ```sh
+   cd newrelic/synthetics
+   ```
+
+1. Download the [GSA website inventory](https://docs.google.com/spreadsheets/d/1OBO6g7_OsVBv0vG8WSCI6L2FD_iRh3A7a_6eQWj2zLE/edit#gid=2013137748) as a CSV.
+1. Move the CSV to be `sites.csv` in this directory.
+1. Initialize Terraform.
+
+   ```sh
+   terraform init
+   ```
+
+1. Apply changes.
+
+   ```sh
+   terraform apply
+   ```
 
 ### Public domain
 
