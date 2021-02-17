@@ -19,8 +19,8 @@ locals {
     }
   ])
 
-  # convert from a list to a map, and filter to the TTS domains
-  tts_sites_by_domain = { for site in local.sites_with_extras : site["Public-Facing Sites/Domains"] => site if length(regexall("^TTS", site["Sub- office"])) > 0 }
+  # convert from a list to a map, and filter to the TTS domains that should give back a response
+  tts_sites_by_domain = { for site in local.sites_with_extras : site["Public-Facing Sites/Domains"] => site if length(regexall("^TTS", site["Sub- office"])) > 0 && site["Production Status"] != "Decommissioned" }
 }
 
 resource "newrelic_synthetics_monitor" "uptime" {
@@ -30,7 +30,7 @@ resource "newrelic_synthetics_monitor" "uptime" {
   locations                 = ["AWS_US_EAST_1", "AWS_US_WEST_2", "AWS_US_WEST_1"]
   name                      = each.key
   sla_threshold             = 10
-  status                    = each.value["Production Status"] == "Decommissioned" ? "DISABLED" : "ENABLED"
+  status                    = "ENABLED"
   treat_redirect_as_failure = false
   type                      = "SIMPLE"
   uri                       = "https://${each.key}"
