@@ -34,5 +34,5 @@ resource "newrelic_synthetics_monitor" "uptime" {
   treat_redirect_as_failure = false
   type                      = "SIMPLE"
   uri                       = "https://${each.key}"
-  verify_ssl                = true
+  verify_ssl                = false
 }
