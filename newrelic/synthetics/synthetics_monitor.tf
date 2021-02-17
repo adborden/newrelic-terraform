@@ -3,8 +3,9 @@ data "local_file" "sites" {
 }
 
 locals {
-  sites               = csvdecode(data.local_file.sites.content)
-  tts_sites_by_domain = { for site in local.sites : site["Public-Facing Sites/Domains"] => site if length(regexall("^TTS", site["Sub-office"])) > 0 }
+  sites = csvdecode(data.local_file.sites.content)
+  # convert from a list to a map, and filter to the TTS domains
+  tts_sites_by_domain = { for site in local.sites : site["Public-Facing Sites/Domains"] => site if length(regexall("^TTS", site["Sub- office"])) > 0 }
 }
 
 resource "newrelic_synthetics_monitor" "uptime" {
