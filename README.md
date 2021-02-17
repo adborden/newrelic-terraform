@@ -25,10 +25,10 @@
    terraform init
    ```
 
-1. Apply changes.
+1. Apply changes, [avoiding the rate limit](https://github.com/newrelic/terraform-provider-newrelic/issues/884#issuecomment-697571469).
 
    ```sh
-   terraform apply
+   terraform apply -parallelism=4
    ```
 
 ### Public domain
