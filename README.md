@@ -1,9 +1,14 @@
 # TTS New Relic Automation
 
+## Requirements
+
+- pipenv
+- [Terraform](https://www.terraform.io/downloads.html) (we suggest using [tfenv](https://github.com/tfutils/tfenv))
+
+
+
 ## Getting Started
 
-1. [Install Terraform](https://www.terraform.io/downloads.html).
-   - If you need a specific version of Terraform, use [tfenv](https://github.com/tfutils/tfenv) or [asdf](https://asdf-vm.com/) instead of [Homebrew](https://brew.sh/).
 1. [Get an API key for New Relic.](https://one.newrelic.com/launcher/api-keys-ui.launcher)
 1. Save the API key as an environment variable.
 
