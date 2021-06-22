@@ -3,12 +3,12 @@
 name: CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+# events but only for the main branch
 on:
   push:
-    branches: [ master ]
+    branches: [main]
   pull_request:
-    branches: [ master ]
+    branches: [main]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -21,23 +21,26 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-      id: 
-      
-    - name: Install Terraform
-      uses: little-core-labs/install-terraform@v1.0.0
+
+    # Validate terraform (with the side-effect of installing the right
+    # version of terraform based on required_version constraints)
+    - name: validate
+      uses: dflook/terraform-validate@v1
       with:
-      # Version of terraform to download
-        timeout-minutes: 5
-        version: 0.12.21
-    
+        path: newrelic
+
+    - name: fmt
+      uses: dflook/terraform-fmt-check@v1
+      with:
+        path: newrelic
+
     # Runs terraform lint
-    - name: Terraform-Lint
-      uses: actionshub/terraform-lint@1.0.0
-      
-    - name: Terraform security scan
-      uses: triat/terraform-security-scan@v1.2
+    - name: lint
+      uses: actionshub/terraform-lint@main
+
+    - name: security scan
+      uses: triat/terraform-security-scan@v2.2.3
       with:
-        # Whether or not to comment on pull requests.
-        tfsec_actions_comment: true # optional, default is true
-        # Terraform working directory.
-        tfsec_actions_working_dir: ./newrelic # optional, default is .      
+        tfsec_actions_working_dir: ./newrelic # optional, default is .
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

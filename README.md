@@ -31,7 +31,13 @@
    terraform apply -parallelism=4
    ```
 
-### Public domain
+## Development
+
+Format your terraform code before pushing.
+
+    $ terraform fmt -recursive
+
+## Public domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
 
