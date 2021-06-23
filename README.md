@@ -97,6 +97,14 @@ AWS_SECRET_ACCESS_KEY | AWS secret key for accessing the S3+DynamoDB Terraform s
 NEW_RELIC_API_KEY | NewRelic [API key](https://one.newrelic.com/launcher/api-keys-ui.launcher).
 NEW_RELIC_ACCOUNT_ID | NewRelic account Id.
 
+To enforce the workflow, you should enable protected branches for the `main`
+branch configured with these options:
+
+- Require pull request reviews before merging
+- Dismiss stale pull request approvals when new commits are pushed
+- Require status checks to pass before merging (build, plan)
+- Require branches to be up to date before merging
+- Include administrators
 
 
 ## Public domain
