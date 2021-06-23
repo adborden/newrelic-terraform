@@ -26,5 +26,5 @@ jobs:
       - name: terraform plan
         uses: dflook/terraform-plan@v1
         with:
-          path: newrelic/synthetics
+          path: .
           parallelism: 4  # avoid rate limiting https://github.com/newrelic/terraform-provider-newrelic/issues/884#issuecomment-697571469

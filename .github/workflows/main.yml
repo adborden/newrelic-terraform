@@ -29,12 +29,12 @@ jobs:
     - name: validate
       uses: dflook/terraform-validate@v1
       with:
-        path: newrelic/synthetics
+        path: .
 
     - name: fmt
       uses: dflook/terraform-fmt-check@v1
       with:
-        path: newrelic/synthetics
+        path: .
 
     # Runs terraform lint
     - name: lint
@@ -42,7 +42,5 @@ jobs:
 
     - name: security scan
       uses: triat/terraform-security-scan@v2.2.3
-      with:
-        tfsec_actions_working_dir: ./newrelic # optional, default is .
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -5,35 +5,29 @@
 - [Terraform](https://www.terraform.io/downloads.html) (we suggest using [tfenv](https://github.com/tfutils/tfenv))
 
 
-
 ## Getting Started
 
-1. Copy `env.sample` to `.env` and edit the values to use your password/secret
-   manager to populate the environment variables.
-1. Source your secrets `. .env`
-1. Go to the `synthetics/` directory.
+Copy `env.sample` to `.env` and edit the values to use your password/secret manager to populate the environment variables.
 
-   ```sh
-   cd newrelic/synthetics
-   ```
+Source your secrets.
 
-1. Initialize Terraform.
+    $ source .env
 
-   ```sh
-   terraform init
-   ```
+Initialize Terraform.
 
-1. Apply changes.
+    $ terraform init
 
-   ```sh
-   terraform apply
-   ```
+Apply changes.
+
+    $ terraform apply
+
 
 ## Development
 
-Format your terraform code before pushing.
+Format your Terraform code before pushing.
 
-    $ terraform fmt -recursive
+    $ terraform fmt
+
 
 ### Update the list of sites
 
