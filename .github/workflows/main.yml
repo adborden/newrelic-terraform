@@ -2,14 +2,12 @@
 
 name: CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the main branch
+# Controls when the action will run. Triggers the workflow on every commit.
 on:
   push:
 
 env:
   NEW_RELIC_ACCOUNT_ID: "${{ secrets.NEW_RELIC_ACCOUNT_ID }}"
-  #NEW_RELIC_API_KEY: "${{ secrets.NEW_RELIC_API_KEY }}"
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -29,20 +27,20 @@ jobs:
     - name: validate
       uses: dflook/terraform-validate@v1
       with:
-        path: newrelic/synthetics
+        path: .
 
+    # Check terraform files are formatted correctly (terraform fmt -check)
     - name: fmt
       uses: dflook/terraform-fmt-check@v1
       with:
-        path: newrelic/synthetics
+        path: .
 
     # Runs terraform lint
     - name: lint
       uses: actionshub/terraform-lint@main
 
+    # Runs tfsec
     - name: security scan
       uses: triat/terraform-security-scan@v2.2.3
-      with:
-        tfsec_actions_working_dir: ./newrelic # optional, default is .
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

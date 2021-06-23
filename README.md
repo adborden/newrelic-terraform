@@ -5,52 +5,48 @@
 - [Terraform](https://www.terraform.io/downloads.html) (we suggest using [tfenv](https://github.com/tfutils/tfenv))
 
 
-
 ## Getting Started
 
-1. Copy `env.sample` to `.env` and edit the values to use your password/secret
-   manager to populate the environment variables.
-1. Source your secrets `. .env`
-1. Go to the `synthetics/` directory.
+Copy `env.sample` to `.env` and edit the values to use your password/secret manager to populate the environment variables.
 
-   ```sh
-   cd newrelic/synthetics
-   ```
+Source your secrets.
 
-1. Download the [GSA website inventory](https://docs.google.com/spreadsheets/d/1OBO6g7_OsVBv0vG8WSCI6L2FD_iRh3A7a_6eQWj2zLE/edit#gid=2013137748) as a CSV.
-1. Move the CSV to be `sites.csv` in this directory.
-1. Initialize Terraform.
+    $ source .env
 
-   ```sh
-   terraform init
-   ```
+Initialize Terraform.
 
-1. Apply changes.
+    $ terraform init
 
-   ```sh
-   terraform apply
-   ```
+Apply changes.
+
+    $ terraform apply
+
 
 ## Development
 
-Format your terraform code before pushing.
+Format your Terraform code before pushing.
 
-    $ terraform fmt -recursive
+    $ terraform fmt
+
 
 ### Update the list of sites
 
-_TODO_ how to update the `sites.csv`.
+_TODO [Provide a script](https://github.com/18F/newrelic-terraform/issues/23) to make the manual steps 1) download 2) run script._
 
-1. Download the [GSA website inventory](https://docs.google.com/spreadsheets/d/1OBO6g7_OsVBv0vG8WSCI6L2FD_iRh3A7a_6eQWj2zLE/edit#gid=2013137748) as a CSV.
-1. Filter the list Production Status != Decommissioned, Sub-Office starts with
-   TTS\*
-1. Copy the first column (list of domains into `newrelic/synthetics/sites.csv`.
+Follow these steps to update the `sites.csv`.
+
+1. Download the [GSA Website Inventory](https://docs.google.com/spreadsheets/d/1OBO6g7_OsVBv0vG8WSCI6L2FD_iRh3A7a_6eQWj2zLE/edit#gid=2013137748) as a CSV.
+1. Filter the list Production Status != Decommissioned, Sub-Office starts with "TTS\*".
+1. Copy the first column (list of domains) into `sites.csv`.
+
 
 ## Initial setup
 
 The first time you setup this project, you'll need to create the Terraform backend and setup CI.
 
+
 ### Terraform backend
+
 This assumes you'll be using an S3 bucket with DynamoDB for locking.
 
 Create the bucket in S3, ensure "Block all public access" is checked.
@@ -85,6 +81,7 @@ Create an IAM user with the following permissions:
   ]
 }
 ```
+
 
 ### GitHub Actions
 
