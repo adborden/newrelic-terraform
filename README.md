@@ -2,20 +2,15 @@
 
 ## Requirements
 
-- pipenv
 - [Terraform](https://www.terraform.io/downloads.html) (we suggest using [tfenv](https://github.com/tfutils/tfenv))
 
 
 
 ## Getting Started
 
-1. [Get an API key for New Relic.](https://one.newrelic.com/launcher/api-keys-ui.launcher)
-1. Save the API key as an environment variable.
-
-   ```sh
-   export NEW_RELIC_API_KEY=...
-   ```
-
+1. Copy `env.sample` to `.env` and edit the values to use your password/secret
+   manager to populate the environment variables.
+1. Source your secrets `. .env`
 1. Go to the `synthetics/` directory.
 
    ```sh
@@ -50,6 +45,59 @@ _TODO_ how to update the `sites.csv`.
 1. Filter the list Production Status != Decommissioned, Sub-Office starts with
    TTS\*
 1. Copy the first column (list of domains into `newrelic/synthetics/sites.csv`.
+
+## Initial setup
+
+The first time you setup this project, you'll need to create the Terraform backend and setup CI.
+
+### Terraform backend
+This assumes you'll be using an S3 bucket with DynamoDB for locking.
+
+Create the bucket in S3, ensure "Block all public access" is checked.
+
+Create the DynamoDB table.
+
+Create an IAM user with the following permissions:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::tts-newrelic-terraform"
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:PutObject"],
+      "Resource": "arn:aws:s3:::tts-newrelic-terraform/production/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "dynamodb:GetItem",
+        "dynamodb:PutItem",
+        "dynamodb:DeleteItem"
+      ],
+      "Resource": "arn:aws:dynamodb:*:*:table/newrelic-terraform-state-lock"
+    }
+  ]
+}
+```
+
+### GitHub Actions
+
+Add these secrets for use in GitHub Actions.
+
+Secret | Description
+------ | -----------
+AWS_ACCESS_KEY_ID | AWS access key Id for accessing the S3+DynamoDB Terraform state.
+AWS_SECRET_ACCESS_KEY | AWS secret key for accessing the S3+DynamoDB Terraform state.
+NEW_RELIC_API_KEY | NewRelic [API key](https://one.newrelic.com/launcher/api-keys-ui.launcher).
+NEW_RELIC_ACCOUNT_ID | NewRelic account Id.
+
+
 
 ## Public domain
 
