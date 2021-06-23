@@ -6,9 +6,15 @@ terraform {
       source  = "newrelic/newrelic"
     }
   }
+
+  backend "s3" {
+    bucket         = "tts-newrelic-terraform"
+    key            = "production/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "newrelic-terraform-state-lock"
+  }
 }
 
 provider "newrelic" {
-  account_id = "562946"
-  region     = "US"
+  region = "US"
 }

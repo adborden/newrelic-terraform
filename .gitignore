@@ -1,6 +1,6 @@
 .DS_Store
+.env
 /todo.txt
 *.tfstate
 *.terraform
 *.tfstate.backup
-*.csv
