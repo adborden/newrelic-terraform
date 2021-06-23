@@ -9,18 +9,14 @@ locals {
   sites_with_extras = concat(local.sites, [
     {
       "Public-Facing Sites/Domains" = "hackerone.com/tts"
-      "Sub- office"                 = "TTS"
-      "Production Status"           = "Production"
     },
     {
       "Public-Facing Sites/Domains" = "dap.digitalgov.gov/Universal-Federated-Analytics-Min.js"
-      "Sub- office"                 = "TTS"
-      "Production Status"           = "Production"
     }
   ])
 
   # convert from a list to a map, and filter to the TTS domains that should give back a response
-  tts_sites_by_domain = { for site in local.sites_with_extras : site["Public-Facing Sites/Domains"] => site if length(regexall("^TTS", site["Sub- office"])) > 0 && site["Production Status"] != "Decommissioned" }
+  tts_sites_by_domain = { for site in local.sites_with_extras : site["Public-Facing Sites/Domains"] => site }
 }
 
 resource "newrelic_synthetics_monitor" "uptime" {

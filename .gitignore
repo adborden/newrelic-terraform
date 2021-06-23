@@ -3,4 +3,3 @@
 *.tfstate
 *.terraform
 *.tfstate.backup
-*.csv

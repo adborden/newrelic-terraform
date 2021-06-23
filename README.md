@@ -42,6 +42,15 @@ Format your terraform code before pushing.
 
     $ terraform fmt -recursive
 
+### Update the list of sites
+
+_TODO_ how to update the `sites.csv`.
+
+1. Download the [GSA website inventory](https://docs.google.com/spreadsheets/d/1OBO6g7_OsVBv0vG8WSCI6L2FD_iRh3A7a_6eQWj2zLE/edit#gid=2013137748) as a CSV.
+1. Filter the list Production Status != Decommissioned, Sub-Office starts with
+   TTS\*
+1. Copy the first column (list of domains into `newrelic/synthetics/sites.csv`.
+
 ## Public domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
