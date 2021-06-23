@@ -17,8 +17,6 @@
    cd newrelic/synthetics
    ```
 
-1. Download the [GSA website inventory](https://docs.google.com/spreadsheets/d/1OBO6g7_OsVBv0vG8WSCI6L2FD_iRh3A7a_6eQWj2zLE/edit#gid=2013137748) as a CSV.
-1. Move the CSV to be `sites.csv` in this directory.
 1. Initialize Terraform.
 
    ```sh
@@ -39,12 +37,14 @@ Format your terraform code before pushing.
 
 ### Update the list of sites
 
-_TODO_ how to update the `sites.csv`.
+_TODO [Provide a script](https://github.com/18F/newrelic-terraform/issues/23) to make the manual steps 1) download 2) run script._
+
+Follow these steps to update the `sites.csv`.
 
 1. Download the [GSA website inventory](https://docs.google.com/spreadsheets/d/1OBO6g7_OsVBv0vG8WSCI6L2FD_iRh3A7a_6eQWj2zLE/edit#gid=2013137748) as a CSV.
 1. Filter the list Production Status != Decommissioned, Sub-Office starts with
    TTS\*
-1. Copy the first column (list of domains into `newrelic/synthetics/sites.csv`.
+1. Copy the first column (list of domains) into `newrelic/synthetics/sites.csv`.
 
 ## Initial setup
 
